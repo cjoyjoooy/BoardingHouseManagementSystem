@@ -63,10 +63,10 @@ Partial Class Tenant
         Guna2Panel4.BorderThickness = 20
         Guna2Panel4.CustomizableEdges = CustomizableEdges1
         Guna2Panel4.FillColor = Color.White
-        Guna2Panel4.Location = New Point(374, 306)
+        Guna2Panel4.Location = New Point(379, 306)
         Guna2Panel4.Name = "Guna2Panel4"
         Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2Panel4.Size = New Size(302, 203)
+        Guna2Panel4.Size = New Size(342, 255)
         Guna2Panel4.TabIndex = 11
         ' 
         ' Guna2Panel2
@@ -76,10 +76,10 @@ Partial Class Tenant
         Guna2Panel2.BorderThickness = 20
         Guna2Panel2.CustomizableEdges = CustomizableEdges3
         Guna2Panel2.FillColor = Color.White
-        Guna2Panel2.Location = New Point(17, 306)
+        Guna2Panel2.Location = New Point(15, 306)
         Guna2Panel2.Name = "Guna2Panel2"
         Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Panel2.Size = New Size(331, 203)
+        Guna2Panel2.Size = New Size(342, 255)
         Guna2Panel2.TabIndex = 10
         ' 
         ' Guna2Panel3
@@ -89,10 +89,10 @@ Partial Class Tenant
         Guna2Panel3.BorderThickness = 20
         Guna2Panel3.CustomizableEdges = CustomizableEdges5
         Guna2Panel3.FillColor = Color.White
-        Guna2Panel3.Location = New Point(17, 79)
+        Guna2Panel3.Location = New Point(14, 79)
         Guna2Panel3.Name = "Guna2Panel3"
         Guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Panel3.Size = New Size(659, 203)
+        Guna2Panel3.Size = New Size(706, 203)
         Guna2Panel3.TabIndex = 9
         ' 
         ' Label2

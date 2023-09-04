@@ -202,15 +202,15 @@ Partial Class Home
         btnRoom.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         btnRoom.ForeColor = Color.White
         btnRoom.Image = CType(resources.GetObject("btnRoom.Image"), Image)
-        btnRoom.ImageOffset = New Point(-22, 0)
+        btnRoom.ImageOffset = New Point(-21, 0)
         btnRoom.ImageSize = New Size(26, 24)
         btnRoom.Location = New Point(12, 256)
         btnRoom.Name = "btnRoom"
         btnRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         btnRoom.Size = New Size(213, 56)
         btnRoom.TabIndex = 7
-        btnRoom.Text = "Room"
-        btnRoom.TextOffset = New Point(-20, 0)
+        btnRoom.Text = "Rooms"
+        btnRoom.TextOffset = New Point(-19, 0)
         ' 
         ' btnTransaction
         ' 
@@ -230,7 +230,7 @@ Partial Class Home
         btnTransaction.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         btnTransaction.ForeColor = Color.White
         btnTransaction.Image = CType(resources.GetObject("btnTransaction.Image"), Image)
-        btnTransaction.ImageOffset = New Point(-8, 0)
+        btnTransaction.ImageOffset = New Point(-9, 0)
         btnTransaction.ImageSize = New Size(24, 24)
         btnTransaction.Location = New Point(12, 318)
         btnTransaction.Name = "btnTransaction"
@@ -238,7 +238,7 @@ Partial Class Home
         btnTransaction.Size = New Size(213, 56)
         btnTransaction.TabIndex = 8
         btnTransaction.Text = "Transaction"
-        btnTransaction.TextOffset = New Point(-8, 0)
+        btnTransaction.TextOffset = New Point(-9, 0)
         ' 
         ' btnLogout
         ' 
@@ -257,9 +257,9 @@ Partial Class Home
         btnLogout.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         btnLogout.ForeColor = Color.White
         btnLogout.Image = CType(resources.GetObject("btnLogout.Image"), Image)
-        btnLogout.ImageOffset = New Point(-19, 0)
+        btnLogout.ImageOffset = New Point(-20, 0)
         btnLogout.ImageSize = New Size(24, 24)
-        btnLogout.Location = New Point(12, 552)
+        btnLogout.Location = New Point(12, 554)
         btnLogout.Name = "btnLogout"
         btnLogout.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         btnLogout.Size = New Size(213, 56)

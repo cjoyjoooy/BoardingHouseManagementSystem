@@ -28,4 +28,8 @@ Public Class Home
     Private Sub btnTenant_Click(sender As Object, e As EventArgs) Handles btnTenant.Click
         changePanel(Tenant)
     End Sub
+
+    Private Sub btnRoom_Click(sender As Object, e As EventArgs) Handles btnRoom.Click
+        changePanel(Rooms)
+    End Sub
 End Class
