@@ -55,7 +55,7 @@ Partial Class Dashboard
         panelDashboard.Location = New Point(0, 0)
         panelDashboard.Name = "panelDashboard"
         panelDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        panelDashboard.Size = New Size(735, 558)
+        panelDashboard.Size = New Size(735, 573)
         panelDashboard.TabIndex = 0
         ' 
         ' Guna2Panel6
@@ -116,7 +116,7 @@ Partial Class Dashboard
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(17, 23)
+        Label2.Location = New Point(3, 9)
         Label2.Name = "Label2"
         Label2.Size = New Size(166, 32)
         Label2.TabIndex = 8
@@ -126,7 +126,7 @@ Partial Class Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(735, 558)
+        ClientSize = New Size(735, 573)
         Controls.Add(panelDashboard)
         FormBorderStyle = FormBorderStyle.None
         Name = "Dashboard"

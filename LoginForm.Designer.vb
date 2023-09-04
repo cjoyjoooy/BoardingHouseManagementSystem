@@ -63,14 +63,14 @@ Partial Class LoginForm
         Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
         Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2TextBox1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2TextBox1.IconLeft = CType(resources.GetObject("Guna2TextBox1.IconLeft"), Image)
         Guna2TextBox1.IconLeftOffset = New Point(5, 0)
         Guna2TextBox1.IconLeftSize = New Size(24, 24)
-        Guna2TextBox1.Location = New Point(494, 169)
+        Guna2TextBox1.Location = New Point(495, 169)
         Guna2TextBox1.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.Padding = New Padding(50, 0, 10, 0)
@@ -110,7 +110,7 @@ Partial Class LoginForm
         btnClose.IconColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnClose.IconSize = 32
-        btnClose.Location = New Point(0, 0)
+        btnClose.Location = New Point(0, 1)
         btnClose.Name = "btnClose"
         btnClose.Size = New Size(36, 32)
         btnClose.TabIndex = 11
@@ -122,7 +122,7 @@ Partial Class LoginForm
         Label2.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Label2.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(496, 127)
+        Label2.Location = New Point(497, 127)
         Label2.Name = "Label2"
         Label2.Size = New Size(154, 20)
         Label2.TabIndex = 12
@@ -141,7 +141,7 @@ Partial Class LoginForm
         btnLogin.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnLogin.ForeColor = Color.White
         btnLogin.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnLogin.Location = New Point(494, 301)
+        btnLogin.Location = New Point(495, 301)
         btnLogin.Name = "btnLogin"
         btnLogin.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnLogin.Size = New Size(284, 46)
@@ -154,7 +154,7 @@ Partial Class LoginForm
         Label1.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Label1.Font = New Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(489, 81)
+        Label1.Location = New Point(490, 81)
         Label1.Name = "Label1"
         Label1.Size = New Size(200, 46)
         Label1.TabIndex = 9
@@ -178,7 +178,7 @@ Partial Class LoginForm
         Guna2TextBox2.IconLeft = CType(resources.GetObject("Guna2TextBox2.IconLeft"), Image)
         Guna2TextBox2.IconLeftOffset = New Point(5, 0)
         Guna2TextBox2.IconLeftSize = New Size(24, 24)
-        Guna2TextBox2.Location = New Point(494, 228)
+        Guna2TextBox2.Location = New Point(495, 228)
         Guna2TextBox2.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox2.Name = "Guna2TextBox2"
         Guna2TextBox2.Padding = New Padding(10, 0, 10, 0)

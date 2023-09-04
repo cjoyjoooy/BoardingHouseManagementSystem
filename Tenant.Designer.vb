@@ -53,7 +53,7 @@ Partial Class Tenant
         panelTenant.Margin = New Padding(0)
         panelTenant.Name = "panelTenant"
         panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        panelTenant.Size = New Size(735, 558)
+        panelTenant.Size = New Size(735, 573)
         panelTenant.TabIndex = 0
         ' 
         ' Guna2Panel4
@@ -101,9 +101,9 @@ Partial Class Tenant
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(17, 23)
+        Label2.Location = New Point(3, 9)
         Label2.Name = "Label2"
-        Label2.Size = New Size(130, 52)
+        Label2.Size = New Size(110, 32)
         Label2.TabIndex = 8
         Label2.Text = "Tenant"
         ' 
@@ -111,7 +111,7 @@ Partial Class Tenant
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(735, 558)
+        ClientSize = New Size(735, 573)
         Controls.Add(panelTenant)
         FormBorderStyle = FormBorderStyle.None
         Name = "Tenant"
