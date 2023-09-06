@@ -2,6 +2,8 @@
 Imports Guna.UI2.WinForms
 
 Public Class Home
+
+
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Application.Exit()
     End Sub
@@ -23,10 +25,10 @@ Public Class Home
         changePanel(Rooms)
     End Sub
 
-    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Home_Load(sender As Object, e As EventArgs) Handles Me.Load
         changePanel(Dashboard)
 
-
-
     End Sub
+
+
 End Class

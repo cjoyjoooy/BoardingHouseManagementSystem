@@ -42,6 +42,7 @@ Partial Class Rooms
         Label16 = New Label()
         Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel15 = New Guna.UI2.WinForms.Guna2Panel()
+        lblRoomNumber = New Label()
         lblStatus = New Label()
         Label30 = New Label()
         Label29 = New Label()
@@ -75,7 +76,7 @@ Partial Class Rooms
         ' 
         ' addroompanel
         ' 
-        addroompanel.Location = New Point(26, 50)
+        addroompanel.Location = New Point(37, 50)
         addroompanel.Name = "addroompanel"
         addroompanel.Size = New Size(638, 139)
         addroompanel.TabIndex = 33
@@ -176,6 +177,7 @@ Partial Class Rooms
         Guna2Panel15.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
         Guna2Panel15.BorderRadius = 20
         Guna2Panel15.BorderThickness = 20
+        Guna2Panel15.Controls.Add(lblRoomNumber)
         Guna2Panel15.Controls.Add(lblStatus)
         Guna2Panel15.Controls.Add(Label30)
         Guna2Panel15.Controls.Add(Label29)
@@ -189,6 +191,18 @@ Partial Class Rooms
         Guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2Panel15.Size = New Size(539, 246)
         Guna2Panel15.TabIndex = 20
+        ' 
+        ' lblRoomNumber
+        ' 
+        lblRoomNumber.AutoSize = True
+        lblRoomNumber.BackColor = Color.Transparent
+        lblRoomNumber.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRoomNumber.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblRoomNumber.Location = New Point(179, 52)
+        lblRoomNumber.Name = "lblRoomNumber"
+        lblRoomNumber.Size = New Size(26, 26)
+        lblRoomNumber.TabIndex = 32
+        lblRoomNumber.Text = "--"
         ' 
         ' lblStatus
         ' 
@@ -308,4 +322,5 @@ Partial Class Rooms
     Friend WithEvents Label18 As Label
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents addroompanel As FlowLayoutPanel
+    Friend WithEvents lblRoomNumber As Label
 End Class
