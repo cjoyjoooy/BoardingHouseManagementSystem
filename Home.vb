@@ -1,17 +1,7 @@
 ﻿Imports System.Windows.Controls
+Imports Guna.UI2.WinForms
 
 Public Class Home
-
-    Public Sub changePanel(ByVal panels As Form)
-        panelHome.Controls.Clear()
-        panels.TopLevel = False
-        panelHome.Controls.Add(panels)
-        panels.Show()
-    End Sub
-    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        changePanel(Dashboard)
-    End Sub
-
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Application.Exit()
     End Sub
@@ -31,5 +21,12 @@ Public Class Home
 
     Private Sub btnRoom_Click(sender As Object, e As EventArgs) Handles btnRoom.Click
         changePanel(Rooms)
+    End Sub
+
+    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        changePanel(Dashboard)
+
+
+
     End Sub
 End Class
