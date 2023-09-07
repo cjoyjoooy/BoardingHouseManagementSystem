@@ -81,6 +81,7 @@ Module Project_Module
         panels.Show()
     End Sub
 
+
     'NOTE: Do not erase --------------------------------
 
     'Public Sub Room_iterate()

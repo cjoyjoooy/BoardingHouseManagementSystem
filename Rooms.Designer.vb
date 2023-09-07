@@ -210,7 +210,7 @@ Partial Class Rooms
         lblStatus.BackColor = Color.Transparent
         lblStatus.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblStatus.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblStatus.Location = New Point(90, 169)
+        lblStatus.Location = New Point(91, 169)
         lblStatus.Name = "lblStatus"
         lblStatus.Size = New Size(26, 26)
         lblStatus.TabIndex = 31

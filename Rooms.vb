@@ -10,6 +10,7 @@ Public Class Rooms
         For Each room In rooms
             RoomPanels(room)
             'NOTE: RoomPanels(id,status)
+
         Next
     End Sub
 
