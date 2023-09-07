@@ -32,30 +32,30 @@ Partial Class Tenant
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Label2 = New Label()
-        Label1 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        Label9 = New Label()
-        Label10 = New Label()
-        Label11 = New Label()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
-        Label16 = New Label()
-        Label17 = New Label()
-        Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Label18 = New Label()
-        Label19 = New Label()
-        Label20 = New Label()
         Label21 = New Label()
+        Label20 = New Label()
+        Label19 = New Label()
+        Label18 = New Label()
+        Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
+        Label17 = New Label()
+        Label16 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label11 = New Label()
+        Label10 = New Label()
+        Label9 = New Label()
+        Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Label15 = New Label()
+        Label8 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label1 = New Label()
+        Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Label12 = New Label()
+        Label2 = New Label()
         panelTenant.SuspendLayout()
         Guna2Panel4.SuspendLayout()
         Guna2Panel2.SuspendLayout()
@@ -105,6 +105,146 @@ Partial Class Tenant
         Guna2Panel4.Size = New Size(342, 255)
         Guna2Panel4.TabIndex = 11
         ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.BackColor = Color.Transparent
+        Label21.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label21.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label21.Location = New Point(171, 42)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(112, 26)
+        Label21.TabIndex = 29
+        Label21.Text = "06/29/2023"
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.BackColor = Color.Transparent
+        Label20.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label20.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label20.Location = New Point(115, 79)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(42, 26)
+        Label20.TabIndex = 28
+        Label20.Text = "500"
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.BackColor = Color.Transparent
+        Label19.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label19.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label19.Location = New Point(140, 158)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(52, 26)
+        Label19.TabIndex = 27
+        Label19.Text = "4000"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.BackColor = Color.Transparent
+        Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label18.Location = New Point(18, 159)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(99, 23)
+        Label18.TabIndex = 26
+        Label18.Text = "Total Bill:"
+        ' 
+        ' Guna2Separator1
+        ' 
+        Guna2Separator1.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Separator1.Location = New Point(17, 144)
+        Guna2Separator1.Name = "Guna2Separator1"
+        Guna2Separator1.Size = New Size(306, 12)
+        Guna2Separator1.TabIndex = 20
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.BackColor = Color.Transparent
+        Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label17.Location = New Point(18, 79)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(95, 23)
+        Label17.TabIndex = 25
+        Label17.Text = "Balance:"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.BackColor = Color.Transparent
+        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label16.Location = New Point(17, 43)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(148, 23)
+        Label16.TabIndex = 24
+        Label16.Text = "Last Payment:"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.BackColor = Color.Transparent
+        Label14.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label14.Location = New Point(158, 112)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(52, 26)
+        Label14.TabIndex = 23
+        Label14.Text = "3500"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.BackColor = Color.Transparent
+        Label13.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label13.Location = New Point(115, 223)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(50, 26)
+        Label13.TabIndex = 22
+        Label13.Text = "Paid"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.BackColor = Color.Transparent
+        Label11.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label11.Location = New Point(18, 223)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(78, 23)
+        Label11.TabIndex = 21
+        Label11.Text = "Status:"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
+        Label10.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label10.Location = New Point(17, 112)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(135, 23)
+        Label10.TabIndex = 20
+        Label10.Text = "Amount Due:"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.BackColor = Color.Transparent
+        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label9.Location = New Point(18, 9)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(111, 23)
+        Label9.TabIndex = 19
+        Label9.Text = "Billing Info"
+        ' 
         ' Guna2Panel2
         ' 
         Guna2Panel2.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
@@ -126,6 +266,102 @@ Partial Class Tenant
         Guna2Panel2.Size = New Size(342, 255)
         Guna2Panel2.TabIndex = 10
         ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.BackColor = Color.Transparent
+        Label15.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label15.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label15.Location = New Point(15, 193)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(72, 23)
+        Label15.TabIndex = 19
+        Label15.Text = "Room:"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.BackColor = Color.Transparent
+        Label8.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label8.Location = New Point(15, 8)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(120, 23)
+        Label8.TabIndex = 18
+        Label8.Text = "Tenant Info"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label7.Location = New Point(15, 163)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(78, 23)
+        Label7.TabIndex = 17
+        Label7.Text = "Status:"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
+        Label6.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label6.Location = New Point(15, 223)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(133, 23)
+        Label6.TabIndex = 16
+        Label6.Text = "Date Leased"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
+        Label5.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label5.Location = New Point(15, 133)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(93, 23)
+        Label5.TabIndex = 15
+        Label5.Text = "Contact:"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
+        Label4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label4.Location = New Point(15, 103)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(99, 23)
+        Label4.TabIndex = 14
+        Label4.Text = "Address:"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label3.Location = New Point(15, 73)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(90, 23)
+        Label3.TabIndex = 13
+        Label3.Text = "Gender:"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label1.Location = New Point(15, 43)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(73, 23)
+        Label1.TabIndex = 12
+        Label1.Text = "Name:"
+        ' 
         ' Guna2Panel3
         ' 
         Guna2Panel3.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
@@ -140,138 +376,6 @@ Partial Class Tenant
         Guna2Panel3.Size = New Size(706, 219)
         Guna2Panel3.TabIndex = 9
         ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 9)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(110, 32)
-        Label2.TabIndex = 8
-        Label2.Text = "Tenant"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(15, 43)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(73, 23)
-        Label1.TabIndex = 12
-        Label1.Text = "Name:"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label3.Location = New Point(15, 73)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(90, 23)
-        Label3.TabIndex = 13
-        Label3.Text = "Gender:"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label4.Location = New Point(15, 103)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(99, 23)
-        Label4.TabIndex = 14
-        Label4.Text = "Address:"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label5.Location = New Point(15, 133)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(93, 23)
-        Label5.TabIndex = 15
-        Label5.Text = "Contact:"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label6.Location = New Point(15, 223)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(133, 23)
-        Label6.TabIndex = 16
-        Label6.Text = "Date Leased"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label7.Location = New Point(15, 163)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(78, 23)
-        Label7.TabIndex = 17
-        Label7.Text = "Status:"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label8.Location = New Point(15, 8)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(120, 23)
-        Label8.TabIndex = 18
-        Label8.Text = "Tenant Info"
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label9.Location = New Point(18, 9)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(111, 23)
-        Label9.TabIndex = 19
-        Label9.Text = "Billing Info"
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label10.Location = New Point(17, 112)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(135, 23)
-        Label10.TabIndex = 20
-        Label10.Text = "Amount Due:"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label11.Location = New Point(18, 223)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(78, 23)
-        Label11.TabIndex = 21
-        Label11.Text = "Status:"
-        ' 
         ' Label12
         ' 
         Label12.AutoSize = True
@@ -284,121 +388,17 @@ Partial Class Tenant
         Label12.TabIndex = 12
         Label12.Text = "Table"
         ' 
-        ' Label13
+        ' Label2
         ' 
-        Label13.AutoSize = True
-        Label13.BackColor = Color.Transparent
-        Label13.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label13.Location = New Point(115, 223)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(50, 26)
-        Label13.TabIndex = 22
-        Label13.Text = "Paid"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.BackColor = Color.Transparent
-        Label14.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label14.Location = New Point(158, 112)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(52, 26)
-        Label14.TabIndex = 23
-        Label14.Text = "3500"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.BackColor = Color.Transparent
-        Label15.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label15.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label15.Location = New Point(15, 193)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(72, 23)
-        Label15.TabIndex = 19
-        Label15.Text = "Room:"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.BackColor = Color.Transparent
-        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(17, 43)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(148, 23)
-        Label16.TabIndex = 24
-        Label16.Text = "Last Payment:"
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.BackColor = Color.Transparent
-        Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(18, 79)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(95, 23)
-        Label17.TabIndex = 25
-        Label17.Text = "Balance:"
-        ' 
-        ' Guna2Separator1
-        ' 
-        Guna2Separator1.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2Separator1.Location = New Point(17, 144)
-        Guna2Separator1.Name = "Guna2Separator1"
-        Guna2Separator1.Size = New Size(306, 12)
-        Guna2Separator1.TabIndex = 20
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.BackColor = Color.Transparent
-        Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(18, 159)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(99, 23)
-        Label18.TabIndex = 26
-        Label18.Text = "Total Bill:"
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.BackColor = Color.Transparent
-        Label19.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label19.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label19.Location = New Point(140, 158)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(52, 26)
-        Label19.TabIndex = 27
-        Label19.Text = "4000"
-        ' 
-        ' Label20
-        ' 
-        Label20.AutoSize = True
-        Label20.BackColor = Color.Transparent
-        Label20.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label20.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label20.Location = New Point(115, 79)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(42, 26)
-        Label20.TabIndex = 28
-        Label20.Text = "500"
-        ' 
-        ' Label21
-        ' 
-        Label21.AutoSize = True
-        Label21.BackColor = Color.Transparent
-        Label21.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label21.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label21.Location = New Point(171, 42)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(112, 26)
-        Label21.TabIndex = 29
-        Label21.Text = "06/29/2023"
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label2.Location = New Point(3, 9)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(110, 32)
+        Label2.TabIndex = 8
+        Label2.Text = "Tenant"
         ' 
         ' Tenant
         ' 
