@@ -84,19 +84,6 @@ Module Project_Module
 
     Public Sub add_tenant(ByVal fname As String, ByVal lname As String, ByVal gender As String, ByVal address As String, ByVal contact As String, ByVal room As String, ByVal lease As String, ByVal status As String)
 
-        'tenant add form
-        fname = tenantAddForm.txtFname.Text
-        lname = tenantAddForm.txtLname.Text
-        If tenantAddForm.rbdFemale.Checked = True Then
-            gender = "Female"
-        ElseIf tenantAddForm.Male.Checked = True Then
-            gender = "Male"
-        End If
-        address = tenantAddForm.txtAddress.Text
-        contact = tenantAddForm.txtContact.Text
-        room = tenantAddForm.cmbRoom.SelectedItem
-        status = tenantAddForm.cmbStatus.SelectedItem
-        lease = tenantAddForm.dtpLease.Value
 
         Tenant.dgvTenant.Rows.Add(fname, lname, gender, address, contact, room, lease, status)
         tenantAddForm.Close()
@@ -110,6 +97,12 @@ Module Project_Module
         tenantEditForm.txtFname.Text = Tenant.dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
         tenantEditForm.txtLname.Text = Tenant.dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
         tenantEditForm.txtAddress.Text = Tenant.dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
+    End Sub
+
+    Public Sub delete_tenant()
+        Dim rowIndex As Integer
+        rowIndex = Tenant.dgvTenant.CurrentRow.Index
+        Tenant.dgvTenant.Rows.RemoveAt(rowIndex)
     End Sub
 
 

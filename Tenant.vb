@@ -9,7 +9,7 @@
 
             'delete row data
         ElseIf colName = "deleteColumn" Then
-            dgvTenant.Rows.RemoveAt(e.RowIndex)
+            delete_tenant()
         End If
     End Sub
 
