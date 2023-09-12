@@ -23,9 +23,11 @@ Public Class Home
         changePanel(Rooms)
     End Sub
 
-    Private Sub Home_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         changePanel(Dashboard)
     End Sub
 
+    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
 
+    End Sub
 End Class

@@ -68,7 +68,7 @@ Partial Class Home
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Guna2Panel1.Size = New Size(959, 639)
+        Guna2Panel1.Size = New Size(1066, 758)
         Guna2Panel1.TabIndex = 0
         ' 
         ' Guna2Panel2
@@ -78,11 +78,11 @@ Partial Class Home
         Guna2Panel2.Controls.Add(panelHome)
         Guna2Panel2.CustomizableEdges = CustomizableEdges3
         Guna2Panel2.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        Guna2Panel2.Location = New Point(188, 34)
+        Guna2Panel2.Location = New Point(201, 41)
         Guna2Panel2.Name = "Guna2Panel2"
         Guna2Panel2.Padding = New Padding(20)
         Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Panel2.Size = New Size(759, 593)
+        Guna2Panel2.Size = New Size(853, 706)
         Guna2Panel2.TabIndex = 4
         ' 
         ' panelHome
@@ -92,11 +92,11 @@ Partial Class Home
         panelHome.BorderRadius = 20
         panelHome.CustomizableEdges = CustomizableEdges1
         panelHome.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        panelHome.Location = New Point(12, 12)
+        panelHome.Location = New Point(10, 11)
         panelHome.Name = "panelHome"
         panelHome.Padding = New Padding(20)
         panelHome.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        panelHome.Size = New Size(735, 573)
+        panelHome.Size = New Size(833, 685)
         panelHome.TabIndex = 14
         ' 
         ' btnClose
@@ -109,7 +109,7 @@ Partial Class Home
         btnClose.IconColor = Color.White
         btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnClose.IconSize = 32
-        btnClose.Location = New Point(911, 3)
+        btnClose.Location = New Point(1018, 3)
         btnClose.Name = "btnClose"
         btnClose.Size = New Size(36, 32)
         btnClose.TabIndex = 12
@@ -135,7 +135,7 @@ Partial Class Home
         btnTenant.Image = CType(resources.GetObject("btnTenant.Image"), Image)
         btnTenant.ImageOffset = New Point(-20, 0)
         btnTenant.ImageSize = New Size(24, 25)
-        btnTenant.Location = New Point(12, 194)
+        btnTenant.Location = New Point(12, 226)
         btnTenant.Name = "btnTenant"
         btnTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         btnTenant.Size = New Size(213, 56)
@@ -164,7 +164,7 @@ Partial Class Home
         btnDashboard.ForeColor = Color.White
         btnDashboard.Image = CType(resources.GetObject("btnDashboard.Image"), Image)
         btnDashboard.ImageOffset = New Point(-12, 0)
-        btnDashboard.Location = New Point(12, 132)
+        btnDashboard.Location = New Point(12, 164)
         btnDashboard.Name = "btnDashboard"
         btnDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         btnDashboard.Size = New Size(213, 56)
@@ -178,7 +178,7 @@ Partial Class Home
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(31, 47)
+        Label1.Location = New Point(31, 41)
         Label1.Name = "Label1"
         Label1.Size = New Size(140, 46)
         Label1.TabIndex = 4
@@ -204,7 +204,7 @@ Partial Class Home
         btnRoom.Image = CType(resources.GetObject("btnRoom.Image"), Image)
         btnRoom.ImageOffset = New Point(-21, 0)
         btnRoom.ImageSize = New Size(26, 24)
-        btnRoom.Location = New Point(12, 256)
+        btnRoom.Location = New Point(12, 288)
         btnRoom.Name = "btnRoom"
         btnRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         btnRoom.Size = New Size(213, 56)
@@ -232,7 +232,7 @@ Partial Class Home
         btnTransaction.Image = CType(resources.GetObject("btnTransaction.Image"), Image)
         btnTransaction.ImageOffset = New Point(-9, 0)
         btnTransaction.ImageSize = New Size(24, 24)
-        btnTransaction.Location = New Point(12, 318)
+        btnTransaction.Location = New Point(12, 350)
         btnTransaction.Name = "btnTransaction"
         btnTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         btnTransaction.Size = New Size(213, 56)
@@ -259,7 +259,7 @@ Partial Class Home
         btnLogout.Image = CType(resources.GetObject("btnLogout.Image"), Image)
         btnLogout.ImageOffset = New Point(-20, 0)
         btnLogout.ImageSize = New Size(24, 24)
-        btnLogout.Location = New Point(12, 554)
+        btnLogout.Location = New Point(12, 675)
         btnLogout.Name = "btnLogout"
         btnLogout.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         btnLogout.Size = New Size(213, 56)
@@ -272,7 +272,7 @@ Partial Class Home
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        ClientSize = New Size(959, 639)
+        ClientSize = New Size(1066, 758)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "Home"

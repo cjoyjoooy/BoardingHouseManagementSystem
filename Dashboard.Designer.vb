@@ -55,7 +55,7 @@ Partial Class Dashboard
         panelDashboard.Location = New Point(0, 0)
         panelDashboard.Name = "panelDashboard"
         panelDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        panelDashboard.Size = New Size(735, 573)
+        panelDashboard.Size = New Size(801, 618)
         panelDashboard.TabIndex = 0
         ' 
         ' Guna2Panel6
@@ -126,7 +126,7 @@ Partial Class Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(735, 573)
+        ClientSize = New Size(801, 618)
         Controls.Add(panelDashboard)
         FormBorderStyle = FormBorderStyle.None
         Name = "Dashboard"

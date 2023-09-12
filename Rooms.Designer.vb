@@ -71,7 +71,7 @@ Partial Class Rooms
         panelRooms.Location = New Point(0, 0)
         panelRooms.Name = "panelRooms"
         panelRooms.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        panelRooms.Size = New Size(717, 526)
+        panelRooms.Size = New Size(801, 618)
         panelRooms.TabIndex = 0
         ' 
         ' addroompanel
@@ -293,7 +293,7 @@ Partial Class Rooms
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        ClientSize = New Size(717, 526)
+        ClientSize = New Size(801, 618)
         Controls.Add(panelRooms)
         FormBorderStyle = FormBorderStyle.None
         Name = "Rooms"

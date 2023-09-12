@@ -22,28 +22,22 @@ Partial Class Tenant
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        panelTenant = New Guna.UI2.WinForms.Guna2Panel()
-        Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Label21 = New Label()
-        Label20 = New Label()
-        Label19 = New Label()
-        Label18 = New Label()
-        Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
-        Label17 = New Label()
-        Label16 = New Label()
-        Label14 = New Label()
-        Label13 = New Label()
-        Label11 = New Label()
-        Label10 = New Label()
-        Label9 = New Label()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Label2 = New Label()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label15 = New Label()
         Label8 = New Label()
@@ -53,197 +47,48 @@ Partial Class Tenant
         Label4 = New Label()
         Label3 = New Label()
         Label1 = New Label()
-        Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Label12 = New Label()
-        Label2 = New Label()
-        panelTenant.SuspendLayout()
-        Guna2Panel4.SuspendLayout()
+        Label21 = New Label()
+        Label18 = New Label()
+        Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
+        Label16 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label11 = New Label()
+        Label10 = New Label()
+        Label9 = New Label()
+        dgvTenant = New Guna.UI2.WinForms.Guna2DataGridView()
+        Column1 = New DataGridViewTextBoxColumn()
+        Column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
+        Column4 = New DataGridViewTextBoxColumn()
+        Column5 = New DataGridViewTextBoxColumn()
+        Column8 = New DataGridViewTextBoxColumn()
+        Column6 = New DataGridViewTextBoxColumn()
+        Column7 = New DataGridViewTextBoxColumn()
+        editColumn = New DataGridViewImageColumn()
+        deleteColumn = New DataGridViewImageColumn()
+        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
+        panelTenant = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel2.SuspendLayout()
-        Guna2Panel3.SuspendLayout()
+        Guna2Panel4.SuspendLayout()
+        CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
+        panelTenant.SuspendLayout()
         SuspendLayout()
         ' 
-        ' panelTenant
+        ' Label2
         ' 
-        panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        panelTenant.BorderRadius = 20
-        panelTenant.Controls.Add(Guna2Panel4)
-        panelTenant.Controls.Add(Guna2Panel2)
-        panelTenant.Controls.Add(Guna2Panel3)
-        panelTenant.Controls.Add(Label2)
-        panelTenant.CustomizableEdges = CustomizableEdges7
-        panelTenant.Dock = DockStyle.Fill
-        panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        panelTenant.Location = New Point(0, 0)
-        panelTenant.Margin = New Padding(0)
-        panelTenant.Name = "panelTenant"
-        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        panelTenant.Size = New Size(735, 573)
-        panelTenant.TabIndex = 0
-        ' 
-        ' Guna2Panel4
-        ' 
-        Guna2Panel4.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
-        Guna2Panel4.BorderRadius = 20
-        Guna2Panel4.BorderThickness = 20
-        Guna2Panel4.Controls.Add(Label21)
-        Guna2Panel4.Controls.Add(Label20)
-        Guna2Panel4.Controls.Add(Label19)
-        Guna2Panel4.Controls.Add(Label18)
-        Guna2Panel4.Controls.Add(Guna2Separator1)
-        Guna2Panel4.Controls.Add(Label17)
-        Guna2Panel4.Controls.Add(Label16)
-        Guna2Panel4.Controls.Add(Label14)
-        Guna2Panel4.Controls.Add(Label13)
-        Guna2Panel4.Controls.Add(Label11)
-        Guna2Panel4.Controls.Add(Label10)
-        Guna2Panel4.Controls.Add(Label9)
-        Guna2Panel4.CustomizableEdges = CustomizableEdges1
-        Guna2Panel4.FillColor = Color.White
-        Guna2Panel4.Location = New Point(379, 306)
-        Guna2Panel4.Name = "Guna2Panel4"
-        Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2Panel4.Size = New Size(342, 255)
-        Guna2Panel4.TabIndex = 11
-        ' 
-        ' Label21
-        ' 
-        Label21.AutoSize = True
-        Label21.BackColor = Color.Transparent
-        Label21.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label21.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label21.Location = New Point(171, 42)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(112, 26)
-        Label21.TabIndex = 29
-        Label21.Text = "06/29/2023"
-        ' 
-        ' Label20
-        ' 
-        Label20.AutoSize = True
-        Label20.BackColor = Color.Transparent
-        Label20.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label20.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label20.Location = New Point(115, 79)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(42, 26)
-        Label20.TabIndex = 28
-        Label20.Text = "500"
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.BackColor = Color.Transparent
-        Label19.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label19.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label19.Location = New Point(140, 158)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(52, 26)
-        Label19.TabIndex = 27
-        Label19.Text = "4000"
-        ' 
-        ' Label18
-        ' 
-        Label18.AutoSize = True
-        Label18.BackColor = Color.Transparent
-        Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(18, 159)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(99, 23)
-        Label18.TabIndex = 26
-        Label18.Text = "Total Bill:"
-        ' 
-        ' Guna2Separator1
-        ' 
-        Guna2Separator1.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2Separator1.Location = New Point(17, 144)
-        Guna2Separator1.Name = "Guna2Separator1"
-        Guna2Separator1.Size = New Size(306, 12)
-        Guna2Separator1.TabIndex = 20
-        ' 
-        ' Label17
-        ' 
-        Label17.AutoSize = True
-        Label17.BackColor = Color.Transparent
-        Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(18, 79)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(95, 23)
-        Label17.TabIndex = 25
-        Label17.Text = "Balance:"
-        ' 
-        ' Label16
-        ' 
-        Label16.AutoSize = True
-        Label16.BackColor = Color.Transparent
-        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(17, 43)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(148, 23)
-        Label16.TabIndex = 24
-        Label16.Text = "Last Payment:"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.BackColor = Color.Transparent
-        Label14.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label14.Location = New Point(158, 112)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(52, 26)
-        Label14.TabIndex = 23
-        Label14.Text = "3500"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.BackColor = Color.Transparent
-        Label13.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label13.Location = New Point(115, 223)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(50, 26)
-        Label13.TabIndex = 22
-        Label13.Text = "Paid"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label11.Location = New Point(18, 223)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(78, 23)
-        Label11.TabIndex = 21
-        Label11.Text = "Status:"
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label10.Location = New Point(17, 112)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(135, 23)
-        Label10.TabIndex = 20
-        Label10.Text = "Amount Due:"
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label9.Location = New Point(18, 9)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(111, 23)
-        Label9.TabIndex = 19
-        Label9.Text = "Billing Info"
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label2.Location = New Point(3, 9)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(110, 32)
+        Label2.TabIndex = 8
+        Label2.Text = "Tenant"
         ' 
         ' Guna2Panel2
         ' 
@@ -258,12 +103,12 @@ Partial Class Tenant
         Guna2Panel2.Controls.Add(Label4)
         Guna2Panel2.Controls.Add(Label3)
         Guna2Panel2.Controls.Add(Label1)
-        Guna2Panel2.CustomizableEdges = CustomizableEdges3
+        Guna2Panel2.CustomizableEdges = CustomizableEdges1
         Guna2Panel2.FillColor = Color.White
-        Guna2Panel2.Location = New Point(15, 306)
+        Guna2Panel2.Location = New Point(12, 417)
         Guna2Panel2.Name = "Guna2Panel2"
-        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Panel2.Size = New Size(342, 255)
+        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Panel2.Size = New Size(425, 255)
         Guna2Panel2.TabIndex = 10
         ' 
         ' Label15
@@ -362,90 +207,425 @@ Partial Class Tenant
         Label1.TabIndex = 12
         Label1.Text = "Name:"
         ' 
-        ' Guna2Panel3
+        ' Guna2Panel4
         ' 
-        Guna2Panel3.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
-        Guna2Panel3.BorderRadius = 20
-        Guna2Panel3.BorderThickness = 20
-        Guna2Panel3.Controls.Add(Label12)
-        Guna2Panel3.CustomizableEdges = CustomizableEdges5
-        Guna2Panel3.FillColor = Color.White
-        Guna2Panel3.Location = New Point(14, 63)
-        Guna2Panel3.Name = "Guna2Panel3"
-        Guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Panel3.Size = New Size(706, 219)
-        Guna2Panel3.TabIndex = 9
+        Guna2Panel4.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
+        Guna2Panel4.BorderRadius = 20
+        Guna2Panel4.BorderThickness = 20
+        Guna2Panel4.Controls.Add(Label12)
+        Guna2Panel4.Controls.Add(Label21)
+        Guna2Panel4.Controls.Add(Label18)
+        Guna2Panel4.Controls.Add(Guna2Separator1)
+        Guna2Panel4.Controls.Add(Label16)
+        Guna2Panel4.Controls.Add(Label14)
+        Guna2Panel4.Controls.Add(Label13)
+        Guna2Panel4.Controls.Add(Label11)
+        Guna2Panel4.Controls.Add(Label10)
+        Guna2Panel4.Controls.Add(Label9)
+        Guna2Panel4.CustomizableEdges = CustomizableEdges3
+        Guna2Panel4.FillColor = Color.White
+        Guna2Panel4.Location = New Point(456, 417)
+        Guna2Panel4.Name = "Guna2Panel4"
+        Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Panel4.Size = New Size(365, 255)
+        Guna2Panel4.TabIndex = 11
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.BackColor = Color.Transparent
-        Label12.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label12.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label12.Location = New Point(295, 77)
+        Label12.Location = New Point(171, 131)
         Label12.Name = "Label12"
-        Label12.Size = New Size(92, 32)
-        Label12.TabIndex = 12
-        Label12.Text = "Table"
+        Label12.Size = New Size(52, 26)
+        Label12.TabIndex = 24
+        Label12.Text = "3500"
         ' 
-        ' Label2
+        ' Label21
         ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 9)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(110, 32)
-        Label2.TabIndex = 8
-        Label2.Text = "Tenant"
+        Label21.AutoSize = True
+        Label21.BackColor = Color.Transparent
+        Label21.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label21.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label21.Location = New Point(171, 42)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(112, 26)
+        Label21.TabIndex = 29
+        Label21.Text = "06/29/2023"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.BackColor = Color.Transparent
+        Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label18.Location = New Point(18, 134)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(99, 23)
+        Label18.TabIndex = 26
+        Label18.Text = "Total Bill:"
+        ' 
+        ' Guna2Separator1
+        ' 
+        Guna2Separator1.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Separator1.Location = New Point(18, 114)
+        Guna2Separator1.Name = "Guna2Separator1"
+        Guna2Separator1.Size = New Size(306, 12)
+        Guna2Separator1.TabIndex = 20
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.BackColor = Color.Transparent
+        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label16.Location = New Point(17, 43)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(148, 23)
+        Label16.TabIndex = 24
+        Label16.Text = "Last Payment:"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.BackColor = Color.Transparent
+        Label14.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label14.Location = New Point(171, 81)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(52, 26)
+        Label14.TabIndex = 23
+        Label14.Text = "3500"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.BackColor = Color.Transparent
+        Label13.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label13.Location = New Point(115, 223)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(50, 26)
+        Label13.TabIndex = 22
+        Label13.Text = "Paid"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.BackColor = Color.Transparent
+        Label11.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label11.Location = New Point(18, 223)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(78, 23)
+        Label11.TabIndex = 21
+        Label11.Text = "Status:"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
+        Label10.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label10.Location = New Point(17, 82)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(135, 23)
+        Label10.TabIndex = 20
+        Label10.Text = "Amount Due:"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.BackColor = Color.Transparent
+        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label9.Location = New Point(18, 9)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(111, 23)
+        Label9.TabIndex = 19
+        Label9.Text = "Billing Info"
+        ' 
+        ' dgvTenant
+        ' 
+        dgvTenant.AllowUserToAddRows = False
+        dgvTenant.AllowUserToDeleteRows = False
+        dgvTenant.AllowUserToResizeColumns = False
+        dgvTenant.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = Color.White
+        DataGridViewCellStyle1.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
+        DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        dgvTenant.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        dgvTenant.CellBorderStyle = DataGridViewCellBorderStyle.None
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        DataGridViewCellStyle2.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        dgvTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        dgvTenant.ColumnHeadersHeight = 50
+        dgvTenant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        dgvTenant.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column8, Column6, Column7, editColumn, deleteColumn})
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.White
+        DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
+        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        dgvTenant.DefaultCellStyle = DataGridViewCellStyle3
+        dgvTenant.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvTenant.Location = New Point(12, 58)
+        dgvTenant.Name = "dgvTenant"
+        dgvTenant.ReadOnly = True
+        dgvTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = Color.White
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = Color.White
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
+        dgvTenant.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        dgvTenant.RowHeadersVisible = False
+        dgvTenant.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        dgvTenant.RowTemplate.Height = 34
+        dgvTenant.Size = New Size(809, 340)
+        dgvTenant.TabIndex = 12
+        dgvTenant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
+        dgvTenant.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        dgvTenant.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
+        dgvTenant.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
+        dgvTenant.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
+        dgvTenant.ThemeStyle.BackColor = Color.White
+        dgvTenant.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvTenant.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        dgvTenant.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
+        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.HeaderStyle.ForeColor = Color.White
+        dgvTenant.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        dgvTenant.ThemeStyle.HeaderStyle.Height = 50
+        dgvTenant.ThemeStyle.ReadOnly = True
+        dgvTenant.ThemeStyle.RowsStyle.BackColor = Color.White
+        dgvTenant.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        dgvTenant.ThemeStyle.RowsStyle.Height = 34
+        dgvTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvTenant.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        ' 
+        ' Column1
+        ' 
+        Column1.FillWeight = 39.649662F
+        Column1.HeaderText = "First Name"
+        Column1.MinimumWidth = 6
+        Column1.Name = "Column1"
+        Column1.ReadOnly = True
+        ' 
+        ' Column2
+        ' 
+        Column2.FillWeight = 39.649662F
+        Column2.HeaderText = "Last Name"
+        Column2.MinimumWidth = 6
+        Column2.Name = "Column2"
+        Column2.ReadOnly = True
+        ' 
+        ' Column3
+        ' 
+        Column3.FillWeight = 39.649662F
+        Column3.HeaderText = "Gender"
+        Column3.MinimumWidth = 6
+        Column3.Name = "Column3"
+        Column3.ReadOnly = True
+        ' 
+        ' Column4
+        ' 
+        Column4.FillWeight = 39.649662F
+        Column4.HeaderText = "Address"
+        Column4.MinimumWidth = 6
+        Column4.Name = "Column4"
+        Column4.ReadOnly = True
+        ' 
+        ' Column5
+        ' 
+        Column5.FillWeight = 39.649662F
+        Column5.HeaderText = "Contact Number"
+        Column5.MinimumWidth = 6
+        Column5.Name = "Column5"
+        Column5.ReadOnly = True
+        ' 
+        ' Column8
+        ' 
+        Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        Column8.FillWeight = 28.6131573F
+        Column8.HeaderText = "Room"
+        Column8.MinimumWidth = 6
+        Column8.Name = "Column8"
+        Column8.ReadOnly = True
+        ' 
+        ' Column6
+        ' 
+        Column6.FillWeight = 39.649662F
+        Column6.HeaderText = "Date Leased"
+        Column6.MinimumWidth = 6
+        Column6.Name = "Column6"
+        Column6.ReadOnly = True
+        ' 
+        ' Column7
+        ' 
+        Column7.FillWeight = 39.649662F
+        Column7.HeaderText = "Status"
+        Column7.MinimumWidth = 6
+        Column7.Name = "Column7"
+        Column7.ReadOnly = True
+        ' 
+        ' editColumn
+        ' 
+        editColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+        editColumn.FillWeight = 80.26524F
+        editColumn.HeaderText = ""
+        editColumn.Image = CType(resources.GetObject("editColumn.Image"), Image)
+        editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
+        editColumn.MinimumWidth = 40
+        editColumn.Name = "editColumn"
+        editColumn.ReadOnly = True
+        editColumn.Resizable = DataGridViewTriState.True
+        editColumn.SortMode = DataGridViewColumnSortMode.Automatic
+        editColumn.Width = 40
+        ' 
+        ' deleteColumn
+        ' 
+        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+        deleteColumn.FillWeight = 613.5739F
+        deleteColumn.HeaderText = ""
+        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
+        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
+        deleteColumn.MinimumWidth = 40
+        deleteColumn.Name = "deleteColumn"
+        deleteColumn.ReadOnly = True
+        deleteColumn.Width = 40
+        ' 
+        ' Guna2TextBox1
+        ' 
+        Guna2TextBox1.BorderRadius = 10
+        Guna2TextBox1.CustomizableEdges = CustomizableEdges5
+        Guna2TextBox1.DefaultText = ""
+        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox1.IconLeft = CType(resources.GetObject("Guna2TextBox1.IconLeft"), Image)
+        Guna2TextBox1.IconLeftOffset = New Point(10, 0)
+        Guna2TextBox1.Location = New Point(542, 12)
+        Guna2TextBox1.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox1.Name = "Guna2TextBox1"
+        Guna2TextBox1.PasswordChar = ChrW(0)
+        Guna2TextBox1.PlaceholderText = ""
+        Guna2TextBox1.SelectedText = ""
+        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2TextBox1.Size = New Size(279, 35)
+        Guna2TextBox1.TabIndex = 13
+        ' 
+        ' btnShowAddForm
+        ' 
+        btnShowAddForm.BorderRadius = 10
+        btnShowAddForm.CustomizableEdges = CustomizableEdges7
+        btnShowAddForm.DisabledState.BorderColor = Color.DarkGray
+        btnShowAddForm.DisabledState.CustomBorderColor = Color.DarkGray
+        btnShowAddForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnShowAddForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnShowAddForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnShowAddForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
+        btnShowAddForm.Location = New Point(406, 12)
+        btnShowAddForm.Name = "btnShowAddForm"
+        btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        btnShowAddForm.Size = New Size(130, 35)
+        btnShowAddForm.TabIndex = 15
+        btnShowAddForm.Text = "Add Tenant"
+        ' 
+        ' panelTenant
+        ' 
+        panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        panelTenant.BorderRadius = 20
+        panelTenant.Controls.Add(btnShowAddForm)
+        panelTenant.Controls.Add(Guna2TextBox1)
+        panelTenant.Controls.Add(dgvTenant)
+        panelTenant.Controls.Add(Guna2Panel4)
+        panelTenant.Controls.Add(Guna2Panel2)
+        panelTenant.Controls.Add(Label2)
+        panelTenant.CustomizableEdges = CustomizableEdges9
+        panelTenant.Dock = DockStyle.Fill
+        panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
+        panelTenant.Location = New Point(0, 0)
+        panelTenant.Margin = New Padding(0)
+        panelTenant.Name = "panelTenant"
+        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        panelTenant.Size = New Size(833, 685)
+        panelTenant.TabIndex = 0
         ' 
         ' Tenant
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(735, 573)
+        ClientSize = New Size(833, 685)
         Controls.Add(panelTenant)
         FormBorderStyle = FormBorderStyle.None
         Name = "Tenant"
         SizeGripStyle = SizeGripStyle.Hide
         StartPosition = FormStartPosition.Manual
         Text = "Tenant"
-        panelTenant.ResumeLayout(False)
-        panelTenant.PerformLayout()
-        Guna2Panel4.ResumeLayout(False)
-        Guna2Panel4.PerformLayout()
         Guna2Panel2.ResumeLayout(False)
         Guna2Panel2.PerformLayout()
-        Guna2Panel3.ResumeLayout(False)
-        Guna2Panel3.PerformLayout()
+        Guna2Panel4.ResumeLayout(False)
+        Guna2Panel4.PerformLayout()
+        CType(dgvTenant, ComponentModel.ISupportInitialize).EndInit()
+        panelTenant.ResumeLayout(False)
+        panelTenant.PerformLayout()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents panelTenant As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Label15 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label16 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents dgvTenant As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents btnShowAddForm As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents panelTenant As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents editColumn As DataGridViewImageColumn
+    Friend WithEvents deleteColumn As DataGridViewImageColumn
 End Class
