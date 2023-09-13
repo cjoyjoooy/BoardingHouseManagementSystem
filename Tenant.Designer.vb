@@ -22,22 +22,21 @@ Partial Class Tenant
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Label2 = New Label()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label15 = New Label()
         Label8 = New Label()
@@ -69,7 +68,7 @@ Partial Class Tenant
         Column7 = New DataGridViewTextBoxColumn()
         editColumn = New DataGridViewImageColumn()
         deleteColumn = New DataGridViewImageColumn()
-        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
         btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel2.SuspendLayout()
@@ -77,18 +76,6 @@ Partial Class Tenant
         CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
         panelTenant.SuspendLayout()
         SuspendLayout()
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 9)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(110, 32)
-        Label2.TabIndex = 8
-        Label2.Text = "Tenant"
         ' 
         ' Guna2Panel2
         ' 
@@ -103,11 +90,11 @@ Partial Class Tenant
         Guna2Panel2.Controls.Add(Label4)
         Guna2Panel2.Controls.Add(Label3)
         Guna2Panel2.Controls.Add(Label1)
-        Guna2Panel2.CustomizableEdges = CustomizableEdges1
+        Guna2Panel2.CustomizableEdges = CustomizableEdges11
         Guna2Panel2.FillColor = Color.White
         Guna2Panel2.Location = New Point(12, 417)
         Guna2Panel2.Name = "Guna2Panel2"
-        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Guna2Panel2.Size = New Size(425, 255)
         Guna2Panel2.TabIndex = 10
         ' 
@@ -222,11 +209,11 @@ Partial Class Tenant
         Guna2Panel4.Controls.Add(Label11)
         Guna2Panel4.Controls.Add(Label10)
         Guna2Panel4.Controls.Add(Label9)
-        Guna2Panel4.CustomizableEdges = CustomizableEdges3
+        Guna2Panel4.CustomizableEdges = CustomizableEdges13
         Guna2Panel4.FillColor = Color.White
         Guna2Panel4.Location = New Point(456, 417)
         Guna2Panel4.Name = "Guna2Panel4"
-        Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         Guna2Panel4.Size = New Size(365, 255)
         Guna2Panel4.TabIndex = 11
         ' 
@@ -352,49 +339,48 @@ Partial Class Tenant
         dgvTenant.AllowUserToDeleteRows = False
         dgvTenant.AllowUserToResizeColumns = False
         dgvTenant.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = Color.White
-        DataGridViewCellStyle1.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
-        DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        dgvTenant.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        dgvTenant.CellBorderStyle = DataGridViewCellBorderStyle.None
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        DataGridViewCellStyle2.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.BackColor = Color.White
+        DataGridViewCellStyle5.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
+        DataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        dgvTenant.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        DataGridViewCellStyle6.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        DataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.True
+        dgvTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         dgvTenant.ColumnHeadersHeight = 50
         dgvTenant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         dgvTenant.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column8, Column6, Column7, editColumn, deleteColumn})
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.White
-        DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
-        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        dgvTenant.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = Color.White
+        DataGridViewCellStyle7.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle7.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
+        DataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.False
+        dgvTenant.DefaultCellStyle = DataGridViewCellStyle7
         dgvTenant.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvTenant.Location = New Point(12, 58)
+        dgvTenant.Location = New Point(12, 47)
         dgvTenant.Name = "dgvTenant"
         dgvTenant.ReadOnly = True
         dgvTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = Color.White
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = Color.White
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        dgvTenant.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = Color.White
+        DataGridViewCellStyle8.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle8.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = Color.White
+        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.True
+        dgvTenant.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         dgvTenant.RowHeadersVisible = False
         dgvTenant.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvTenant.RowTemplate.Height = 34
-        dgvTenant.Size = New Size(809, 340)
+        dgvTenant.Size = New Size(809, 351)
         dgvTenant.TabIndex = 12
         dgvTenant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvTenant.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -509,34 +495,34 @@ Partial Class Tenant
         deleteColumn.ReadOnly = True
         deleteColumn.Width = 40
         ' 
-        ' Guna2TextBox1
+        ' txtTenantSearch
         ' 
-        Guna2TextBox1.BorderRadius = 10
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges5
-        Guna2TextBox1.DefaultText = ""
-        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.IconLeft = CType(resources.GetObject("Guna2TextBox1.IconLeft"), Image)
-        Guna2TextBox1.IconLeftOffset = New Point(10, 0)
-        Guna2TextBox1.Location = New Point(542, 12)
-        Guna2TextBox1.Margin = New Padding(4, 3, 4, 3)
-        Guna2TextBox1.Name = "Guna2TextBox1"
-        Guna2TextBox1.PasswordChar = ChrW(0)
-        Guna2TextBox1.PlaceholderText = ""
-        Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2TextBox1.Size = New Size(279, 35)
-        Guna2TextBox1.TabIndex = 13
+        txtTenantSearch.BorderRadius = 10
+        txtTenantSearch.CustomizableEdges = CustomizableEdges15
+        txtTenantSearch.DefaultText = ""
+        txtTenantSearch.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtTenantSearch.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtTenantSearch.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtTenantSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtTenantSearch.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtTenantSearch.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtTenantSearch.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtTenantSearch.IconLeft = CType(resources.GetObject("txtTenantSearch.IconLeft"), Image)
+        txtTenantSearch.IconLeftOffset = New Point(10, 0)
+        txtTenantSearch.Location = New Point(12, 6)
+        txtTenantSearch.Margin = New Padding(4, 3, 4, 3)
+        txtTenantSearch.Name = "txtTenantSearch"
+        txtTenantSearch.PasswordChar = ChrW(0)
+        txtTenantSearch.PlaceholderText = ""
+        txtTenantSearch.SelectedText = ""
+        txtTenantSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        txtTenantSearch.Size = New Size(404, 35)
+        txtTenantSearch.TabIndex = 13
         ' 
         ' btnShowAddForm
         ' 
         btnShowAddForm.BorderRadius = 10
-        btnShowAddForm.CustomizableEdges = CustomizableEdges7
+        btnShowAddForm.CustomizableEdges = CustomizableEdges17
         btnShowAddForm.DisabledState.BorderColor = Color.DarkGray
         btnShowAddForm.DisabledState.CustomBorderColor = Color.DarkGray
         btnShowAddForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -545,9 +531,9 @@ Partial Class Tenant
         btnShowAddForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
-        btnShowAddForm.Location = New Point(406, 12)
+        btnShowAddForm.Location = New Point(691, 6)
         btnShowAddForm.Name = "btnShowAddForm"
-        btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         btnShowAddForm.Size = New Size(130, 35)
         btnShowAddForm.TabIndex = 15
         btnShowAddForm.Text = "Add Tenant"
@@ -557,18 +543,17 @@ Partial Class Tenant
         panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
         panelTenant.BorderRadius = 20
         panelTenant.Controls.Add(btnShowAddForm)
-        panelTenant.Controls.Add(Guna2TextBox1)
+        panelTenant.Controls.Add(txtTenantSearch)
         panelTenant.Controls.Add(dgvTenant)
         panelTenant.Controls.Add(Guna2Panel4)
         panelTenant.Controls.Add(Guna2Panel2)
-        panelTenant.Controls.Add(Label2)
-        panelTenant.CustomizableEdges = CustomizableEdges9
+        panelTenant.CustomizableEdges = CustomizableEdges19
         panelTenant.Dock = DockStyle.Fill
         panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelTenant.Location = New Point(0, 0)
         panelTenant.Margin = New Padding(0)
         panelTenant.Name = "panelTenant"
-        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         panelTenant.Size = New Size(833, 685)
         panelTenant.TabIndex = 0
         ' 
@@ -589,11 +574,8 @@ Partial Class Tenant
         Guna2Panel4.PerformLayout()
         CType(dgvTenant, ComponentModel.ISupportInitialize).EndInit()
         panelTenant.ResumeLayout(False)
-        panelTenant.PerformLayout()
         ResumeLayout(False)
     End Sub
-
-    Friend WithEvents Label2 As Label
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label15 As Label
     Friend WithEvents Label8 As Label
@@ -615,7 +597,7 @@ Partial Class Tenant
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents dgvTenant As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtTenantSearch As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnShowAddForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents panelTenant As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Column1 As DataGridViewTextBoxColumn

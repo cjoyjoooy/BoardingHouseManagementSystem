@@ -3,7 +3,7 @@ Public Class Rooms
     Private Sub Rooms_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'NOTE: temporary representation of status in database
-        Dim rooms() As String = {"Occupied", "Vacant", "Vacant", "Occupied"}
+        Dim rooms() As String = {"Occupied", "Vacant", "Vacant", "Occupied", "Vacant", "Occupied", "Occupied"}
 
         'NOTE: Need to select id and status from database
 
@@ -14,4 +14,7 @@ Public Class Rooms
         Next
     End Sub
 
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+
+    End Sub
 End Class

@@ -33,30 +33,43 @@ Partial Class Dashboard
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         panelDashboard = New Guna.UI2.WinForms.Guna2Panel()
+        Label2 = New Label()
         Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Label2 = New Label()
         panelDashboard.SuspendLayout()
         SuspendLayout()
         ' 
         ' panelDashboard
         ' 
+        panelDashboard.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelDashboard.BorderRadius = 20
         panelDashboard.Controls.Add(Guna2Panel6)
+        panelDashboard.Controls.Add(Label2)
         panelDashboard.Controls.Add(Guna2Panel5)
         panelDashboard.Controls.Add(Guna2Panel4)
         panelDashboard.Controls.Add(Guna2Panel3)
-        panelDashboard.Controls.Add(Label2)
         panelDashboard.CustomizableEdges = CustomizableEdges9
         panelDashboard.Dock = DockStyle.Fill
         panelDashboard.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelDashboard.Location = New Point(0, 0)
         panelDashboard.Name = "panelDashboard"
         panelDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        panelDashboard.Size = New Size(801, 618)
+        panelDashboard.Size = New Size(833, 685)
         panelDashboard.TabIndex = 0
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label2.Location = New Point(12, 6)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(166, 32)
+        Label2.TabIndex = 8
+        Label2.Text = "Dashboard"
         ' 
         ' Guna2Panel6
         ' 
@@ -65,10 +78,10 @@ Partial Class Dashboard
         Guna2Panel6.BorderThickness = 20
         Guna2Panel6.CustomizableEdges = CustomizableEdges1
         Guna2Panel6.FillColor = Color.White
-        Guna2Panel6.Location = New Point(17, 263)
+        Guna2Panel6.Location = New Point(12, 239)
         Guna2Panel6.Name = "Guna2Panel6"
         Guna2Panel6.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2Panel6.Size = New Size(688, 253)
+        Guna2Panel6.Size = New Size(809, 434)
         Guna2Panel6.TabIndex = 12
         ' 
         ' Guna2Panel5
@@ -78,7 +91,7 @@ Partial Class Dashboard
         Guna2Panel5.BorderThickness = 20
         Guna2Panel5.CustomizableEdges = CustomizableEdges3
         Guna2Panel5.FillColor = Color.White
-        Guna2Panel5.Location = New Point(439, 72)
+        Guna2Panel5.Location = New Point(426, 53)
         Guna2Panel5.Name = "Guna2Panel5"
         Guna2Panel5.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Guna2Panel5.Size = New Size(201, 168)
@@ -91,7 +104,7 @@ Partial Class Dashboard
         Guna2Panel4.BorderThickness = 20
         Guna2Panel4.CustomizableEdges = CustomizableEdges5
         Guna2Panel4.FillColor = Color.White
-        Guna2Panel4.Location = New Point(228, 72)
+        Guna2Panel4.Location = New Point(219, 53)
         Guna2Panel4.Name = "Guna2Panel4"
         Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2Panel4.Size = New Size(201, 168)
@@ -104,29 +117,17 @@ Partial Class Dashboard
         Guna2Panel3.BorderThickness = 20
         Guna2Panel3.CustomizableEdges = CustomizableEdges7
         Guna2Panel3.FillColor = Color.White
-        Guna2Panel3.Location = New Point(17, 72)
+        Guna2Panel3.Location = New Point(12, 53)
         Guna2Panel3.Name = "Guna2Panel3"
         Guna2Panel3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2Panel3.Size = New Size(201, 168)
         Guna2Panel3.TabIndex = 9
         ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 9)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(166, 32)
-        Label2.TabIndex = 8
-        Label2.Text = "Dashboard"
-        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(801, 618)
+        ClientSize = New Size(833, 685)
         Controls.Add(panelDashboard)
         FormBorderStyle = FormBorderStyle.None
         Name = "Dashboard"

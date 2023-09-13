@@ -27,7 +27,19 @@ Public Class Home
         changePanel(Dashboard)
     End Sub
 
-    Private Sub Guna2Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel2.Paint
+    Private Sub btnTransaction_Click(sender As Object, e As EventArgs) Handles btnTransaction.Click
+        changePanel(Transaction)
+    End Sub
 
+    Private Sub btnBill_Click(sender As Object, e As EventArgs) Handles btnBill.Click
+        changePanel(Bills)
+    End Sub
+
+    Private Sub btnEarnings_Click(sender As Object, e As EventArgs) Handles btnEarnings.Click
+        changePanel(Earnings)
+    End Sub
+
+    Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
+        changePanel(User)
     End Sub
 End Class

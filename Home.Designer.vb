@@ -22,8 +22,8 @@ Partial Class Home
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -39,6 +39,12 @@ Partial Class Home
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         panelHome = New Guna.UI2.WinForms.Guna2Panel()
@@ -49,6 +55,9 @@ Partial Class Home
         btnRoom = New Guna.UI2.WinForms.Guna2Button()
         btnTransaction = New Guna.UI2.WinForms.Guna2Button()
         btnLogout = New Guna.UI2.WinForms.Guna2Button()
+        btnUser = New Guna.UI2.WinForms.Guna2Button()
+        btnEarnings = New Guna.UI2.WinForms.Guna2Button()
+        btnBill = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel1.SuspendLayout()
         Guna2Panel2.SuspendLayout()
         SuspendLayout()
@@ -63,11 +72,14 @@ Partial Class Home
         Guna2Panel1.Controls.Add(btnRoom)
         Guna2Panel1.Controls.Add(btnTransaction)
         Guna2Panel1.Controls.Add(btnLogout)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges15
+        Guna2Panel1.Controls.Add(btnUser)
+        Guna2Panel1.Controls.Add(btnEarnings)
+        Guna2Panel1.Controls.Add(btnBill)
+        Guna2Panel1.CustomizableEdges = CustomizableEdges21
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         Guna2Panel1.Size = New Size(1066, 758)
         Guna2Panel1.TabIndex = 0
         ' 
@@ -109,7 +121,7 @@ Partial Class Home
         btnClose.IconColor = Color.White
         btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnClose.IconSize = 32
-        btnClose.Location = New Point(1018, 3)
+        btnClose.Location = New Point(1018, 4)
         btnClose.Name = "btnClose"
         btnClose.Size = New Size(36, 32)
         btnClose.TabIndex = 12
@@ -135,7 +147,7 @@ Partial Class Home
         btnTenant.Image = CType(resources.GetObject("btnTenant.Image"), Image)
         btnTenant.ImageOffset = New Point(-20, 0)
         btnTenant.ImageSize = New Size(24, 25)
-        btnTenant.Location = New Point(12, 226)
+        btnTenant.Location = New Point(12, 191)
         btnTenant.Name = "btnTenant"
         btnTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         btnTenant.Size = New Size(213, 56)
@@ -164,7 +176,7 @@ Partial Class Home
         btnDashboard.ForeColor = Color.White
         btnDashboard.Image = CType(resources.GetObject("btnDashboard.Image"), Image)
         btnDashboard.ImageOffset = New Point(-12, 0)
-        btnDashboard.Location = New Point(12, 164)
+        btnDashboard.Location = New Point(12, 123)
         btnDashboard.Name = "btnDashboard"
         btnDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         btnDashboard.Size = New Size(213, 56)
@@ -204,7 +216,7 @@ Partial Class Home
         btnRoom.Image = CType(resources.GetObject("btnRoom.Image"), Image)
         btnRoom.ImageOffset = New Point(-21, 0)
         btnRoom.ImageSize = New Size(26, 24)
-        btnRoom.Location = New Point(12, 288)
+        btnRoom.Location = New Point(12, 259)
         btnRoom.Name = "btnRoom"
         btnRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         btnRoom.Size = New Size(213, 56)
@@ -232,13 +244,13 @@ Partial Class Home
         btnTransaction.Image = CType(resources.GetObject("btnTransaction.Image"), Image)
         btnTransaction.ImageOffset = New Point(-9, 0)
         btnTransaction.ImageSize = New Size(24, 24)
-        btnTransaction.Location = New Point(12, 350)
+        btnTransaction.Location = New Point(12, 463)
         btnTransaction.Name = "btnTransaction"
         btnTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         btnTransaction.Size = New Size(213, 56)
         btnTransaction.TabIndex = 8
         btnTransaction.Text = "Transaction"
-        btnTransaction.TextOffset = New Point(-9, 0)
+        btnTransaction.TextOffset = New Point(-8, 0)
         ' 
         ' btnLogout
         ' 
@@ -267,6 +279,92 @@ Partial Class Home
         btnLogout.Text = "Logout"
         btnLogout.TextOffset = New Point(-18, 0)
         ' 
+        ' btnUser
+        ' 
+        btnUser.Animated = True
+        btnUser.AutoRoundedCorners = True
+        btnUser.BorderRadius = 27
+        btnUser.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        btnUser.CheckedState.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
+        btnUser.CheckedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnUser.CheckedState.Image = CType(resources.GetObject("resource.Image5"), Image)
+        btnUser.CustomizableEdges = CustomizableEdges15
+        btnUser.DisabledState.BorderColor = Color.DarkGray
+        btnUser.DisabledState.CustomBorderColor = Color.DarkGray
+        btnUser.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnUser.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnUser.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnUser.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        btnUser.ForeColor = Color.White
+        btnUser.Image = CType(resources.GetObject("btnUser.Image"), Image)
+        btnUser.ImageOffset = New Point(-24, 0)
+        btnUser.ImageSize = New Size(26, 26)
+        btnUser.Location = New Point(12, 531)
+        btnUser.Name = "btnUser"
+        btnUser.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        btnUser.Size = New Size(213, 56)
+        btnUser.TabIndex = 19
+        btnUser.Text = "User"
+        btnUser.TextOffset = New Point(-23, 0)
+        ' 
+        ' btnEarnings
+        ' 
+        btnEarnings.Animated = True
+        btnEarnings.AutoRoundedCorners = True
+        btnEarnings.BorderRadius = 27
+        btnEarnings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        btnEarnings.CheckedState.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
+        btnEarnings.CheckedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnEarnings.CheckedState.Image = CType(resources.GetObject("resource.Image6"), Image)
+        btnEarnings.CustomizableEdges = CustomizableEdges17
+        btnEarnings.DisabledState.BorderColor = Color.DarkGray
+        btnEarnings.DisabledState.CustomBorderColor = Color.DarkGray
+        btnEarnings.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnEarnings.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnEarnings.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnEarnings.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        btnEarnings.ForeColor = Color.White
+        btnEarnings.Image = CType(resources.GetObject("btnEarnings.Image"), Image)
+        btnEarnings.ImageOffset = New Point(-16, 0)
+        btnEarnings.ImageSize = New Size(26, 26)
+        btnEarnings.Location = New Point(12, 395)
+        btnEarnings.Name = "btnEarnings"
+        btnEarnings.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        btnEarnings.Size = New Size(213, 56)
+        btnEarnings.TabIndex = 18
+        btnEarnings.Text = "Earnings"
+        btnEarnings.TextOffset = New Point(-13, 0)
+        ' 
+        ' btnBill
+        ' 
+        btnBill.Animated = True
+        btnBill.AutoRoundedCorners = True
+        btnBill.BorderRadius = 27
+        btnBill.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        btnBill.CheckedState.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
+        btnBill.CheckedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnBill.CheckedState.Image = CType(resources.GetObject("resource.Image7"), Image)
+        btnBill.CustomizableEdges = CustomizableEdges19
+        btnBill.DisabledState.BorderColor = Color.DarkGray
+        btnBill.DisabledState.CustomBorderColor = Color.DarkGray
+        btnBill.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnBill.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnBill.FillColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnBill.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
+        btnBill.ForeColor = Color.White
+        btnBill.Image = CType(resources.GetObject("btnBill.Image"), Image)
+        btnBill.ImageAlign = HorizontalAlignment.Left
+        btnBill.ImageOffset = New Point(11, 0)
+        btnBill.ImageSize = New Size(28, 28)
+        btnBill.Location = New Point(12, 327)
+        btnBill.Name = "btnBill"
+        btnBill.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        btnBill.Size = New Size(213, 56)
+        btnBill.TabIndex = 17
+        btnBill.Text = "Bill"
+        btnBill.TextAlign = HorizontalAlignment.Left
+        btnBill.TextOffset = New Point(10, 0)
+        ' 
         ' Home
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -294,4 +392,7 @@ Partial Class Home
     Friend WithEvents btnLogout As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents panelHome As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents btnUser As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnEarnings As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnBill As Guna.UI2.WinForms.Guna2Button
 End Class

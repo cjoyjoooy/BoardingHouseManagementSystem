@@ -22,9 +22,10 @@ Partial Class Rooms
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Rooms))
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -32,7 +33,16 @@ Partial Class Rooms
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         panelRooms = New Guna.UI2.WinForms.Guna2Panel()
+        Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         addroompanel = New FlowLayoutPanel()
         Label18 = New Label()
         Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
@@ -56,6 +66,10 @@ Partial Class Rooms
         ' 
         ' panelRooms
         ' 
+        panelRooms.BorderRadius = 10
+        panelRooms.Controls.Add(Guna2Button1)
+        panelRooms.Controls.Add(Guna2Button4)
+        panelRooms.Controls.Add(Guna2Button5)
         panelRooms.Controls.Add(addroompanel)
         panelRooms.Controls.Add(Label18)
         panelRooms.Controls.Add(Guna2Panel7)
@@ -66,19 +80,75 @@ Partial Class Rooms
         panelRooms.Controls.Add(Guna2Panel8)
         panelRooms.Controls.Add(Guna2Panel15)
         panelRooms.Controls.Add(Label2)
-        panelRooms.CustomizableEdges = CustomizableEdges9
+        panelRooms.CustomizableEdges = CustomizableEdges15
         panelRooms.Dock = DockStyle.Fill
+        panelRooms.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelRooms.Location = New Point(0, 0)
         panelRooms.Name = "panelRooms"
-        panelRooms.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        panelRooms.Size = New Size(801, 618)
+        panelRooms.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        panelRooms.Size = New Size(833, 685)
         panelRooms.TabIndex = 0
+        ' 
+        ' Guna2Button1
+        ' 
+        Guna2Button1.BorderRadius = 10
+        Guna2Button1.CustomizableEdges = CustomizableEdges1
+        Guna2Button1.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button1.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        Guna2Button1.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Button1.Image = CType(resources.GetObject("Guna2Button1.Image"), Image)
+        Guna2Button1.Location = New Point(659, 305)
+        Guna2Button1.Name = "Guna2Button1"
+        Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Button1.Size = New Size(50, 40)
+        Guna2Button1.TabIndex = 40
+        ' 
+        ' Guna2Button4
+        ' 
+        Guna2Button4.BorderRadius = 10
+        Guna2Button4.CustomizableEdges = CustomizableEdges3
+        Guna2Button4.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button4.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button4.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button4.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        Guna2Button4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), Image)
+        Guna2Button4.Location = New Point(771, 305)
+        Guna2Button4.Name = "Guna2Button4"
+        Guna2Button4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Button4.Size = New Size(50, 40)
+        Guna2Button4.TabIndex = 39
+        ' 
+        ' Guna2Button5
+        ' 
+        Guna2Button5.BorderRadius = 10
+        Guna2Button5.CustomizableEdges = CustomizableEdges5
+        Guna2Button5.DisabledState.BorderColor = Color.DarkGray
+        Guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray
+        Guna2Button5.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Guna2Button5.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Guna2Button5.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        Guna2Button5.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2Button5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), Image)
+        Guna2Button5.Location = New Point(715, 305)
+        Guna2Button5.Name = "Guna2Button5"
+        Guna2Button5.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2Button5.Size = New Size(50, 40)
+        Guna2Button5.TabIndex = 38
         ' 
         ' addroompanel
         ' 
-        addroompanel.Location = New Point(12, 50)
+        addroompanel.AutoScroll = True
+        addroompanel.Location = New Point(12, 37)
         addroompanel.Name = "addroompanel"
-        addroompanel.Size = New Size(682, 139)
+        addroompanel.Size = New Size(809, 244)
         addroompanel.TabIndex = 33
         ' 
         ' Label18
@@ -87,7 +157,7 @@ Partial Class Rooms
         Label18.BackColor = Color.Transparent
         Label18.Font = New Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(400, 223)
+        Label18.Location = New Point(404, 288)
         Label18.Name = "Label18"
         Label18.Size = New Size(53, 15)
         Label18.TabIndex = 32
@@ -99,11 +169,11 @@ Partial Class Rooms
         Guna2Panel7.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel7.BorderRadius = 5
         Guna2Panel7.BorderThickness = 20
-        Guna2Panel7.CustomizableEdges = CustomizableEdges1
+        Guna2Panel7.CustomizableEdges = CustomizableEdges7
         Guna2Panel7.FillColor = Color.FromArgb(CByte(154), CByte(154), CByte(154))
-        Guna2Panel7.Location = New Point(353, 218)
+        Guna2Panel7.Location = New Point(357, 283)
         Guna2Panel7.Name = "Guna2Panel7"
-        Guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2Panel7.Size = New Size(27, 24)
         Guna2Panel7.TabIndex = 31
         ' 
@@ -113,7 +183,7 @@ Partial Class Rooms
         Label17.BackColor = Color.Transparent
         Label17.Font = New Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(258, 223)
+        Label17.Location = New Point(262, 288)
         Label17.Name = "Label17"
         Label17.Size = New Size(69, 15)
         Label17.TabIndex = 24
@@ -125,11 +195,11 @@ Partial Class Rooms
         Guna2Panel9.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel9.BorderRadius = 5
         Guna2Panel9.BorderThickness = 20
-        Guna2Panel9.CustomizableEdges = CustomizableEdges3
+        Guna2Panel9.CustomizableEdges = CustomizableEdges9
         Guna2Panel9.FillColor = Color.White
-        Guna2Panel9.Location = New Point(225, 218)
+        Guna2Panel9.Location = New Point(229, 283)
         Guna2Panel9.Name = "Guna2Panel9"
-        Guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         Guna2Panel9.Size = New Size(27, 24)
         Guna2Panel9.TabIndex = 30
         ' 
@@ -139,7 +209,7 @@ Partial Class Rooms
         Label15.BackColor = Color.Transparent
         Label15.Font = New Font("Arial Rounded MT Bold", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label15.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label15.Location = New Point(127, 223)
+        Label15.Location = New Point(131, 288)
         Label15.Name = "Label15"
         Label15.Size = New Size(65, 15)
         Label15.TabIndex = 28
@@ -152,7 +222,7 @@ Partial Class Rooms
         Label16.BackColor = Color.Transparent
         Label16.Font = New Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(12, 201)
+        Label16.Location = New Point(12, 284)
         Label16.Name = "Label16"
         Label16.Size = New Size(76, 20)
         Label16.TabIndex = 27
@@ -164,11 +234,11 @@ Partial Class Rooms
         Guna2Panel8.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel8.BorderRadius = 5
         Guna2Panel8.BorderThickness = 20
-        Guna2Panel8.CustomizableEdges = CustomizableEdges5
+        Guna2Panel8.CustomizableEdges = CustomizableEdges11
         Guna2Panel8.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2Panel8.Location = New Point(94, 218)
+        Guna2Panel8.Location = New Point(98, 283)
         Guna2Panel8.Name = "Guna2Panel8"
-        Guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Guna2Panel8.Size = New Size(27, 24)
         Guna2Panel8.TabIndex = 29
         ' 
@@ -184,12 +254,12 @@ Partial Class Rooms
         Guna2Panel15.Controls.Add(Label28)
         Guna2Panel15.Controls.Add(Label27)
         Guna2Panel15.Controls.Add(Label26)
-        Guna2Panel15.CustomizableEdges = CustomizableEdges7
+        Guna2Panel15.CustomizableEdges = CustomizableEdges13
         Guna2Panel15.FillColor = Color.White
-        Guna2Panel15.Location = New Point(14, 268)
+        Guna2Panel15.Location = New Point(14, 351)
         Guna2Panel15.Name = "Guna2Panel15"
-        Guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2Panel15.Size = New Size(477, 246)
+        Guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Guna2Panel15.Size = New Size(807, 322)
         Guna2Panel15.TabIndex = 20
         ' 
         ' lblRoomNumber
@@ -282,7 +352,7 @@ Partial Class Rooms
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 9)
+        Label2.Location = New Point(3, 2)
         Label2.Name = "Label2"
         Label2.Size = New Size(108, 32)
         Label2.TabIndex = 9
@@ -293,7 +363,7 @@ Partial Class Rooms
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        ClientSize = New Size(801, 618)
+        ClientSize = New Size(833, 685)
         Controls.Add(panelRooms)
         FormBorderStyle = FormBorderStyle.None
         Name = "Rooms"
@@ -323,4 +393,7 @@ Partial Class Rooms
     Friend WithEvents Guna2Panel7 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents addroompanel As FlowLayoutPanel
     Friend WithEvents lblRoomNumber As Label
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
 End Class
