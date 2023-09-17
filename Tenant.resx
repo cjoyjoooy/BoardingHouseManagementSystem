@@ -203,4 +203,24 @@
         RK5CYII=
 </value>
   </data>
+  <data name="btnPay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAM7SURBVGhD7Zk7axRRGIajeGsEIWr2lsQiWKxayDYiiIhN
+        gjbeCiu1EQsbRRCxsDFoISF4+QEaFaz8A5oUamMsvIvYSDSgFuZiEC8k+pzNu8vJcGZnd3Jmk2JeeMju
+        d/9mZ2ZnSUuqVKlSVZXL5fbCU/idz+f/JYGpDb1q6U9meFfDhJhUW39igWFHI+/o072otv6kwsFmo3Iv
+        fgWH1wKX5F78Cgw+CpeLxeIKuSNF3iFyhmBcDGE7KHfysheQqV4tY9g7dr4NvgETMxuaoOymMtUlBuy3
+        c10Q06fw5GQ3lClShUJhC/Ezdm4I0+3t7ZuUlozshjJFitgbdl4E15TmR52dnWuy2exhvXUuwOs9fPyf
+        4ROve2SuCtu7Sk4dvFFafDH0KoY5SrEH/P1jCsvlXECDV+wjMleFbcryRzGltHhimO3wIVhY7sW9AIPs
+        hp+OojUX4HWPlhjhgu2WuSrsyZ9CnDYZkr8FilVRmHOBKBF73c6rBQfiqtIaE4m3XQUrKCzWAnwqm4mv
+        6zaayWSKSqtfNNhJcs0GCo21gBEHqM/ODeGKwhuS+Yp/5Sg2B8XGXgCZPgN2vg2+myZmNrQBkXwqWMyF
+        wu0FZmSqyAx4Al7DGP7HsEu+qrAdwD8I5kFuDB5i2y93Y+ro6MiSPAFzhnWhlMoCz2CbTOVTkEFeVmIt
+        pvkS3KEw/6Jp6NOhDXHflWIWOM6fpeY1g/M2fxdqXT+PTKx31XPhGhj+BXeGdUoryzz/4zsLP+zYECZM
+        TldX10qHLxT6hv+oL5VKy3FGXrjinNLKYvFubO8DMaHQ57nyeOuOqYH7Rz1FTzuCnZhF29raNjCAuZff
+        D/qjIP+Yeh5x+cMg3v2jnuftHI5JOzgpGKJfbf2JordczXxDnwtq6VcUdj6secTcOk+qnX85GvrkLweo
+        fM4nJkdTLzD4Ly70fWqTnFzN5wvDjyf6jWvLNcA8+cICW1U+eTkGmA8fGX6jSjdHjiHi8hYKKts8BYaI
+        BUd9mHN+rUo2V66BGoHhB1tbW1erXPPlGqoB7pmnSpVaGHEE4/xfa4q8M6Qvma2ygGKQ3jqX+ApPiD3P
+        0+h6padKlSpVHLW0/Ac0zwH5VFC8HQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
