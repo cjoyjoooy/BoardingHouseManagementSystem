@@ -76,7 +76,7 @@ Module Project_Module
             .BackColor = Color.Transparent
             .Location = New Point(44, 22)
             .Font = New Drawing.Font("Trebuchet MS", 12)
-            'NOTE: change name to id
+
             .Text = "Room"
         End With
         With roomNumber
@@ -85,7 +85,7 @@ Module Project_Module
             .BackColor = Color.Transparent
             .Location = New Point(44, 53)
             .Font = New Drawing.Font("Trebuchet MS", 12)
-            'NOTE: change name to id
+            'NOTE: change name to roomname(database)
             .Text = (name).ToString
         End With
 
