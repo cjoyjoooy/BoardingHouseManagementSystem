@@ -24,8 +24,6 @@ Partial Class tenantEditForm
     Private Sub InitializeComponent()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -44,14 +42,12 @@ Partial Class tenantEditForm
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Label19 = New Label()
-        Label9 = New Label()
-        rbdMale = New Guna.UI2.WinForms.Guna2CustomRadioButton()
-        rbdFemale = New Guna.UI2.WinForms.Guna2CustomRadioButton()
         txtLname = New Guna.UI2.WinForms.Guna2TextBox()
         Label10 = New Label()
         txtContact = New Guna.UI2.WinForms.Guna2TextBox()
@@ -66,19 +62,17 @@ Partial Class tenantEditForm
         Label16 = New Label()
         Label17 = New Label()
         Label18 = New Label()
+        cmbGender = New Guna.UI2.WinForms.Guna2ComboBox()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Guna2Panel1
         ' 
         Guna2Panel1.BackColor = Color.White
+        Guna2Panel1.Controls.Add(cmbGender)
         Guna2Panel1.Controls.Add(Guna2DateTimePicker1)
         Guna2Panel1.Controls.Add(Guna2ComboBox2)
         Guna2Panel1.Controls.Add(Guna2ComboBox1)
-        Guna2Panel1.Controls.Add(Label19)
-        Guna2Panel1.Controls.Add(Label9)
-        Guna2Panel1.Controls.Add(rbdMale)
-        Guna2Panel1.Controls.Add(rbdFemale)
         Guna2Panel1.Controls.Add(txtLname)
         Guna2Panel1.Controls.Add(Label10)
         Guna2Panel1.Controls.Add(txtContact)
@@ -106,7 +100,7 @@ Partial Class tenantEditForm
         Guna2DateTimePicker1.BackColor = Color.White
         Guna2DateTimePicker1.BorderRadius = 10
         Guna2DateTimePicker1.Checked = True
-        Guna2DateTimePicker1.CustomizableEdges = CustomizableEdges1
+        Guna2DateTimePicker1.CustomizableEdges = CustomizableEdges3
         Guna2DateTimePicker1.FillColor = Color.White
         Guna2DateTimePicker1.FocusedColor = Color.White
         Guna2DateTimePicker1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
@@ -116,7 +110,7 @@ Partial Class tenantEditForm
         Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Guna2DateTimePicker1.Size = New Size(322, 39)
         Guna2DateTimePicker1.TabIndex = 65
         Guna2DateTimePicker1.Value = New Date(2023, 9, 12, 15, 5, 18, 211)
@@ -126,7 +120,7 @@ Partial Class tenantEditForm
         Guna2ComboBox2.BackColor = Color.Transparent
         Guna2ComboBox2.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2ComboBox2.BorderRadius = 10
-        Guna2ComboBox2.CustomizableEdges = CustomizableEdges3
+        Guna2ComboBox2.CustomizableEdges = CustomizableEdges5
         Guna2ComboBox2.DrawMode = DrawMode.OwnerDrawFixed
         Guna2ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
         Guna2ComboBox2.FocusedColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
@@ -138,7 +132,7 @@ Partial Class tenantEditForm
         Guna2ComboBox2.Items.AddRange(New Object() {"Active", "Inactive"})
         Guna2ComboBox2.Location = New Point(15, 359)
         Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Guna2ComboBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2ComboBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2ComboBox2.Size = New Size(322, 36)
         Guna2ComboBox2.TabIndex = 64
         ' 
@@ -147,7 +141,7 @@ Partial Class tenantEditForm
         Guna2ComboBox1.BackColor = Color.Transparent
         Guna2ComboBox1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2ComboBox1.BorderRadius = 10
-        Guna2ComboBox1.CustomizableEdges = CustomizableEdges5
+        Guna2ComboBox1.CustomizableEdges = CustomizableEdges7
         Guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed
         Guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
         Guna2ComboBox1.FocusedColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
@@ -159,69 +153,9 @@ Partial Class tenantEditForm
         Guna2ComboBox1.Items.AddRange(New Object() {"Active", "Inactive"})
         Guna2ComboBox1.Location = New Point(368, 358)
         Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2ComboBox1.Size = New Size(322, 36)
         Guna2ComboBox1.TabIndex = 63
-        ' 
-        ' Label19
-        ' 
-        Label19.AutoSize = True
-        Label19.BackColor = Color.Transparent
-        Label19.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label19.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label19.Location = New Point(50, 134)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(55, 26)
-        Label19.TabIndex = 62
-        Label19.Text = "Male"
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label9.Location = New Point(50, 108)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(79, 26)
-        Label9.TabIndex = 61
-        Label9.Text = "Female"
-        ' 
-        ' rbdMale
-        ' 
-        rbdMale.BackColor = Color.White
-        rbdMale.CheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        rbdMale.CheckedState.BorderThickness = 0
-        rbdMale.CheckedState.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        rbdMale.CheckedState.InnerColor = Color.White
-        rbdMale.Location = New Point(25, 139)
-        rbdMale.Name = "rbdMale"
-        rbdMale.ShadowDecoration.CustomizableEdges = CustomizableEdges7
-        rbdMale.Size = New Size(20, 16)
-        rbdMale.TabIndex = 60
-        rbdMale.Text = "Male"
-        rbdMale.UncheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        rbdMale.UncheckedState.BorderThickness = 2
-        rbdMale.UncheckedState.FillColor = Color.Transparent
-        rbdMale.UncheckedState.InnerColor = Color.Transparent
-        ' 
-        ' rbdFemale
-        ' 
-        rbdFemale.BackColor = Color.White
-        rbdFemale.CheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        rbdFemale.CheckedState.BorderThickness = 0
-        rbdFemale.CheckedState.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        rbdFemale.CheckedState.InnerColor = Color.White
-        rbdFemale.Location = New Point(25, 113)
-        rbdFemale.Name = "rbdFemale"
-        rbdFemale.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        rbdFemale.Size = New Size(20, 16)
-        rbdFemale.TabIndex = 59
-        rbdFemale.Text = "Female"
-        rbdFemale.UncheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        rbdFemale.UncheckedState.BorderThickness = 2
-        rbdFemale.UncheckedState.FillColor = Color.Transparent
-        rbdFemale.UncheckedState.InnerColor = Color.Transparent
         ' 
         ' txtLname
         ' 
@@ -461,6 +395,27 @@ Partial Class tenantEditForm
         Label18.TabIndex = 45
         Label18.Text = "First Name"
         ' 
+        ' cmbGender
+        ' 
+        cmbGender.BackColor = Color.Transparent
+        cmbGender.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        cmbGender.BorderRadius = 10
+        cmbGender.CustomizableEdges = CustomizableEdges1
+        cmbGender.DrawMode = DrawMode.OwnerDrawFixed
+        cmbGender.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbGender.FocusedColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbGender.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbGender.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        cmbGender.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        cmbGender.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbGender.ItemHeight = 30
+        cmbGender.Items.AddRange(New Object() {"Female", "Male"})
+        cmbGender.Location = New Point(16, 111)
+        cmbGender.Name = "cmbGender"
+        cmbGender.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        cmbGender.Size = New Size(322, 36)
+        cmbGender.TabIndex = 46
+        ' 
         ' tenantEditForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -480,10 +435,6 @@ Partial Class tenantEditForm
     Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents rbdMale As Guna.UI2.WinForms.Guna2CustomRadioButton
-    Friend WithEvents rbdFemale As Guna.UI2.WinForms.Guna2CustomRadioButton
     Friend WithEvents txtLname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents txtContact As Guna.UI2.WinForms.Guna2TextBox
@@ -498,4 +449,5 @@ Partial Class tenantEditForm
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
+    Friend WithEvents cmbGender As Guna.UI2.WinForms.Guna2ComboBox
 End Class

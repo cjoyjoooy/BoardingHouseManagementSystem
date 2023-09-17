@@ -14,7 +14,12 @@ Public Class Rooms
         Next
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-
+    Private Sub btnAddRoomForm_Click(sender As Object, e As EventArgs) Handles btnAddRoomForm.Click
+        roomAddForm.Show()
     End Sub
+
+    Private Sub btnEditRoomForm_Click(sender As Object, e As EventArgs) Handles btnEditRoomForm.Click
+        roomEditForm.Show()
+    End Sub
+
 End Class

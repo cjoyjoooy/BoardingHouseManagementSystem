@@ -7,11 +7,7 @@
         Dim fname, lname, gender, address, contact, room, lease, status As String
         fname = txtFname.Text
         lname = txtLname.Text
-        If rbdFemale.Checked = True Then
-            gender = "Female"
-        ElseIf Male.Checked = True Then
-            gender = "Male"
-        End If
+        gender = cmbGender.SelectedItem
         address = txtAddress.Text
         contact = txtContact.Text
         room = cmbRoom.SelectedItem

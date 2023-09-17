@@ -1,0 +1,288 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class roomAddForm
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        btnCancel = New Guna.UI2.WinForms.Guna2Button()
+        btnAddRoom = New Guna.UI2.WinForms.Guna2Button()
+        txtNumPerson = New Guna.UI2.WinForms.Guna2TextBox()
+        Label2 = New Label()
+        txtMonthlyRent = New Guna.UI2.WinForms.Guna2TextBox()
+        Label1 = New Label()
+        cmbRoomStatus = New Guna.UI2.WinForms.Guna2ComboBox()
+        txtRoomName = New Guna.UI2.WinForms.Guna2TextBox()
+        Label17 = New Label()
+        Label18 = New Label()
+        Guna2Panel1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Guna2Panel1
+        ' 
+        Guna2Panel1.BackColor = Color.White
+        Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Panel1.BorderThickness = 2
+        Guna2Panel1.Controls.Add(btnCancel)
+        Guna2Panel1.Controls.Add(btnAddRoom)
+        Guna2Panel1.Controls.Add(txtNumPerson)
+        Guna2Panel1.Controls.Add(Label2)
+        Guna2Panel1.Controls.Add(txtMonthlyRent)
+        Guna2Panel1.Controls.Add(Label1)
+        Guna2Panel1.Controls.Add(cmbRoomStatus)
+        Guna2Panel1.Controls.Add(txtRoomName)
+        Guna2Panel1.Controls.Add(Label17)
+        Guna2Panel1.Controls.Add(Label18)
+        Guna2Panel1.CustomizableEdges = CustomizableEdges27
+        Guna2Panel1.Dock = DockStyle.Fill
+        Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Name = "Guna2Panel1"
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Guna2Panel1.Size = New Size(388, 450)
+        Guna2Panel1.TabIndex = 0
+        ' 
+        ' btnCancel
+        ' 
+        btnCancel.BackColor = Color.White
+        btnCancel.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnCancel.BorderRadius = 10
+        btnCancel.BorderThickness = 2
+        btnCancel.CustomizableEdges = CustomizableEdges15
+        btnCancel.DisabledState.BorderColor = Color.DarkGray
+        btnCancel.DisabledState.CustomBorderColor = Color.DarkGray
+        btnCancel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnCancel.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnCancel.FillColor = Color.White
+        btnCancel.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnCancel.Location = New Point(29, 386)
+        btnCancel.Name = "btnCancel"
+        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        btnCancel.Size = New Size(152, 36)
+        btnCancel.TabIndex = 55
+        btnCancel.Text = "Cancel"
+        ' 
+        ' btnAddRoom
+        ' 
+        btnAddRoom.BackColor = Color.White
+        btnAddRoom.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnAddRoom.BorderRadius = 10
+        btnAddRoom.BorderThickness = 2
+        btnAddRoom.CustomizableEdges = CustomizableEdges17
+        btnAddRoom.DisabledState.BorderColor = Color.DarkGray
+        btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray
+        btnAddRoom.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnAddRoom.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnAddRoom.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnAddRoom.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAddRoom.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnAddRoom.Location = New Point(207, 386)
+        btnAddRoom.Name = "btnAddRoom"
+        btnAddRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        btnAddRoom.Size = New Size(152, 36)
+        btnAddRoom.TabIndex = 54
+        btnAddRoom.Text = "Add"
+        ' 
+        ' txtNumPerson
+        ' 
+        txtNumPerson.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtNumPerson.BorderRadius = 10
+        txtNumPerson.CustomizableEdges = CustomizableEdges19
+        txtNumPerson.DefaultText = ""
+        txtNumPerson.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtNumPerson.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtNumPerson.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtNumPerson.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtNumPerson.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtNumPerson.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtNumPerson.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtNumPerson.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtNumPerson.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtNumPerson.Location = New Point(29, 220)
+        txtNumPerson.Margin = New Padding(4, 4, 4, 4)
+        txtNumPerson.Name = "txtNumPerson"
+        txtNumPerson.PasswordChar = ChrW(0)
+        txtNumPerson.PlaceholderText = ""
+        txtNumPerson.SelectedText = ""
+        txtNumPerson.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        txtNumPerson.Size = New Size(330, 34)
+        txtNumPerson.TabIndex = 53
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label2.Location = New Point(29, 193)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(187, 23)
+        Label2.TabIndex = 52
+        Label2.Text = "Number of Person"
+        ' 
+        ' txtMonthlyRent
+        ' 
+        txtMonthlyRent.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMonthlyRent.BorderRadius = 10
+        txtMonthlyRent.CustomizableEdges = CustomizableEdges21
+        txtMonthlyRent.DefaultText = ""
+        txtMonthlyRent.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtMonthlyRent.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtMonthlyRent.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMonthlyRent.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMonthlyRent.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMonthlyRent.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMonthlyRent.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtMonthlyRent.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMonthlyRent.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMonthlyRent.Location = New Point(29, 130)
+        txtMonthlyRent.Margin = New Padding(4, 4, 4, 4)
+        txtMonthlyRent.Name = "txtMonthlyRent"
+        txtMonthlyRent.PasswordChar = ChrW(0)
+        txtMonthlyRent.PlaceholderText = ""
+        txtMonthlyRent.SelectedText = ""
+        txtMonthlyRent.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        txtMonthlyRent.Size = New Size(330, 34)
+        txtMonthlyRent.TabIndex = 51
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label1.Location = New Point(29, 103)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(136, 23)
+        Label1.TabIndex = 50
+        Label1.Text = "Monthly Rent"
+        ' 
+        ' cmbRoomStatus
+        ' 
+        cmbRoomStatus.BackColor = Color.Transparent
+        cmbRoomStatus.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        cmbRoomStatus.BorderRadius = 10
+        cmbRoomStatus.CustomizableEdges = CustomizableEdges23
+        cmbRoomStatus.DrawMode = DrawMode.OwnerDrawFixed
+        cmbRoomStatus.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbRoomStatus.FocusedColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbRoomStatus.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbRoomStatus.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        cmbRoomStatus.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        cmbRoomStatus.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        cmbRoomStatus.ItemHeight = 30
+        cmbRoomStatus.Items.AddRange(New Object() {"Vacant", "Full/Occupied"})
+        cmbRoomStatus.Location = New Point(29, 313)
+        cmbRoomStatus.Name = "cmbRoomStatus"
+        cmbRoomStatus.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        cmbRoomStatus.Size = New Size(330, 36)
+        cmbRoomStatus.TabIndex = 49
+        ' 
+        ' txtRoomName
+        ' 
+        txtRoomName.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtRoomName.BorderRadius = 10
+        txtRoomName.CustomizableEdges = CustomizableEdges25
+        txtRoomName.DefaultText = ""
+        txtRoomName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtRoomName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtRoomName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtRoomName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtRoomName.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtRoomName.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtRoomName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtRoomName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtRoomName.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtRoomName.Location = New Point(29, 47)
+        txtRoomName.Margin = New Padding(4, 4, 4, 4)
+        txtRoomName.Name = "txtRoomName"
+        txtRoomName.PasswordChar = ChrW(0)
+        txtRoomName.PlaceholderText = ""
+        txtRoomName.SelectedText = ""
+        txtRoomName.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        txtRoomName.Size = New Size(330, 34)
+        txtRoomName.TabIndex = 48
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.BackColor = Color.Transparent
+        Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label17.Location = New Point(29, 281)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(72, 23)
+        Label17.TabIndex = 47
+        Label17.Text = "Status"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.BackColor = Color.Transparent
+        Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label18.Location = New Point(29, 20)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(128, 23)
+        Label18.TabIndex = 46
+        Label18.Text = "Room Name"
+        ' 
+        ' roomAddForm
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(388, 450)
+        Controls.Add(Guna2Panel1)
+        FormBorderStyle = FormBorderStyle.None
+        Name = "roomAddForm"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "roomAdd"
+        Guna2Panel1.ResumeLayout(False)
+        Guna2Panel1.PerformLayout()
+        ResumeLayout(False)
+    End Sub
+
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents txtNumPerson As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtMonthlyRent As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cmbRoomStatus As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents txtRoomName As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnAddRoom As Guna.UI2.WinForms.Guna2Button
+End Class
