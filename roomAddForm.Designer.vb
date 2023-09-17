@@ -22,20 +22,20 @@ Partial Class roomAddForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnAddRoom = New Guna.UI2.WinForms.Guna2Button()
@@ -65,11 +65,11 @@ Partial Class roomAddForm
         Guna2Panel1.Controls.Add(txtRoomName)
         Guna2Panel1.Controls.Add(Label17)
         Guna2Panel1.Controls.Add(Label18)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges27
+        Guna2Panel1.CustomizableEdges = CustomizableEdges13
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         Guna2Panel1.Size = New Size(388, 450)
         Guna2Panel1.TabIndex = 0
         ' 
@@ -79,7 +79,7 @@ Partial Class roomAddForm
         btnCancel.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.BorderRadius = 10
         btnCancel.BorderThickness = 2
-        btnCancel.CustomizableEdges = CustomizableEdges15
+        btnCancel.CustomizableEdges = CustomizableEdges1
         btnCancel.DisabledState.BorderColor = Color.DarkGray
         btnCancel.DisabledState.CustomBorderColor = Color.DarkGray
         btnCancel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -89,7 +89,7 @@ Partial Class roomAddForm
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.Location = New Point(29, 386)
         btnCancel.Name = "btnCancel"
-        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         btnCancel.Size = New Size(152, 36)
         btnCancel.TabIndex = 55
         btnCancel.Text = "Cancel"
@@ -100,7 +100,7 @@ Partial Class roomAddForm
         btnAddRoom.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnAddRoom.BorderRadius = 10
         btnAddRoom.BorderThickness = 2
-        btnAddRoom.CustomizableEdges = CustomizableEdges17
+        btnAddRoom.CustomizableEdges = CustomizableEdges3
         btnAddRoom.DisabledState.BorderColor = Color.DarkGray
         btnAddRoom.DisabledState.CustomBorderColor = Color.DarkGray
         btnAddRoom.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -110,7 +110,7 @@ Partial Class roomAddForm
         btnAddRoom.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnAddRoom.Location = New Point(207, 386)
         btnAddRoom.Name = "btnAddRoom"
-        btnAddRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        btnAddRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnAddRoom.Size = New Size(152, 36)
         btnAddRoom.TabIndex = 54
         btnAddRoom.Text = "Add"
@@ -119,7 +119,7 @@ Partial Class roomAddForm
         ' 
         txtNumPerson.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtNumPerson.BorderRadius = 10
-        txtNumPerson.CustomizableEdges = CustomizableEdges19
+        txtNumPerson.CustomizableEdges = CustomizableEdges5
         txtNumPerson.DefaultText = ""
         txtNumPerson.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtNumPerson.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -136,7 +136,7 @@ Partial Class roomAddForm
         txtNumPerson.PasswordChar = ChrW(0)
         txtNumPerson.PlaceholderText = ""
         txtNumPerson.SelectedText = ""
-        txtNumPerson.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        txtNumPerson.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         txtNumPerson.Size = New Size(330, 34)
         txtNumPerson.TabIndex = 53
         ' 
@@ -156,7 +156,7 @@ Partial Class roomAddForm
         ' 
         txtMonthlyRent.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtMonthlyRent.BorderRadius = 10
-        txtMonthlyRent.CustomizableEdges = CustomizableEdges21
+        txtMonthlyRent.CustomizableEdges = CustomizableEdges7
         txtMonthlyRent.DefaultText = ""
         txtMonthlyRent.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtMonthlyRent.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -173,7 +173,7 @@ Partial Class roomAddForm
         txtMonthlyRent.PasswordChar = ChrW(0)
         txtMonthlyRent.PlaceholderText = ""
         txtMonthlyRent.SelectedText = ""
-        txtMonthlyRent.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        txtMonthlyRent.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         txtMonthlyRent.Size = New Size(330, 34)
         txtMonthlyRent.TabIndex = 51
         ' 
@@ -194,7 +194,7 @@ Partial Class roomAddForm
         cmbRoomStatus.BackColor = Color.Transparent
         cmbRoomStatus.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         cmbRoomStatus.BorderRadius = 10
-        cmbRoomStatus.CustomizableEdges = CustomizableEdges23
+        cmbRoomStatus.CustomizableEdges = CustomizableEdges9
         cmbRoomStatus.DrawMode = DrawMode.OwnerDrawFixed
         cmbRoomStatus.DropDownStyle = ComboBoxStyle.DropDownList
         cmbRoomStatus.FocusedColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
@@ -206,7 +206,7 @@ Partial Class roomAddForm
         cmbRoomStatus.Items.AddRange(New Object() {"Vacant", "Full/Occupied"})
         cmbRoomStatus.Location = New Point(29, 313)
         cmbRoomStatus.Name = "cmbRoomStatus"
-        cmbRoomStatus.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        cmbRoomStatus.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         cmbRoomStatus.Size = New Size(330, 36)
         cmbRoomStatus.TabIndex = 49
         ' 
@@ -214,7 +214,7 @@ Partial Class roomAddForm
         ' 
         txtRoomName.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtRoomName.BorderRadius = 10
-        txtRoomName.CustomizableEdges = CustomizableEdges25
+        txtRoomName.CustomizableEdges = CustomizableEdges11
         txtRoomName.DefaultText = ""
         txtRoomName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtRoomName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -231,7 +231,7 @@ Partial Class roomAddForm
         txtRoomName.PasswordChar = ChrW(0)
         txtRoomName.PlaceholderText = ""
         txtRoomName.SelectedText = ""
-        txtRoomName.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        txtRoomName.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         txtRoomName.Size = New Size(330, 34)
         txtRoomName.TabIndex = 48
         ' 

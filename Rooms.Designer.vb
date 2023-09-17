@@ -60,8 +60,8 @@ Partial Class Rooms
         Label16 = New Label()
         Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel15 = New Guna.UI2.WinForms.Guna2Panel()
-        Label8 = New Label()
-        Label7 = New Label()
+        lblMonthlyRent = New Label()
+        lblTenantName = New Label()
         lblRoomNumber = New Label()
         lblStatus = New Label()
         Label30 = New Label()
@@ -337,8 +337,8 @@ Partial Class Rooms
         Guna2Panel15.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel15.BorderRadius = 10
         Guna2Panel15.BorderThickness = 20
-        Guna2Panel15.Controls.Add(Label8)
-        Guna2Panel15.Controls.Add(Label7)
+        Guna2Panel15.Controls.Add(lblMonthlyRent)
+        Guna2Panel15.Controls.Add(lblTenantName)
         Guna2Panel15.Controls.Add(lblRoomNumber)
         Guna2Panel15.Controls.Add(lblStatus)
         Guna2Panel15.Controls.Add(Label30)
@@ -354,29 +354,29 @@ Partial Class Rooms
         Guna2Panel15.Size = New Size(370, 322)
         Guna2Panel15.TabIndex = 20
         ' 
-        ' Label8
+        ' lblMonthlyRent
         ' 
-        Label8.AutoSize = True
-        Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label8.Location = New Point(189, 133)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(26, 26)
-        Label8.TabIndex = 34
-        Label8.Text = "--"
+        lblMonthlyRent.AutoSize = True
+        lblMonthlyRent.BackColor = Color.Transparent
+        lblMonthlyRent.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblMonthlyRent.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblMonthlyRent.Location = New Point(189, 133)
+        lblMonthlyRent.Name = "lblMonthlyRent"
+        lblMonthlyRent.Size = New Size(26, 26)
+        lblMonthlyRent.TabIndex = 34
+        lblMonthlyRent.Text = "--"
         ' 
-        ' Label7
+        ' lblTenantName
         ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label7.Location = New Point(189, 94)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(26, 26)
-        Label7.TabIndex = 33
-        Label7.Text = "--"
+        lblTenantName.AutoSize = True
+        lblTenantName.BackColor = Color.Transparent
+        lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTenantName.Location = New Point(189, 94)
+        lblTenantName.Name = "lblTenantName"
+        lblTenantName.Size = New Size(26, 26)
+        lblTenantName.TabIndex = 33
+        lblTenantName.Text = "--"
         ' 
         ' lblRoomNumber
         ' 
@@ -520,6 +520,6 @@ Partial Class Rooms
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lblMonthlyRent As Label
+    Friend WithEvents lblTenantName As Label
 End Class
