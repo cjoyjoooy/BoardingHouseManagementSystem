@@ -35,6 +35,8 @@ Partial Class Tenant
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
@@ -71,6 +73,7 @@ Partial Class Tenant
         txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
         btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
+        btnPay = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel2.SuspendLayout()
         Guna2Panel4.SuspendLayout()
         CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
@@ -531,7 +534,7 @@ Partial Class Tenant
         btnShowAddForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
-        btnShowAddForm.Location = New Point(691, 6)
+        btnShowAddForm.Location = New Point(549, 6)
         btnShowAddForm.Name = "btnShowAddForm"
         btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         btnShowAddForm.Size = New Size(130, 35)
@@ -542,20 +545,40 @@ Partial Class Tenant
         ' 
         panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
         panelTenant.BorderRadius = 20
+        panelTenant.Controls.Add(btnPay)
         panelTenant.Controls.Add(btnShowAddForm)
         panelTenant.Controls.Add(txtTenantSearch)
         panelTenant.Controls.Add(dgvTenant)
         panelTenant.Controls.Add(Guna2Panel4)
         panelTenant.Controls.Add(Guna2Panel2)
-        panelTenant.CustomizableEdges = CustomizableEdges9
+        panelTenant.CustomizableEdges = CustomizableEdges11
         panelTenant.Dock = DockStyle.Fill
         panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelTenant.Location = New Point(0, 0)
         panelTenant.Margin = New Padding(0)
         panelTenant.Name = "panelTenant"
-        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         panelTenant.Size = New Size(833, 685)
         panelTenant.TabIndex = 0
+        ' 
+        ' btnPay
+        ' 
+        btnPay.BorderRadius = 10
+        btnPay.CustomizableEdges = CustomizableEdges9
+        btnPay.DisabledState.BorderColor = Color.DarkGray
+        btnPay.DisabledState.CustomBorderColor = Color.DarkGray
+        btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnPay.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnPay.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnPay.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnPay.Image = CType(resources.GetObject("btnPay.Image"), Image)
+        btnPay.Location = New Point(691, 6)
+        btnPay.Name = "btnPay"
+        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        btnPay.Size = New Size(130, 35)
+        btnPay.TabIndex = 16
+        btnPay.Text = "Pay"
         ' 
         ' Tenant
         ' 
@@ -610,4 +633,5 @@ Partial Class Tenant
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents editColumn As DataGridViewImageColumn
     Friend WithEvents deleteColumn As DataGridViewImageColumn
+    Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
 End Class

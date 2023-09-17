@@ -1,5 +1,6 @@
 ﻿Imports Guna.UI2.WinForms
 Imports System.Data.SQLite
+Imports System.Security.Cryptography.X509Certificates
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 Module Project_Module
@@ -66,6 +67,19 @@ Module Project_Module
             SQLite_Close_Connection()
 
         End Try
+
+    End Sub
+
+    Public Sub edit_Rooms()
+
+    End Sub
+
+    Public Sub add_Bill()
+
+    End Sub
+
+    Public Sub edit_Bill()
+
     End Sub
 
     Private SelectedPanel As Guna2Panel = Nothing
