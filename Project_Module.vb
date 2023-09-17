@@ -1,5 +1,72 @@
 ﻿Imports Guna.UI2.WinForms
+Imports System.Data.SQLite
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+
 Module Project_Module
+
+    Public sqliteConnection As New SQLiteConnection("Data Source = " & Application.StartupPath & "\LourdesBhausDatabase.db")
+
+    Dim sqliteDataAdapter As SQLiteDataAdapter
+
+    Dim dataSet As DataSet
+
+    Public Sub SQLite_Open_Connection()
+
+        Try
+
+            If sqliteConnection.State = ConnectionState.Closed Then
+
+                sqliteConnection.Open()
+
+
+            End If
+
+        Catch ex As SQLiteException
+
+            MessageBox.Show("Error: " & ex.Message)
+
+        End Try
+
+    End Sub
+
+    Public Sub SQLite_Close_Connection()
+
+        Try
+
+            If sqliteConnection.State = ConnectionState.Open Then
+
+                sqliteConnection.Close()
+
+            End If
+
+        Catch ex As SQLiteException
+
+            MessageBox.Show("Error: " & ex.Message)
+
+        End Try
+
+    End Sub
+    Public Sub add_Rooms(ByVal RoomName As String, ByVal MonthlyRent As String, ByVal NumberOfPerson As String, ByVal Status As String)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+
+            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Room VALUES(null,'" & RoomName & "','" & MonthlyRent & "', '" & NumberOfPerson & "', '" & Status & "')", sqliteConnection)
+
+            sqliteDataAdapter.Fill(dataSet, "Room")
+
+            MessageBox.Show("Added.")
+
+        Catch ex As SQLiteException
+
+            MessageBox.Show("Error: " & ex.Message)
+
+        Finally
+
+            SQLite_Close_Connection()
+
+        End Try
+    End Sub
 
     Private SelectedPanel As Guna2Panel = Nothing
 
@@ -130,7 +197,6 @@ Module Project_Module
         rowIndex = Tenant.dgvTenant.CurrentRow.Index
         Tenant.dgvTenant.Rows.RemoveAt(rowIndex)
     End Sub
-
 
     'NOTE: Do not erase --------------------------------
 
