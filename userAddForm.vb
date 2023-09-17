@@ -5,4 +5,5 @@
     Private Sub btnAddUser_Click(sender As Object, e As EventArgs) Handles btnAddUser.Click
         Me.Close()
     End Sub
+
 End Class
