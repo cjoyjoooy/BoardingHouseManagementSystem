@@ -35,10 +35,12 @@ Partial Class Tenant
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label15 = New Label()
         Label8 = New Label()
@@ -73,6 +75,7 @@ Partial Class Tenant
         txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
         btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
+        btnArchive = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel2.SuspendLayout()
         Guna2Panel4.SuspendLayout()
@@ -82,7 +85,7 @@ Partial Class Tenant
         ' 
         ' Guna2Panel2
         ' 
-        Guna2Panel2.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
+        Guna2Panel2.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel2.BorderRadius = 20
         Guna2Panel2.BorderThickness = 20
         Guna2Panel2.Controls.Add(Label15)
@@ -199,7 +202,7 @@ Partial Class Tenant
         ' 
         ' Guna2Panel4
         ' 
-        Guna2Panel4.BackColor = Color.FromArgb(CByte(248), CByte(249), CByte(248))
+        Guna2Panel4.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel4.BorderRadius = 20
         Guna2Panel4.BorderThickness = 20
         Guna2Panel4.Controls.Add(Label12)
@@ -519,7 +522,7 @@ Partial Class Tenant
         txtTenantSearch.PlaceholderText = ""
         txtTenantSearch.SelectedText = ""
         txtTenantSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtTenantSearch.Size = New Size(404, 35)
+        txtTenantSearch.Size = New Size(314, 35)
         txtTenantSearch.TabIndex = 13
         ' 
         ' btnShowAddForm
@@ -534,7 +537,7 @@ Partial Class Tenant
         btnShowAddForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
-        btnShowAddForm.Location = New Point(549, 6)
+        btnShowAddForm.Location = New Point(413, 6)
         btnShowAddForm.Name = "btnShowAddForm"
         btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         btnShowAddForm.Size = New Size(130, 35)
@@ -545,26 +548,46 @@ Partial Class Tenant
         ' 
         panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
         panelTenant.BorderRadius = 20
+        panelTenant.Controls.Add(btnArchive)
         panelTenant.Controls.Add(btnPay)
         panelTenant.Controls.Add(btnShowAddForm)
         panelTenant.Controls.Add(txtTenantSearch)
         panelTenant.Controls.Add(dgvTenant)
         panelTenant.Controls.Add(Guna2Panel4)
         panelTenant.Controls.Add(Guna2Panel2)
-        panelTenant.CustomizableEdges = CustomizableEdges11
+        panelTenant.CustomizableEdges = CustomizableEdges13
         panelTenant.Dock = DockStyle.Fill
         panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelTenant.Location = New Point(0, 0)
         panelTenant.Margin = New Padding(0)
         panelTenant.Name = "panelTenant"
-        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         panelTenant.Size = New Size(833, 685)
         panelTenant.TabIndex = 0
+        ' 
+        ' btnArchive
+        ' 
+        btnArchive.BorderRadius = 10
+        btnArchive.CustomizableEdges = CustomizableEdges9
+        btnArchive.DisabledState.BorderColor = Color.DarkGray
+        btnArchive.DisabledState.CustomBorderColor = Color.DarkGray
+        btnArchive.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnArchive.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnArchive.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnArchive.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnArchive.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnArchive.Image = CType(resources.GetObject("btnArchive.Image"), Image)
+        btnArchive.Location = New Point(552, 6)
+        btnArchive.Name = "btnArchive"
+        btnArchive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        btnArchive.Size = New Size(130, 35)
+        btnArchive.TabIndex = 17
+        btnArchive.Text = "Archives"
         ' 
         ' btnPay
         ' 
         btnPay.BorderRadius = 10
-        btnPay.CustomizableEdges = CustomizableEdges9
+        btnPay.CustomizableEdges = CustomizableEdges11
         btnPay.DisabledState.BorderColor = Color.DarkGray
         btnPay.DisabledState.CustomBorderColor = Color.DarkGray
         btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -575,7 +598,7 @@ Partial Class Tenant
         btnPay.Image = CType(resources.GetObject("btnPay.Image"), Image)
         btnPay.Location = New Point(691, 6)
         btnPay.Name = "btnPay"
-        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         btnPay.Size = New Size(130, 35)
         btnPay.TabIndex = 16
         btnPay.Text = "Pay"
@@ -634,4 +657,5 @@ Partial Class Tenant
     Friend WithEvents editColumn As DataGridViewImageColumn
     Friend WithEvents deleteColumn As DataGridViewImageColumn
     Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnArchive As Guna.UI2.WinForms.Guna2Button
 End Class
