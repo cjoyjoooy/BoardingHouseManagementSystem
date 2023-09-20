@@ -193,7 +193,7 @@ Partial Class Bills
         ' 
         ' Column1
         ' 
-        Column1.HeaderText = "Maintainance"
+        Column1.HeaderText = "Maintenance"
         Column1.MinimumWidth = 6
         Column1.Name = "Column1"
         Column1.ReadOnly = True
@@ -250,11 +250,11 @@ Partial Class Bills
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents dgvBill As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents btnAddBillForm As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents editColumn As DataGridViewImageColumn
     Friend WithEvents deleteColumn As DataGridViewImageColumn
-    Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
 End Class

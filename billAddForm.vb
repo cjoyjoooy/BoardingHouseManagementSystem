@@ -7,6 +7,8 @@
         MaintenanceBill = txtMaintainance.Text
         MiscBill = txtMiscellaneous.Text
 
+        add_Bill(ElectricityBill, WaterBill, MaintenanceBill, MiscBill)
+        display_Bill()
         Me.Close()
     End Sub
 

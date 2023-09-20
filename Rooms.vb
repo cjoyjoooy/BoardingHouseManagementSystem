@@ -22,4 +22,8 @@ Public Class Rooms
         roomEditForm.Show()
     End Sub
 
+    Private Sub btnDeleteRoom_Click(sender As Object, e As EventArgs) Handles btnDeleteRoom.Click
+
+    End Sub
+
 End Class

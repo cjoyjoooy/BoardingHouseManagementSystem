@@ -1,4 +1,5 @@
 ﻿Imports Guna.UI2.WinForms
+Imports System.Data.SqlClient
 Imports System.Data.SQLite
 Imports System.Security.Cryptography.X509Certificates
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
@@ -47,7 +48,7 @@ Module Project_Module
         End Try
 
     End Sub
-    Public Sub add_Rooms(ByVal RoomName As String, ByVal MonthlyRent As String, ByVal NumberOfPerson As String, ByVal Status As String)
+    Public Sub add_Rooms(ByVal RoomName As String, ByVal MonthlyRent As Double, ByVal NumberOfPerson As Integer, ByVal Status As String)
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
@@ -70,16 +71,61 @@ Module Project_Module
 
     End Sub
 
-    Public Sub edit_Rooms()
+    Public Sub edit_Rooms(ByVal RoomName As String, ByVal MonthlyRent As Double, ByVal NumberOfPerson As Integer, ByVal Status As String)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Room SET MonthlyRent = '" & MonthlyRent & "', '" & NumberOfPerson & "', '" & Status & "' WHERE RoomName = '" & RoomName & "'", sqliteConnection)
+
+            sqliteDataAdapter.Fill(dataSet, "Room")
+
+            MessageBox.Show("Edited.")
+
+        Catch ex As SQLiteException
+
+            MessageBox.Show("Error: " & ex.Message)
+
+        Finally
+
+            SQLite_Close_Connection()
+
+        End Try
+    End Sub
+
+    Public Sub add_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+
+            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Bill VALUES(null,'" & ElectricityBill & "','" & WaterBill & "', '" & MaintenanceBill & "', '" & MiscBill & "')", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Bill")
+            MessageBox.Show("Added")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+
+        End Try
 
     End Sub
 
-    Public Sub add_Bill()
+    Public Sub edit_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
+        Dim rowIndex As Integer
+        rowIndex = Bills.dgvBill.CurrentRow.Index
 
     End Sub
 
-    Public Sub edit_Bill()
-
+    Public Sub display_Bill()
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill,WaterBill,MaintenanceBill,MiscBill", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Bill")
+            Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 
     Private SelectedPanel As Guna2Panel = Nothing
