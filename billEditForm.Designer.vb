@@ -37,16 +37,17 @@ Partial Class billEditForm
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        txtBillID = New Label()
         Label18 = New Label()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnEditBill = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        txtRoomName = New Guna.UI2.WinForms.Guna2TextBox()
+        txtMisc = New Guna.UI2.WinForms.Guna2TextBox()
+        txtMaintenance = New Guna.UI2.WinForms.Guna2TextBox()
+        txtWater = New Guna.UI2.WinForms.Guna2TextBox()
+        txtElectricity = New Guna.UI2.WinForms.Guna2TextBox()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -55,6 +56,7 @@ Partial Class billEditForm
         Guna2Panel1.BackColor = Color.White
         Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.BorderThickness = 2
+        Guna2Panel1.Controls.Add(txtBillID)
         Guna2Panel1.Controls.Add(Label18)
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(Label2)
@@ -66,6 +68,15 @@ Partial Class billEditForm
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Guna2Panel1.Size = New Size(377, 414)
         Guna2Panel1.TabIndex = 0
+        ' 
+        ' txtBillID
+        ' 
+        txtBillID.AutoSize = True
+        txtBillID.Location = New Point(201, 21)
+        txtBillID.Name = "txtBillID"
+        txtBillID.Size = New Size(53, 20)
+        txtBillID.TabIndex = 66
+        txtBillID.Text = "Label4"
         ' 
         ' Label18
         ' 
@@ -157,105 +168,105 @@ Partial Class billEditForm
         btnEditBill.TabIndex = 67
         btnEditBill.Text = "Save"
         ' 
-        ' Guna2TextBox3
+        ' txtMisc
         ' 
-        Guna2TextBox3.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.BorderRadius = 10
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges7
-        Guna2TextBox3.DefaultText = ""
-        Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox3.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox3.Location = New Point(23, 293)
-        Guna2TextBox3.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox3.Name = "Guna2TextBox3"
-        Guna2TextBox3.PasswordChar = ChrW(0)
-        Guna2TextBox3.PlaceholderText = ""
-        Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2TextBox3.Size = New Size(330, 34)
-        Guna2TextBox3.TabIndex = 66
+        txtMisc.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMisc.BorderRadius = 10
+        txtMisc.CustomizableEdges = CustomizableEdges7
+        txtMisc.DefaultText = ""
+        txtMisc.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtMisc.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtMisc.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMisc.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMisc.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMisc.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMisc.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtMisc.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMisc.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMisc.Location = New Point(23, 293)
+        txtMisc.Margin = New Padding(4, 4, 4, 4)
+        txtMisc.Name = "txtMisc"
+        txtMisc.PasswordChar = ChrW(0)
+        txtMisc.PlaceholderText = ""
+        txtMisc.SelectedText = ""
+        txtMisc.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        txtMisc.Size = New Size(330, 34)
+        txtMisc.TabIndex = 66
         ' 
-        ' Guna2TextBox2
+        ' txtMaintenance
         ' 
-        Guna2TextBox2.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.BorderRadius = 10
-        Guna2TextBox2.CustomizableEdges = CustomizableEdges9
-        Guna2TextBox2.DefaultText = ""
-        Guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox2.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox2.Location = New Point(23, 210)
-        Guna2TextBox2.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox2.Name = "Guna2TextBox2"
-        Guna2TextBox2.PasswordChar = ChrW(0)
-        Guna2TextBox2.PlaceholderText = ""
-        Guna2TextBox2.SelectedText = ""
-        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2TextBox2.Size = New Size(330, 34)
-        Guna2TextBox2.TabIndex = 64
+        txtMaintenance.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMaintenance.BorderRadius = 10
+        txtMaintenance.CustomizableEdges = CustomizableEdges9
+        txtMaintenance.DefaultText = ""
+        txtMaintenance.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtMaintenance.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtMaintenance.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMaintenance.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtMaintenance.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMaintenance.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMaintenance.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtMaintenance.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtMaintenance.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtMaintenance.Location = New Point(23, 210)
+        txtMaintenance.Margin = New Padding(4, 4, 4, 4)
+        txtMaintenance.Name = "txtMaintenance"
+        txtMaintenance.PasswordChar = ChrW(0)
+        txtMaintenance.PlaceholderText = ""
+        txtMaintenance.SelectedText = ""
+        txtMaintenance.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        txtMaintenance.Size = New Size(330, 34)
+        txtMaintenance.TabIndex = 64
         ' 
-        ' Guna2TextBox1
+        ' txtWater
         ' 
-        Guna2TextBox1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.BorderRadius = 10
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges11
-        Guna2TextBox1.DefaultText = ""
-        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox1.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox1.Location = New Point(23, 127)
-        Guna2TextBox1.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox1.Name = "Guna2TextBox1"
-        Guna2TextBox1.PasswordChar = ChrW(0)
-        Guna2TextBox1.PlaceholderText = ""
-        Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2TextBox1.Size = New Size(330, 34)
-        Guna2TextBox1.TabIndex = 62
+        txtWater.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtWater.BorderRadius = 10
+        txtWater.CustomizableEdges = CustomizableEdges11
+        txtWater.DefaultText = ""
+        txtWater.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtWater.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtWater.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtWater.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtWater.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtWater.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtWater.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtWater.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtWater.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtWater.Location = New Point(23, 127)
+        txtWater.Margin = New Padding(4, 4, 4, 4)
+        txtWater.Name = "txtWater"
+        txtWater.PasswordChar = ChrW(0)
+        txtWater.PlaceholderText = ""
+        txtWater.SelectedText = ""
+        txtWater.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        txtWater.Size = New Size(330, 34)
+        txtWater.TabIndex = 62
         ' 
-        ' txtRoomName
+        ' txtElectricity
         ' 
-        txtRoomName.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtRoomName.BorderRadius = 10
-        txtRoomName.CustomizableEdges = CustomizableEdges13
-        txtRoomName.DefaultText = ""
-        txtRoomName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtRoomName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtRoomName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtRoomName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtRoomName.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtRoomName.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtRoomName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        txtRoomName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtRoomName.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtRoomName.Location = New Point(23, 48)
-        txtRoomName.Margin = New Padding(4, 4, 4, 4)
-        txtRoomName.Name = "txtRoomName"
-        txtRoomName.PasswordChar = ChrW(0)
-        txtRoomName.PlaceholderText = ""
-        txtRoomName.SelectedText = ""
-        txtRoomName.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        txtRoomName.Size = New Size(330, 34)
-        txtRoomName.TabIndex = 60
+        txtElectricity.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtElectricity.BorderRadius = 10
+        txtElectricity.CustomizableEdges = CustomizableEdges13
+        txtElectricity.DefaultText = ""
+        txtElectricity.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtElectricity.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtElectricity.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtElectricity.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtElectricity.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtElectricity.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtElectricity.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtElectricity.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtElectricity.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtElectricity.Location = New Point(23, 48)
+        txtElectricity.Margin = New Padding(4, 4, 4, 4)
+        txtElectricity.Name = "txtElectricity"
+        txtElectricity.PasswordChar = ChrW(0)
+        txtElectricity.PlaceholderText = ""
+        txtElectricity.SelectedText = ""
+        txtElectricity.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        txtElectricity.Size = New Size(330, 34)
+        txtElectricity.TabIndex = 60
         ' 
         ' billEditForm
         ' 
@@ -264,10 +275,10 @@ Partial Class billEditForm
         ClientSize = New Size(377, 414)
         Controls.Add(btnCancel)
         Controls.Add(btnEditBill)
-        Controls.Add(Guna2TextBox3)
-        Controls.Add(Guna2TextBox2)
-        Controls.Add(Guna2TextBox1)
-        Controls.Add(txtRoomName)
+        Controls.Add(txtMisc)
+        Controls.Add(txtMaintenance)
+        Controls.Add(txtWater)
+        Controls.Add(txtElectricity)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "billEditForm"
@@ -282,11 +293,12 @@ Partial Class billEditForm
     Friend WithEvents Label18 As Label
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnEditBill As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtMisc As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtMaintenance As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtWater As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtRoomName As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtElectricity As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtBillID As Label
 End Class

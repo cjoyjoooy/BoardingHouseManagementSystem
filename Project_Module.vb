@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.Data.SQLite
 Imports System.Security.Cryptography.X509Certificates
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 Module Project_Module
@@ -110,10 +111,27 @@ Module Project_Module
 
     End Sub
 
-    Public Sub edit_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
-        Dim rowIndex As Integer
-        rowIndex = Bills.dgvBill.CurrentRow.Index
+    Public Sub edit_Bill(ByVal BillID As Integer, ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
 
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Bill SET ElectricityBill = '" & ElectricityBill & "', WaterBill = '" & WaterBill & "', MaintenanceBill = '" & MaintenanceBill & "', MiscBill = '" & MiscBill & "' WHERE BillID = " & BillID & " ", sqliteConnection)
+
+            sqliteDataAdapter.Fill(dataSet, "Bill")
+
+            MessageBox.Show("Edited.")
+
+        Catch ex As SQLiteException
+
+            MessageBox.Show("Error: " & ex.Message)
+
+        Finally
+
+            SQLite_Close_Connection()
+
+        End Try
     End Sub
 
 
@@ -121,7 +139,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT BillID, ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
             Bills.dgvBill.Columns.Clear()
             Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
