@@ -1,4 +1,8 @@
 ﻿Public Class Bills
+
+    Private Sub Bills_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        display_Bill()
+    End Sub
     Private Sub dgvBill_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvBill.CellContentClick
         Dim colName As String = dgvBill.Columns(e.ColumnIndex).Name
         'show edit form

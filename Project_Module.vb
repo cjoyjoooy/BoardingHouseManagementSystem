@@ -114,13 +114,18 @@ Module Project_Module
         Dim rowIndex As Integer
         rowIndex = Bills.dgvBill.CurrentRow.Index
 
+        Bills.dgvBill.Rows(rowIndex).Cells(0).Value = billEditForm.txtElectricityBill.Text
+        Bills.dgvBill.Rows(rowIndex).Cells(1).Value = billEditForm.txtWaterBill.Text
+        Bills.dgvBill.Rows(rowIndex).Cells(2).Value = billEditForm.txtMaintenanceBill.Text
+        Bills.dgvBill.Rows(rowIndex).Cells(3).Value = billEditForm.txtMiscBill.Text
+
     End Sub
 
     Public Sub display_Bill()
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill,WaterBill,MaintenanceBill,MiscBill", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill,WaterBill,MaintenanceBill,MiscBill FROM Bill", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
             Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
         Catch ex As Exception

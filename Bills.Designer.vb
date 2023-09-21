@@ -37,10 +37,10 @@ Partial Class Bills
         txtSearchTransaction = New Guna.UI2.WinForms.Guna2TextBox()
         btnAddBillForm = New Guna.UI2.WinForms.Guna2Button()
         dgvBill = New Guna.UI2.WinForms.Guna2DataGridView()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
+        Column4 = New DataGridViewTextBoxColumn()
         editColumn = New DataGridViewImageColumn()
         deleteColumn = New DataGridViewImageColumn()
         Guna2Panel1.SuspendLayout()
@@ -126,7 +126,7 @@ Partial Class Bills
         dgvBill.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvBill.ColumnHeadersHeight = 50
         dgvBill.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvBill.Columns.AddRange(New DataGridViewColumn() {Column6, Column7, Column1, Column2, editColumn, deleteColumn})
+        dgvBill.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, editColumn, deleteColumn})
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
@@ -175,35 +175,35 @@ Partial Class Bills
         dgvBill.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvBill.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' Column6
-        ' 
-        Column6.FillWeight = 39.649662F
-        Column6.HeaderText = "Electricity"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        ' 
-        ' Column7
-        ' 
-        Column7.FillWeight = 39.649662F
-        Column7.HeaderText = "Water"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        ' 
         ' Column1
         ' 
-        Column1.HeaderText = "Maintenance"
+        Column1.FillWeight = 39.649662F
+        Column1.HeaderText = "Electricity"
         Column1.MinimumWidth = 6
         Column1.Name = "Column1"
         Column1.ReadOnly = True
         ' 
         ' Column2
         ' 
-        Column2.HeaderText = "Miscellaneous"
+        Column2.FillWeight = 39.649662F
+        Column2.HeaderText = "Water"
         Column2.MinimumWidth = 6
         Column2.Name = "Column2"
         Column2.ReadOnly = True
+        ' 
+        ' Column3
+        ' 
+        Column3.HeaderText = "Maintenance"
+        Column3.MinimumWidth = 6
+        Column3.Name = "Column3"
+        Column3.ReadOnly = True
+        ' 
+        ' Column4
+        ' 
+        Column4.HeaderText = "Miscellaneous"
+        Column4.MinimumWidth = 6
+        Column4.Name = "Column4"
+        Column4.ReadOnly = True
         ' 
         ' editColumn
         ' 
@@ -251,10 +251,10 @@ Partial Class Bills
     Friend WithEvents dgvBill As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents btnAddBillForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents editColumn As DataGridViewImageColumn
     Friend WithEvents deleteColumn As DataGridViewImageColumn
 End Class
