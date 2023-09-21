@@ -53,6 +53,8 @@ Partial Class billEditForm
         ' Guna2Panel1
         ' 
         Guna2Panel1.BackColor = Color.White
+        Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Panel1.BorderThickness = 2
         Guna2Panel1.Controls.Add(Label18)
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(Label2)

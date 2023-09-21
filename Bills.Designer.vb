@@ -37,12 +37,6 @@ Partial Class Bills
         txtSearchTransaction = New Guna.UI2.WinForms.Guna2TextBox()
         btnAddBillForm = New Guna.UI2.WinForms.Guna2Button()
         dgvBill = New Guna.UI2.WinForms.Guna2DataGridView()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        editColumn = New DataGridViewImageColumn()
-        deleteColumn = New DataGridViewImageColumn()
         Guna2Panel1.SuspendLayout()
         CType(dgvBill, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -126,7 +120,6 @@ Partial Class Bills
         dgvBill.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvBill.ColumnHeadersHeight = 50
         dgvBill.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvBill.Columns.AddRange(New DataGridViewColumn() {Column6, Column7, Column1, Column2, editColumn, deleteColumn})
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
@@ -175,62 +168,6 @@ Partial Class Bills
         dgvBill.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvBill.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' Column6
-        ' 
-        Column6.FillWeight = 39.649662F
-        Column6.HeaderText = "Electricity"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        ' 
-        ' Column7
-        ' 
-        Column7.FillWeight = 39.649662F
-        Column7.HeaderText = "Water"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "Maintenance"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "Miscellaneous"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        ' 
-        ' editColumn
-        ' 
-        editColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        editColumn.FillWeight = 80.26524F
-        editColumn.HeaderText = ""
-        editColumn.Image = CType(resources.GetObject("editColumn.Image"), Image)
-        editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        editColumn.MinimumWidth = 40
-        editColumn.Name = "editColumn"
-        editColumn.ReadOnly = True
-        editColumn.Resizable = DataGridViewTriState.True
-        editColumn.SortMode = DataGridViewColumnSortMode.Automatic
-        editColumn.Width = 40
-        ' 
-        ' deleteColumn
-        ' 
-        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        deleteColumn.FillWeight = 613.5739F
-        deleteColumn.HeaderText = ""
-        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
-        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        deleteColumn.MinimumWidth = 40
-        deleteColumn.Name = "deleteColumn"
-        deleteColumn.ReadOnly = True
-        deleteColumn.Width = 40
-        ' 
         ' Bills
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -251,10 +188,4 @@ Partial Class Bills
     Friend WithEvents dgvBill As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents btnAddBillForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents editColumn As DataGridViewImageColumn
-    Friend WithEvents deleteColumn As DataGridViewImageColumn
 End Class

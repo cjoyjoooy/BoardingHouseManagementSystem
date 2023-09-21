@@ -30,7 +30,6 @@ Partial Class Tenant
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -41,6 +40,7 @@ Partial Class Tenant
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label15 = New Label()
         Label8 = New Label()
@@ -62,6 +62,11 @@ Partial Class Tenant
         Label10 = New Label()
         Label9 = New Label()
         dgvTenant = New Guna.UI2.WinForms.Guna2DataGridView()
+        txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
+        btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
+        panelTenant = New Guna.UI2.WinForms.Guna2Panel()
+        btnArchive = New Guna.UI2.WinForms.Guna2Button()
+        btnPay = New Guna.UI2.WinForms.Guna2Button()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
@@ -72,11 +77,6 @@ Partial Class Tenant
         Column7 = New DataGridViewTextBoxColumn()
         editColumn = New DataGridViewImageColumn()
         deleteColumn = New DataGridViewImageColumn()
-        txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
-        btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
-        panelTenant = New Guna.UI2.WinForms.Guna2Panel()
-        btnArchive = New Guna.UI2.WinForms.Guna2Button()
-        btnPay = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel2.SuspendLayout()
         Guna2Panel4.SuspendLayout()
         CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
@@ -410,97 +410,6 @@ Partial Class Tenant
         dgvTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvTenant.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' Column1
-        ' 
-        Column1.FillWeight = 39.649662F
-        Column1.HeaderText = "First Name"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        ' 
-        ' Column2
-        ' 
-        Column2.FillWeight = 39.649662F
-        Column2.HeaderText = "Last Name"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        ' 
-        ' Column3
-        ' 
-        Column3.FillWeight = 39.649662F
-        Column3.HeaderText = "Gender"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.ReadOnly = True
-        ' 
-        ' Column4
-        ' 
-        Column4.FillWeight = 39.649662F
-        Column4.HeaderText = "Address"
-        Column4.MinimumWidth = 6
-        Column4.Name = "Column4"
-        Column4.ReadOnly = True
-        ' 
-        ' Column5
-        ' 
-        Column5.FillWeight = 39.649662F
-        Column5.HeaderText = "Contact Number"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.ReadOnly = True
-        ' 
-        ' Column8
-        ' 
-        Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        Column8.FillWeight = 28.6131573F
-        Column8.HeaderText = "Room"
-        Column8.MinimumWidth = 6
-        Column8.Name = "Column8"
-        Column8.ReadOnly = True
-        ' 
-        ' Column6
-        ' 
-        Column6.FillWeight = 39.649662F
-        Column6.HeaderText = "Date Leased"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        ' 
-        ' Column7
-        ' 
-        Column7.FillWeight = 39.649662F
-        Column7.HeaderText = "Status"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        ' 
-        ' editColumn
-        ' 
-        editColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        editColumn.FillWeight = 80.26524F
-        editColumn.HeaderText = ""
-        editColumn.Image = CType(resources.GetObject("editColumn.Image"), Image)
-        editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        editColumn.MinimumWidth = 40
-        editColumn.Name = "editColumn"
-        editColumn.ReadOnly = True
-        editColumn.Resizable = DataGridViewTriState.True
-        editColumn.SortMode = DataGridViewColumnSortMode.Automatic
-        editColumn.Width = 40
-        ' 
-        ' deleteColumn
-        ' 
-        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        deleteColumn.FillWeight = 613.5739F
-        deleteColumn.HeaderText = ""
-        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
-        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        deleteColumn.MinimumWidth = 40
-        deleteColumn.Name = "deleteColumn"
-        deleteColumn.ReadOnly = True
-        deleteColumn.Width = 40
-        ' 
         ' txtTenantSearch
         ' 
         txtTenantSearch.BorderRadius = 10
@@ -603,6 +512,97 @@ Partial Class Tenant
         btnPay.TabIndex = 16
         btnPay.Text = "Pay"
         ' 
+        ' Column1
+        ' 
+        Column1.FillWeight = 39.649662F
+        Column1.HeaderText = "First Name"
+        Column1.MinimumWidth = 6
+        Column1.Name = "Column1"
+        Column1.ReadOnly = True
+        ' 
+        ' Column2
+        ' 
+        Column2.FillWeight = 39.649662F
+        Column2.HeaderText = "Last Name"
+        Column2.MinimumWidth = 6
+        Column2.Name = "Column2"
+        Column2.ReadOnly = True
+        ' 
+        ' Column3
+        ' 
+        Column3.FillWeight = 39.649662F
+        Column3.HeaderText = "Gender"
+        Column3.MinimumWidth = 6
+        Column3.Name = "Column3"
+        Column3.ReadOnly = True
+        ' 
+        ' Column4
+        ' 
+        Column4.FillWeight = 39.649662F
+        Column4.HeaderText = "Address"
+        Column4.MinimumWidth = 6
+        Column4.Name = "Column4"
+        Column4.ReadOnly = True
+        ' 
+        ' Column5
+        ' 
+        Column5.FillWeight = 39.649662F
+        Column5.HeaderText = "Contact Number"
+        Column5.MinimumWidth = 6
+        Column5.Name = "Column5"
+        Column5.ReadOnly = True
+        ' 
+        ' Column8
+        ' 
+        Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        Column8.FillWeight = 28.6131573F
+        Column8.HeaderText = "Room"
+        Column8.MinimumWidth = 6
+        Column8.Name = "Column8"
+        Column8.ReadOnly = True
+        ' 
+        ' Column6
+        ' 
+        Column6.FillWeight = 39.649662F
+        Column6.HeaderText = "Date Leased"
+        Column6.MinimumWidth = 6
+        Column6.Name = "Column6"
+        Column6.ReadOnly = True
+        ' 
+        ' Column7
+        ' 
+        Column7.FillWeight = 39.649662F
+        Column7.HeaderText = "Status"
+        Column7.MinimumWidth = 6
+        Column7.Name = "Column7"
+        Column7.ReadOnly = True
+        ' 
+        ' editColumn
+        ' 
+        editColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+        editColumn.FillWeight = 80.26524F
+        editColumn.HeaderText = ""
+        editColumn.Image = CType(resources.GetObject("editColumn.Image"), Image)
+        editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
+        editColumn.MinimumWidth = 40
+        editColumn.Name = "editColumn"
+        editColumn.ReadOnly = True
+        editColumn.Resizable = DataGridViewTriState.True
+        editColumn.SortMode = DataGridViewColumnSortMode.Automatic
+        editColumn.Width = 40
+        ' 
+        ' deleteColumn
+        ' 
+        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+        deleteColumn.FillWeight = 613.5739F
+        deleteColumn.HeaderText = ""
+        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
+        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
+        deleteColumn.MinimumWidth = 40
+        deleteColumn.Name = "deleteColumn"
+        deleteColumn.ReadOnly = True
+        deleteColumn.Width = 40
+        ' 
         ' Tenant
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -646,6 +646,8 @@ Partial Class Tenant
     Friend WithEvents txtTenantSearch As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnShowAddForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents panelTenant As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnArchive As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -656,6 +658,4 @@ Partial Class Tenant
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents editColumn As DataGridViewImageColumn
     Friend WithEvents deleteColumn As DataGridViewImageColumn
-    Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnArchive As Guna.UI2.WinForms.Guna2Button
 End Class
