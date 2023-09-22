@@ -102,7 +102,7 @@ Module Project_Module
             sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Bill VALUES(null,'" & ElectricityBill & "','" & WaterBill & "', '" & MaintenanceBill & "', '" & MiscBill & "')", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
             MessageBox.Show("Added")
-        Catch ex As Exception
+        Catch ex As SQLiteException
             MessageBox.Show("Error: " & ex.Message)
         Finally
             SQLite_Close_Connection()
@@ -111,13 +111,13 @@ Module Project_Module
 
     End Sub
 
-    Public Sub edit_Bill(ByVal BillID As Integer, ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
+    Public Sub edit_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double, ByVal BillID As Integer)
 
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
 
-            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Bill SET ElectricityBill = '" & ElectricityBill & "', WaterBill = '" & WaterBill & "', MaintenanceBill = '" & MaintenanceBill & "', MiscBill = '" & MiscBill & "' WHERE BillID = " & BillID & " ", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Bill SET ElectricityBill = " & ElectricityBill & ", WaterBill = " & WaterBill & ", MaintenanceBill = " & MaintenanceBill & ", MiscBill = " & MiscBill & " WHERE BillID = " & BillID & "", sqliteConnection)
 
             sqliteDataAdapter.Fill(dataSet, "Bill")
 
@@ -143,7 +143,48 @@ Module Project_Module
             sqliteDataAdapter.Fill(dataSet, "Bill")
             Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
 
-        Catch ex As Exception
+        Catch ex As SqlException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
+    Public Sub add_User(ByVal Name As String, ByVal Address As String, ByVal ContactNum As String, ByVal Username As String, ByVal Password As String)
+        SQLite_Open_Connection()
+        dataSet = New DataSet
+        sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO User VALUES(null, '" & Name & "', '" & Address & "', '" & ContactNum & "', '" & Username & "', '" & Password & "')", sqliteConnection)
+        sqliteDataAdapter.Fill(dataSet, "User")
+    End Sub
+
+    Public Sub edit_User(ByVal Name As String, ByVal Address As String, ByVal ContactNum As String, ByVal Username As String, ByVal Password As String, ByVal UserID As Integer)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE User SET Name = '" & Name & "', Address = '" & Address & "', ContactNum = '" & ContactNum & "', Username = '" & Username & "', Password = '" & Password & "' WHERE UserID = " & UserID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "User")
+        Catch ex As SqlException
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+
+    End Sub
+
+    Public Sub delete_User(ByVal UserID As Integer)
+        SQLite_Open_Connection()
+        dataSet = New DataSet
+        sqliteDataAdapter = New SQLiteDataAdapter("Delete FROM User WHERE UserID = " & UserID & "", sqliteConnection)
+        sqliteDataAdapter.Fill(dataSet, "User")
+    End Sub
+
+    Public Sub display_User()
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT UserID, Name, Address, ContactNum, Username, Password FROM User", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "User")
+            User.dgvUser.DataSource = dataSet.Tables("User").DefaultView
+
+        Catch ex As SqlException
             MessageBox.Show("Error: " & ex.Message)
         Finally
             SQLite_Close_Connection()

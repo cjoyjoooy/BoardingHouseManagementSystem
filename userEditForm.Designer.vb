@@ -24,33 +24,34 @@ Partial Class userEditForm
     Private Sub InitializeComponent()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        btnEditUser = New Guna.UI2.WinForms.Guna2Button()
+        txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
-        Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
         Label4 = New Label()
-        Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
+        btnEditUser = New Guna.UI2.WinForms.Guna2Button()
+        txtUsername = New Guna.UI2.WinForms.Guna2TextBox()
+        txtName = New Guna.UI2.WinForms.Guna2TextBox()
         Label2 = New Label()
-        Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Label3 = New Label()
-        Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Label1 = New Label()
-        txtAddress = New Guna.UI2.WinForms.Guna2TextBox()
         Label16 = New Label()
+        txtContactNum = New Guna.UI2.WinForms.Guna2TextBox()
+        Label1 = New Label()
+        Label3 = New Label()
+        txtAddress = New Guna.UI2.WinForms.Guna2TextBox()
+        txtUserID = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -59,18 +60,19 @@ Partial Class userEditForm
         Guna2Panel1.BackColor = Color.White
         Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.BorderThickness = 2
-        Guna2Panel1.Controls.Add(Guna2TextBox4)
+        Guna2Panel1.Controls.Add(txtUserID)
+        Guna2Panel1.Controls.Add(txtPassword)
         Guna2Panel1.Controls.Add(btnCancel)
         Guna2Panel1.Controls.Add(Label4)
         Guna2Panel1.Controls.Add(btnEditUser)
-        Guna2Panel1.Controls.Add(Guna2TextBox3)
-        Guna2Panel1.Controls.Add(txtAddress)
+        Guna2Panel1.Controls.Add(txtUsername)
+        Guna2Panel1.Controls.Add(txtName)
         Guna2Panel1.Controls.Add(Label2)
         Guna2Panel1.Controls.Add(Label16)
-        Guna2Panel1.Controls.Add(Guna2TextBox2)
+        Guna2Panel1.Controls.Add(txtContactNum)
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(Label3)
-        Guna2Panel1.Controls.Add(Guna2TextBox1)
+        Guna2Panel1.Controls.Add(txtAddress)
         Guna2Panel1.CustomizableEdges = CustomizableEdges15
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
@@ -79,26 +81,30 @@ Partial Class userEditForm
         Guna2Panel1.Size = New Size(453, 513)
         Guna2Panel1.TabIndex = 0
         ' 
-        ' btnEditUser
+        ' txtPassword
         ' 
-        btnEditUser.BackColor = Color.White
-        btnEditUser.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnEditUser.BorderRadius = 10
-        btnEditUser.BorderThickness = 2
-        btnEditUser.CustomizableEdges = CustomizableEdges5
-        btnEditUser.DisabledState.BorderColor = Color.DarkGray
-        btnEditUser.DisabledState.CustomBorderColor = Color.DarkGray
-        btnEditUser.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        btnEditUser.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        btnEditUser.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnEditUser.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        btnEditUser.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnEditUser.Location = New Point(280, 455)
-        btnEditUser.Name = "btnEditUser"
-        btnEditUser.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        btnEditUser.Size = New Size(152, 36)
-        btnEditUser.TabIndex = 52
-        btnEditUser.Text = "Save"
+        txtPassword.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtPassword.BorderRadius = 10
+        txtPassword.CustomizableEdges = CustomizableEdges1
+        txtPassword.DefaultText = ""
+        txtPassword.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtPassword.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtPassword.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtPassword.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtPassword.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtPassword.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtPassword.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtPassword.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtPassword.Location = New Point(21, 386)
+        txtPassword.Margin = New Padding(4, 4, 4, 4)
+        txtPassword.Name = "txtPassword"
+        txtPassword.PasswordChar = ChrW(0)
+        txtPassword.PlaceholderText = ""
+        txtPassword.SelectedText = ""
+        txtPassword.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        txtPassword.Size = New Size(411, 34)
+        txtPassword.TabIndex = 59
         ' 
         ' btnCancel
         ' 
@@ -121,31 +127,6 @@ Partial Class userEditForm
         btnCancel.TabIndex = 53
         btnCancel.Text = "Cancel"
         ' 
-        ' Guna2TextBox4
-        ' 
-        Guna2TextBox4.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox4.BorderRadius = 10
-        Guna2TextBox4.CustomizableEdges = CustomizableEdges1
-        Guna2TextBox4.DefaultText = ""
-        Guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox4.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox4.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox4.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox4.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox4.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox4.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox4.Location = New Point(21, 386)
-        Guna2TextBox4.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox4.Name = "Guna2TextBox4"
-        Guna2TextBox4.PasswordChar = ChrW(0)
-        Guna2TextBox4.PlaceholderText = ""
-        Guna2TextBox4.SelectedText = ""
-        Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2TextBox4.Size = New Size(411, 34)
-        Guna2TextBox4.TabIndex = 59
-        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
@@ -158,30 +139,76 @@ Partial Class userEditForm
         Label4.TabIndex = 58
         Label4.Text = "Password"
         ' 
-        ' Guna2TextBox3
+        ' btnEditUser
         ' 
-        Guna2TextBox3.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.BorderRadius = 10
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges7
-        Guna2TextBox3.DefaultText = ""
-        Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox3.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox3.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox3.Location = New Point(21, 301)
-        Guna2TextBox3.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox3.Name = "Guna2TextBox3"
-        Guna2TextBox3.PasswordChar = ChrW(0)
-        Guna2TextBox3.PlaceholderText = ""
-        Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2TextBox3.Size = New Size(411, 34)
-        Guna2TextBox3.TabIndex = 57
+        btnEditUser.BackColor = Color.White
+        btnEditUser.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnEditUser.BorderRadius = 10
+        btnEditUser.BorderThickness = 2
+        btnEditUser.CustomizableEdges = CustomizableEdges5
+        btnEditUser.DisabledState.BorderColor = Color.DarkGray
+        btnEditUser.DisabledState.CustomBorderColor = Color.DarkGray
+        btnEditUser.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnEditUser.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnEditUser.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnEditUser.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        btnEditUser.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnEditUser.Location = New Point(280, 455)
+        btnEditUser.Name = "btnEditUser"
+        btnEditUser.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        btnEditUser.Size = New Size(152, 36)
+        btnEditUser.TabIndex = 52
+        btnEditUser.Text = "Save"
+        ' 
+        ' txtUsername
+        ' 
+        txtUsername.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtUsername.BorderRadius = 10
+        txtUsername.CustomizableEdges = CustomizableEdges7
+        txtUsername.DefaultText = ""
+        txtUsername.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtUsername.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtUsername.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtUsername.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtUsername.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtUsername.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtUsername.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtUsername.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtUsername.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtUsername.Location = New Point(21, 301)
+        txtUsername.Margin = New Padding(4, 4, 4, 4)
+        txtUsername.Name = "txtUsername"
+        txtUsername.PasswordChar = ChrW(0)
+        txtUsername.PlaceholderText = ""
+        txtUsername.SelectedText = ""
+        txtUsername.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        txtUsername.Size = New Size(411, 34)
+        txtUsername.TabIndex = 57
+        ' 
+        ' txtName
+        ' 
+        txtName.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtName.BorderRadius = 10
+        txtName.CustomizableEdges = CustomizableEdges9
+        txtName.DefaultText = ""
+        txtName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtName.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtName.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtName.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtName.Location = New Point(21, 49)
+        txtName.Margin = New Padding(4, 4, 4, 4)
+        txtName.Name = "txtName"
+        txtName.PasswordChar = ChrW(0)
+        txtName.PlaceholderText = ""
+        txtName.SelectedText = ""
+        txtName.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        txtName.Size = New Size(411, 34)
+        txtName.TabIndex = 51
         ' 
         ' Label2
         ' 
@@ -195,67 +222,42 @@ Partial Class userEditForm
         Label2.TabIndex = 56
         Label2.Text = "Username"
         ' 
-        ' Guna2TextBox2
+        ' Label16
         ' 
-        Guna2TextBox2.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.BorderRadius = 10
-        Guna2TextBox2.CustomizableEdges = CustomizableEdges11
-        Guna2TextBox2.DefaultText = ""
-        Guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox2.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox2.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox2.Location = New Point(21, 130)
-        Guna2TextBox2.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox2.Name = "Guna2TextBox2"
-        Guna2TextBox2.PasswordChar = ChrW(0)
-        Guna2TextBox2.PlaceholderText = ""
-        Guna2TextBox2.SelectedText = ""
-        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2TextBox2.Size = New Size(411, 34)
-        Guna2TextBox2.TabIndex = 55
+        Label16.AutoSize = True
+        Label16.BackColor = Color.Transparent
+        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label16.Location = New Point(21, 22)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(67, 23)
+        Label16.TabIndex = 50
+        Label16.Text = "Name"
         ' 
-        ' Label3
+        ' txtContactNum
         ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label3.Location = New Point(21, 103)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(171, 23)
-        Label3.TabIndex = 54
-        Label3.Text = "Contact Number"
-        ' 
-        ' Guna2TextBox1
-        ' 
-        Guna2TextBox1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.BorderRadius = 10
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges13
-        Guna2TextBox1.DefaultText = ""
-        Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox1.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2TextBox1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2TextBox1.Location = New Point(21, 216)
-        Guna2TextBox1.Margin = New Padding(4, 4, 4, 4)
-        Guna2TextBox1.Name = "Guna2TextBox1"
-        Guna2TextBox1.PasswordChar = ChrW(0)
-        Guna2TextBox1.PlaceholderText = ""
-        Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Guna2TextBox1.Size = New Size(411, 34)
-        Guna2TextBox1.TabIndex = 53
+        txtContactNum.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContactNum.BorderRadius = 10
+        txtContactNum.CustomizableEdges = CustomizableEdges11
+        txtContactNum.DefaultText = ""
+        txtContactNum.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtContactNum.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtContactNum.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtContactNum.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtContactNum.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtContactNum.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContactNum.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtContactNum.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContactNum.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtContactNum.Location = New Point(21, 130)
+        txtContactNum.Margin = New Padding(4, 4, 4, 4)
+        txtContactNum.Name = "txtContactNum"
+        txtContactNum.PasswordChar = ChrW(0)
+        txtContactNum.PlaceholderText = ""
+        txtContactNum.SelectedText = ""
+        txtContactNum.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        txtContactNum.Size = New Size(411, 34)
+        txtContactNum.TabIndex = 55
         ' 
         ' Label1
         ' 
@@ -269,11 +271,23 @@ Partial Class userEditForm
         Label1.TabIndex = 52
         Label1.Text = "Address"
         ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
+        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label3.Location = New Point(21, 103)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(171, 23)
+        Label3.TabIndex = 54
+        Label3.Text = "Contact Number"
+        ' 
         ' txtAddress
         ' 
         txtAddress.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtAddress.BorderRadius = 10
-        txtAddress.CustomizableEdges = CustomizableEdges9
+        txtAddress.CustomizableEdges = CustomizableEdges13
         txtAddress.DefaultText = ""
         txtAddress.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtAddress.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -284,27 +298,24 @@ Partial Class userEditForm
         txtAddress.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtAddress.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtAddress.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtAddress.Location = New Point(21, 49)
+        txtAddress.Location = New Point(21, 216)
         txtAddress.Margin = New Padding(4, 4, 4, 4)
         txtAddress.Name = "txtAddress"
         txtAddress.PasswordChar = ChrW(0)
         txtAddress.PlaceholderText = ""
         txtAddress.SelectedText = ""
-        txtAddress.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        txtAddress.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         txtAddress.Size = New Size(411, 34)
-        txtAddress.TabIndex = 51
+        txtAddress.TabIndex = 53
         ' 
-        ' Label16
+        ' txtUserID
         ' 
-        Label16.AutoSize = True
-        Label16.BackColor = Color.Transparent
-        Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(21, 22)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(67, 23)
-        Label16.TabIndex = 50
-        Label16.Text = "Name"
+        txtUserID.AutoSize = True
+        txtUserID.Location = New Point(198, 22)
+        txtUserID.Name = "txtUserID"
+        txtUserID.Size = New Size(53, 20)
+        txtUserID.TabIndex = 60
+        txtUserID.Text = "Label5"
         ' 
         ' userEditForm
         ' 
@@ -324,14 +335,15 @@ Partial Class userEditForm
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnEditUser As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtPassword As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents txtAddress As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtUsername As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtContactNum As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtAddress As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtUserID As Label
 End Class
