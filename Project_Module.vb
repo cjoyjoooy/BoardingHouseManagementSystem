@@ -181,8 +181,6 @@ Module Project_Module
 
         'display the roomNumber and Status
         Rooms.lblRoomNumber.Text = panelName.Substring(7)
-        'NOTE: remove Rooms.lblStatus.Text = panelName.Substring(7)
-        Rooms.lblStatus.Text = panelName.Substring(7)
 
         SelectedPanel = clickedPanel
     End Sub
@@ -192,7 +190,7 @@ Module Project_Module
     'creates room panel with labels and assigned background color based on room status(vacant, occupied)
     Private _CurrentContactPanelName As String = Nothing
     Private _ContactPanelsAddedCount As Integer = 0
-    Public Sub RoomPanels(ByVal name As String) 'NOTE: (ByVal id As Integer, Byval status As String)
+    Public Sub RoomPanels(ByVal name As String, ByVal status As String) 'NOTE: (ByVal id As Integer, Byval status As String)
         Dim roomPanel As Guna2Panel
         Dim roomName, roomNumber As Label
 
@@ -209,10 +207,10 @@ Module Project_Module
             .Name = "pnlRoom" + (name).ToString
 
             'NOTE: change name to status
-            If name = "Occupied" Then
+            If status = "Occupied" Then
                 .Tag = Color.White
                 .FillColor = Color.White
-            ElseIf name = "Vacant" Then
+            ElseIf status = "Vacant" Then
                 .Tag = Color.FromArgb(154, 154, 154)
                 .FillColor = Color.FromArgb(154, 154, 154)
             End If
