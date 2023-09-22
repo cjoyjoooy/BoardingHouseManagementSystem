@@ -141,34 +141,7 @@ Module Project_Module
             dataSet = New DataSet
             sqliteDataAdapter = New SQLiteDataAdapter("SELECT BillID, ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
-            Bills.dgvBill.Columns.Clear()
             Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
-
-            ' Add edit and delete image columns
-            Dim editColumn As New DataGridViewImageColumn()
-            Dim deleteColumn As New DataGridViewImageColumn()
-
-            ' Set specific names for the image columns
-            editColumn.Name = "editColumn"
-            deleteColumn.Name = "deleteColumn"
-
-            editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-            deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-            editColumn.Image = Image.FromFile("icons8-create-48.png")
-            deleteColumn.Image = Image.FromFile("icons8-delete-48.png")
-
-            ' Set the column headers for the edit and delete columns
-            editColumn.HeaderText = " "
-            deleteColumn.HeaderText = " "
-
-            ' Add the image columns to the DataGridView
-            Bills.dgvBill.Columns.Add(editColumn)
-            Bills.dgvBill.Columns.Add(deleteColumn)
-
-
-            editColumn.Width = 20
-            deleteColumn.Width = 90
-
 
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)

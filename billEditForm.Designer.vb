@@ -72,7 +72,7 @@ Partial Class billEditForm
         ' txtBillID
         ' 
         txtBillID.AutoSize = True
-        txtBillID.Location = New Point(201, 21)
+        txtBillID.Location = New Point(233, 21)
         txtBillID.Name = "txtBillID"
         txtBillID.Size = New Size(53, 20)
         txtBillID.TabIndex = 66

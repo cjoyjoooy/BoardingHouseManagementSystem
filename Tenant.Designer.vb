@@ -31,16 +31,20 @@ Partial Class Tenant
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Tenant))
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label15 = New Label()
         Label8 = New Label()
@@ -65,18 +69,10 @@ Partial Class Tenant
         txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
         btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
+        btnDeleteTenant = New Guna.UI2.WinForms.Guna2Button()
+        btnTenantBillForm = New Guna.UI2.WinForms.Guna2Button()
         btnArchive = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        editColumn = New DataGridViewImageColumn()
-        deleteColumn = New DataGridViewImageColumn()
         Guna2Panel2.SuspendLayout()
         Guna2Panel4.SuspendLayout()
         CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
@@ -98,10 +94,10 @@ Partial Class Tenant
         Guna2Panel2.Controls.Add(Label1)
         Guna2Panel2.CustomizableEdges = CustomizableEdges1
         Guna2Panel2.FillColor = Color.White
-        Guna2Panel2.Location = New Point(12, 417)
+        Guna2Panel2.Location = New Point(12, 423)
         Guna2Panel2.Name = "Guna2Panel2"
         Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2Panel2.Size = New Size(425, 255)
+        Guna2Panel2.Size = New Size(411, 262)
         Guna2Panel2.TabIndex = 10
         ' 
         ' Label15
@@ -217,10 +213,10 @@ Partial Class Tenant
         Guna2Panel4.Controls.Add(Label9)
         Guna2Panel4.CustomizableEdges = CustomizableEdges3
         Guna2Panel4.FillColor = Color.White
-        Guna2Panel4.Location = New Point(456, 417)
+        Guna2Panel4.Location = New Point(429, 423)
         Guna2Panel4.Name = "Guna2Panel4"
         Guna2Panel4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Panel4.Size = New Size(365, 255)
+        Guna2Panel4.Size = New Size(392, 262)
         Guna2Panel4.TabIndex = 11
         ' 
         ' Label12
@@ -361,7 +357,6 @@ Partial Class Tenant
         dgvTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvTenant.ColumnHeadersHeight = 50
         dgvTenant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvTenant.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column8, Column6, Column7, editColumn, deleteColumn})
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
@@ -386,7 +381,7 @@ Partial Class Tenant
         dgvTenant.RowHeadersVisible = False
         dgvTenant.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvTenant.RowTemplate.Height = 34
-        dgvTenant.Size = New Size(809, 351)
+        dgvTenant.Size = New Size(809, 325)
         dgvTenant.TabIndex = 12
         dgvTenant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvTenant.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -424,14 +419,14 @@ Partial Class Tenant
         txtTenantSearch.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtTenantSearch.IconLeft = CType(resources.GetObject("txtTenantSearch.IconLeft"), Image)
         txtTenantSearch.IconLeftOffset = New Point(10, 0)
-        txtTenantSearch.Location = New Point(12, 6)
+        txtTenantSearch.Location = New Point(12, 2)
         txtTenantSearch.Margin = New Padding(4, 3, 4, 3)
         txtTenantSearch.Name = "txtTenantSearch"
         txtTenantSearch.PasswordChar = ChrW(0)
         txtTenantSearch.PlaceholderText = ""
         txtTenantSearch.SelectedText = ""
         txtTenantSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtTenantSearch.Size = New Size(314, 35)
+        txtTenantSearch.Size = New Size(314, 40)
         txtTenantSearch.TabIndex = 13
         ' 
         ' btnShowAddForm
@@ -446,17 +441,18 @@ Partial Class Tenant
         btnShowAddForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
-        btnShowAddForm.Location = New Point(413, 6)
+        btnShowAddForm.Location = New Point(597, 0)
         btnShowAddForm.Name = "btnShowAddForm"
         btnShowAddForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        btnShowAddForm.Size = New Size(130, 35)
+        btnShowAddForm.Size = New Size(50, 40)
         btnShowAddForm.TabIndex = 15
-        btnShowAddForm.Text = "Add Tenant"
         ' 
         ' panelTenant
         ' 
         panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
         panelTenant.BorderRadius = 20
+        panelTenant.Controls.Add(btnDeleteTenant)
+        panelTenant.Controls.Add(btnTenantBillForm)
         panelTenant.Controls.Add(btnArchive)
         panelTenant.Controls.Add(btnPay)
         panelTenant.Controls.Add(btnShowAddForm)
@@ -464,20 +460,56 @@ Partial Class Tenant
         panelTenant.Controls.Add(dgvTenant)
         panelTenant.Controls.Add(Guna2Panel4)
         panelTenant.Controls.Add(Guna2Panel2)
-        panelTenant.CustomizableEdges = CustomizableEdges13
+        panelTenant.CustomizableEdges = CustomizableEdges17
         panelTenant.Dock = DockStyle.Fill
         panelTenant.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelTenant.Location = New Point(0, 0)
         panelTenant.Margin = New Padding(0)
         panelTenant.Name = "panelTenant"
-        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        panelTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         panelTenant.Size = New Size(833, 685)
         panelTenant.TabIndex = 0
+        ' 
+        ' btnDeleteTenant
+        ' 
+        btnDeleteTenant.BorderRadius = 10
+        btnDeleteTenant.CustomizableEdges = CustomizableEdges9
+        btnDeleteTenant.DisabledState.BorderColor = Color.DarkGray
+        btnDeleteTenant.DisabledState.CustomBorderColor = Color.DarkGray
+        btnDeleteTenant.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnDeleteTenant.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnDeleteTenant.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnDeleteTenant.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDeleteTenant.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnDeleteTenant.Image = CType(resources.GetObject("btnDeleteTenant.Image"), Image)
+        btnDeleteTenant.Location = New Point(713, 0)
+        btnDeleteTenant.Name = "btnDeleteTenant"
+        btnDeleteTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        btnDeleteTenant.Size = New Size(50, 40)
+        btnDeleteTenant.TabIndex = 48
+        ' 
+        ' btnTenantBillForm
+        ' 
+        btnTenantBillForm.BorderRadius = 10
+        btnTenantBillForm.CustomizableEdges = CustomizableEdges11
+        btnTenantBillForm.DisabledState.BorderColor = Color.DarkGray
+        btnTenantBillForm.DisabledState.CustomBorderColor = Color.DarkGray
+        btnTenantBillForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnTenantBillForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnTenantBillForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnTenantBillForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnTenantBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnTenantBillForm.Image = CType(resources.GetObject("btnTenantBillForm.Image"), Image)
+        btnTenantBillForm.Location = New Point(655, 0)
+        btnTenantBillForm.Name = "btnTenantBillForm"
+        btnTenantBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        btnTenantBillForm.Size = New Size(50, 40)
+        btnTenantBillForm.TabIndex = 47
         ' 
         ' btnArchive
         ' 
         btnArchive.BorderRadius = 10
-        btnArchive.CustomizableEdges = CustomizableEdges9
+        btnArchive.CustomizableEdges = CustomizableEdges13
         btnArchive.DisabledState.BorderColor = Color.DarkGray
         btnArchive.DisabledState.CustomBorderColor = Color.DarkGray
         btnArchive.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -486,17 +518,16 @@ Partial Class Tenant
         btnArchive.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnArchive.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnArchive.Image = CType(resources.GetObject("btnArchive.Image"), Image)
-        btnArchive.Location = New Point(552, 6)
+        btnArchive.Location = New Point(771, 0)
         btnArchive.Name = "btnArchive"
-        btnArchive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        btnArchive.Size = New Size(130, 35)
+        btnArchive.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        btnArchive.Size = New Size(50, 40)
         btnArchive.TabIndex = 17
-        btnArchive.Text = "Archives"
         ' 
         ' btnPay
         ' 
         btnPay.BorderRadius = 10
-        btnPay.CustomizableEdges = CustomizableEdges11
+        btnPay.CustomizableEdges = CustomizableEdges15
         btnPay.DisabledState.BorderColor = Color.DarkGray
         btnPay.DisabledState.CustomBorderColor = Color.DarkGray
         btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -505,103 +536,12 @@ Partial Class Tenant
         btnPay.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnPay.Image = CType(resources.GetObject("btnPay.Image"), Image)
-        btnPay.Location = New Point(691, 6)
+        btnPay.Location = New Point(691, 382)
         btnPay.Name = "btnPay"
-        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         btnPay.Size = New Size(130, 35)
         btnPay.TabIndex = 16
         btnPay.Text = "Pay"
-        ' 
-        ' Column1
-        ' 
-        Column1.FillWeight = 39.649662F
-        Column1.HeaderText = "First Name"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        ' 
-        ' Column2
-        ' 
-        Column2.FillWeight = 39.649662F
-        Column2.HeaderText = "Last Name"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        ' 
-        ' Column3
-        ' 
-        Column3.FillWeight = 39.649662F
-        Column3.HeaderText = "Gender"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.ReadOnly = True
-        ' 
-        ' Column4
-        ' 
-        Column4.FillWeight = 39.649662F
-        Column4.HeaderText = "Address"
-        Column4.MinimumWidth = 6
-        Column4.Name = "Column4"
-        Column4.ReadOnly = True
-        ' 
-        ' Column5
-        ' 
-        Column5.FillWeight = 39.649662F
-        Column5.HeaderText = "Contact Number"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.ReadOnly = True
-        ' 
-        ' Column8
-        ' 
-        Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        Column8.FillWeight = 28.6131573F
-        Column8.HeaderText = "Room"
-        Column8.MinimumWidth = 6
-        Column8.Name = "Column8"
-        Column8.ReadOnly = True
-        ' 
-        ' Column6
-        ' 
-        Column6.FillWeight = 39.649662F
-        Column6.HeaderText = "Date Leased"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        ' 
-        ' Column7
-        ' 
-        Column7.FillWeight = 39.649662F
-        Column7.HeaderText = "Status"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        ' 
-        ' editColumn
-        ' 
-        editColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        editColumn.FillWeight = 80.26524F
-        editColumn.HeaderText = ""
-        editColumn.Image = CType(resources.GetObject("editColumn.Image"), Image)
-        editColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        editColumn.MinimumWidth = 40
-        editColumn.Name = "editColumn"
-        editColumn.ReadOnly = True
-        editColumn.Resizable = DataGridViewTriState.True
-        editColumn.SortMode = DataGridViewColumnSortMode.Automatic
-        editColumn.Width = 40
-        ' 
-        ' deleteColumn
-        ' 
-        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        deleteColumn.FillWeight = 613.5739F
-        deleteColumn.HeaderText = ""
-        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
-        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        deleteColumn.MinimumWidth = 40
-        deleteColumn.Name = "deleteColumn"
-        deleteColumn.ReadOnly = True
-        deleteColumn.Width = 40
         ' 
         ' Tenant
         ' 
@@ -648,14 +588,6 @@ Partial Class Tenant
     Friend WithEvents panelTenant As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnArchive As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents editColumn As DataGridViewImageColumn
-    Friend WithEvents deleteColumn As DataGridViewImageColumn
+    Friend WithEvents btnDeleteTenant As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnTenantBillForm As Guna.UI2.WinForms.Guna2Button
 End Class

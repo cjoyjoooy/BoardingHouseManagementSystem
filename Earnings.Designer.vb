@@ -72,7 +72,7 @@ Partial Class Earnings
         txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
         txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(416, 3)
+        txtSearchTransaction.Location = New Point(416, 0)
         txtSearchTransaction.Margin = New Padding(4, 3, 4, 3)
         txtSearchTransaction.Name = "txtSearchTransaction"
         txtSearchTransaction.PasswordChar = ChrW(0)
@@ -114,7 +114,7 @@ Partial Class Earnings
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvEarnings.DefaultCellStyle = DataGridViewCellStyle3
         dgvEarnings.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvEarnings.Location = New Point(12, 44)
+        dgvEarnings.Location = New Point(12, 40)
         dgvEarnings.Name = "dgvEarnings"
         dgvEarnings.ReadOnly = True
         dgvEarnings.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -129,7 +129,7 @@ Partial Class Earnings
         dgvEarnings.RowHeadersVisible = False
         dgvEarnings.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvEarnings.RowTemplate.Height = 34
-        dgvEarnings.Size = New Size(809, 629)
+        dgvEarnings.Size = New Size(809, 642)
         dgvEarnings.TabIndex = 13
         dgvEarnings.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvEarnings.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -183,7 +183,7 @@ Partial Class Earnings
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(3, 4)
+        Label2.Location = New Point(3, 1)
         Label2.Name = "Label2"
         Label2.Size = New Size(137, 32)
         Label2.TabIndex = 11
