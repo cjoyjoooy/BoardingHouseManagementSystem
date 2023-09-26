@@ -20,4 +20,12 @@
         billEditForm.Show()
     End Sub
 
+    Private Sub btnDeleteBill_Click(sender As Object, e As EventArgs) Handles btnDeleteBill.Click
+        Dim rowIndex As Integer
+        Dim BillID As Integer
+        rowIndex = dgvBill.CurrentRow.Index
+        BillID = dgvBill.Rows(rowIndex).Cells(0).Value.ToString
+        delete_Bill(BillID)
+        display_Bill()
+    End Sub
 End Class

@@ -60,9 +60,10 @@ Partial Class User
         Guna2Panel1.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2Panel1.Size = New Size(833, 685)
+        Guna2Panel1.Size = New Size(729, 514)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnDeleteUser
@@ -74,13 +75,14 @@ Partial Class User
         btnDeleteUser.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnDeleteUser.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnDeleteUser.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnDeleteUser.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDeleteUser.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnDeleteUser.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), Image)
-        btnDeleteUser.Location = New Point(771, -1)
+        btnDeleteUser.Location = New Point(675, -1)
+        btnDeleteUser.Margin = New Padding(3, 2, 3, 2)
         btnDeleteUser.Name = "btnDeleteUser"
         btnDeleteUser.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnDeleteUser.Size = New Size(50, 40)
+        btnDeleteUser.Size = New Size(44, 30)
         btnDeleteUser.TabIndex = 50
         ' 
         ' btnUserBillForm
@@ -92,13 +94,14 @@ Partial Class User
         btnUserBillForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnUserBillForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnUserBillForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnUserBillForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnUserBillForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnUserBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnUserBillForm.Image = CType(resources.GetObject("btnUserBillForm.Image"), Image)
-        btnUserBillForm.Location = New Point(714, -1)
+        btnUserBillForm.Location = New Point(625, -1)
+        btnUserBillForm.Margin = New Padding(3, 2, 3, 2)
         btnUserBillForm.Name = "btnUserBillForm"
         btnUserBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        btnUserBillForm.Size = New Size(50, 40)
+        btnUserBillForm.Size = New Size(44, 30)
         btnUserBillForm.TabIndex = 49
         ' 
         ' txtSearchTransaction
@@ -111,18 +114,18 @@ Partial Class User
         txtSearchTransaction.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtSearchTransaction.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtSearchTransaction.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtSearchTransaction.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
         txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(13, 2)
-        txtSearchTransaction.Margin = New Padding(4, 3, 4, 3)
+        txtSearchTransaction.Location = New Point(11, 2)
+        txtSearchTransaction.Margin = New Padding(4, 2, 4, 2)
         txtSearchTransaction.Name = "txtSearchTransaction"
         txtSearchTransaction.PasswordChar = ChrW(0)
         txtSearchTransaction.PlaceholderText = ""
         txtSearchTransaction.SelectedText = ""
         txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtSearchTransaction.Size = New Size(404, 35)
+        txtSearchTransaction.Size = New Size(354, 26)
         txtSearchTransaction.TabIndex = 45
         ' 
         ' dgvUser
@@ -156,7 +159,8 @@ Partial Class User
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvUser.DefaultCellStyle = DataGridViewCellStyle3
         dgvUser.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvUser.Location = New Point(12, 43)
+        dgvUser.Location = New Point(10, 32)
+        dgvUser.Margin = New Padding(3, 2, 3, 2)
         dgvUser.Name = "dgvUser"
         dgvUser.ReadOnly = True
         dgvUser.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -171,7 +175,7 @@ Partial Class User
         dgvUser.RowHeadersVisible = False
         dgvUser.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvUser.RowTemplate.Height = 34
-        dgvUser.Size = New Size(809, 642)
+        dgvUser.Size = New Size(708, 482)
         dgvUser.TabIndex = 44
         dgvUser.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvUser.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -204,22 +208,24 @@ Partial Class User
         btnAddUserForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnAddUserForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnAddUserForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnAddUserForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAddUserForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnAddUserForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnAddUserForm.Image = CType(resources.GetObject("btnAddUserForm.Image"), Image)
-        btnAddUserForm.Location = New Point(657, -1)
+        btnAddUserForm.Location = New Point(575, -1)
+        btnAddUserForm.Margin = New Padding(3, 2, 3, 2)
         btnAddUserForm.Name = "btnAddUserForm"
         btnAddUserForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        btnAddUserForm.Size = New Size(50, 40)
+        btnAddUserForm.Size = New Size(44, 30)
         btnAddUserForm.TabIndex = 43
         ' 
         ' User
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(833, 685)
+        ClientSize = New Size(729, 514)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "User"
         StartPosition = FormStartPosition.CenterScreen
         Text = "User"

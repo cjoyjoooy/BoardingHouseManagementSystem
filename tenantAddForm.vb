@@ -13,7 +13,9 @@
         room = cmbRoom.SelectedItem
         lease = dtpLease.Value
 
-        add_tenant(fname, lname, gender, address, contact, room, lease, "Active")
+        add_Tenant(fname, lname, gender, address, contact, lease, "Active", room)
+        display_Tenant()
+        Me.Close()
     End Sub
 
 End Class

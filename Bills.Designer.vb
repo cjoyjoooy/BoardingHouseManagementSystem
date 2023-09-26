@@ -59,9 +59,10 @@ Partial Class Bills
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2Panel1.Size = New Size(833, 685)
+        Guna2Panel1.Size = New Size(729, 514)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnDeleteBill
@@ -73,13 +74,14 @@ Partial Class Bills
         btnDeleteBill.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnDeleteBill.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnDeleteBill.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnDeleteBill.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDeleteBill.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnDeleteBill.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnDeleteBill.Image = CType(resources.GetObject("btnDeleteBill.Image"), Image)
-        btnDeleteBill.Location = New Point(769, 1)
+        btnDeleteBill.Location = New Point(673, 1)
+        btnDeleteBill.Margin = New Padding(3, 2, 3, 2)
         btnDeleteBill.Name = "btnDeleteBill"
         btnDeleteBill.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnDeleteBill.Size = New Size(50, 40)
+        btnDeleteBill.Size = New Size(44, 30)
         btnDeleteBill.TabIndex = 46
         ' 
         ' btnEditBillForm
@@ -91,13 +93,14 @@ Partial Class Bills
         btnEditBillForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnEditBillForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnEditBillForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnEditBillForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnEditBillForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnEditBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnEditBillForm.Image = CType(resources.GetObject("btnEditBillForm.Image"), Image)
-        btnEditBillForm.Location = New Point(705, 1)
+        btnEditBillForm.Location = New Point(617, 1)
+        btnEditBillForm.Margin = New Padding(3, 2, 3, 2)
         btnEditBillForm.Name = "btnEditBillForm"
         btnEditBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        btnEditBillForm.Size = New Size(50, 40)
+        btnEditBillForm.Size = New Size(44, 30)
         btnEditBillForm.TabIndex = 45
         ' 
         ' dgvBill
@@ -131,7 +134,8 @@ Partial Class Bills
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvBill.DefaultCellStyle = DataGridViewCellStyle3
         dgvBill.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvBill.Location = New Point(12, 46)
+        dgvBill.Location = New Point(10, 34)
+        dgvBill.Margin = New Padding(3, 2, 3, 2)
         dgvBill.Name = "dgvBill"
         dgvBill.ReadOnly = True
         dgvBill.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -146,7 +150,7 @@ Partial Class Bills
         dgvBill.RowHeadersVisible = False
         dgvBill.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvBill.RowTemplate.Height = 34
-        dgvBill.Size = New Size(809, 636)
+        dgvBill.Size = New Size(708, 477)
         dgvBill.TabIndex = 44
         dgvBill.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvBill.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -180,18 +184,18 @@ Partial Class Bills
         txtSearchTransaction.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtSearchTransaction.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtSearchTransaction.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtSearchTransaction.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
         txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(12, 3)
-        txtSearchTransaction.Margin = New Padding(4, 3, 4, 3)
+        txtSearchTransaction.Location = New Point(10, 2)
+        txtSearchTransaction.Margin = New Padding(4, 2, 4, 2)
         txtSearchTransaction.Name = "txtSearchTransaction"
         txtSearchTransaction.PasswordChar = ChrW(0)
         txtSearchTransaction.PlaceholderText = ""
         txtSearchTransaction.SelectedText = ""
         txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtSearchTransaction.Size = New Size(404, 35)
+        txtSearchTransaction.Size = New Size(354, 26)
         txtSearchTransaction.TabIndex = 15
         ' 
         ' btnAddBillForm
@@ -203,23 +207,25 @@ Partial Class Bills
         btnAddBillForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnAddBillForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnAddBillForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnAddBillForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAddBillForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnAddBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnAddBillForm.Image = CType(resources.GetObject("btnAddBillForm.Image"), Image)
-        btnAddBillForm.Location = New Point(641, 1)
+        btnAddBillForm.Location = New Point(561, 1)
+        btnAddBillForm.Margin = New Padding(3, 2, 3, 2)
         btnAddBillForm.Name = "btnAddBillForm"
         btnAddBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        btnAddBillForm.Size = New Size(50, 40)
+        btnAddBillForm.Size = New Size(44, 30)
         btnAddBillForm.TabIndex = 43
         ' 
         ' Bills
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(833, 685)
+        ClientSize = New Size(729, 514)
         Controls.Add(Guna2Panel1)
         ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "Bills"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Bills"

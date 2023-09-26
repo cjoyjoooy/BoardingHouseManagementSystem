@@ -1,6 +1,8 @@
 ﻿Imports Guna.UI2.WinForms
+Imports Microsoft.VisualBasic.ApplicationServices
 Imports System.Data.SqlClient
 Imports System.Data.SQLite
+Imports System.Net
 Imports System.Security.Cryptography.X509Certificates
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
@@ -134,6 +136,19 @@ Module Project_Module
         End Try
     End Sub
 
+    Public Sub delete_Bill(ByVal BillID As Integer)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("DELETE FROM Bill WHERE BillID = " & BillID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Bill")
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+
+            SQLite_Close_Connection()
+        End Try
+    End Sub
 
     Public Sub display_Bill()
         Try
@@ -151,10 +166,17 @@ Module Project_Module
     End Sub
 
     Public Sub add_User(ByVal Name As String, ByVal Address As String, ByVal ContactNum As String, ByVal Username As String, ByVal Password As String)
-        SQLite_Open_Connection()
-        dataSet = New DataSet
-        sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO User VALUES(null, '" & Name & "', '" & Address & "', '" & ContactNum & "', '" & Username & "', '" & Password & "')", sqliteConnection)
-        sqliteDataAdapter.Fill(dataSet, "User")
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO User VALUES(null, '" & Name & "', '" & Address & "', '" & ContactNum & "', '" & Username & "', '" & Password & "')", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "User")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
     End Sub
 
     Public Sub edit_User(ByVal Name As String, ByVal Address As String, ByVal ContactNum As String, ByVal Username As String, ByVal Password As String, ByVal UserID As Integer)
@@ -165,15 +187,24 @@ Module Project_Module
             sqliteDataAdapter.Fill(dataSet, "User")
         Catch ex As SqlException
             MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
         End Try
 
     End Sub
 
     Public Sub delete_User(ByVal UserID As Integer)
-        SQLite_Open_Connection()
-        dataSet = New DataSet
-        sqliteDataAdapter = New SQLiteDataAdapter("Delete FROM User WHERE UserID = " & UserID & "", sqliteConnection)
-        sqliteDataAdapter.Fill(dataSet, "User")
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("DELETE FROM User WHERE UserID = " & UserID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "User")
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
     End Sub
 
     Public Sub display_User()
@@ -191,6 +222,74 @@ Module Project_Module
         End Try
     End Sub
 
+    Public Sub add_Tenant(ByVal FirstName As String, ByVal LastName As String, ByVal Gender As String, ByVal Address As String, ByVal ContactNum As String, ByVal DateLeased As String, ByVal Status As String, ByVal RoomID As Integer)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Tenant VALUES(null, '" & FirstName & "', '" & LastName & "', '" & Gender & "', '" & Address & "', '" & ContactNum & "', '" & DateLeased & "', '" & Status & "', '" & RoomID & "')", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
+    Public Sub edit_Tenant(ByVal FirstName As String, ByVal LastName As String, ByVal Gender As String, ByVal Address As String, ByVal ContactNum As String, ByVal DateLeased As String, ByVal Status As String, ByVal RoomID As Integer, ByVal TenandID As Integer)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET FirstName = '" & FirstName & "', LastName = '" & LastName & "', Gender = '" & Gender & "', Address = '" & Address & "', ContactNum = '" & ContactNum & "', DateLeased = '" & DateLeased & "', Status = 'Active', RoomID = '" & RoomID & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+        Catch ex As SqlException
+            MessageBox.Show("Error:   " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
+    End Sub
+    Public Sub delete_Tenant(ByVal TenantID As Integer)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET Status = 'Inactive' WHERE TenandID = " & TenantID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
+    End Sub
+    Public Sub display_Tenant()
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE Status = 'Active'", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            Tenant.dgvTenant.DataSource = dataSet.Tables("Tenant").DefaultView
+
+        Catch ex As SqlException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
+    Public Sub display_TenantArchive()
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE Status = 'Inactive'", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            tenantArchive.dgvArchiveTenant.DataSource = dataSet.Tables("Archive Tenant").DefaultView
+
+        Catch ex As SqlException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
     Private SelectedPanel As Guna2Panel = Nothing
 
     'This changes room panels background color when selected
@@ -297,11 +396,6 @@ Module Project_Module
         panels.Show()
     End Sub
 
-
-    Public Sub add_tenant(ByVal fname As String, ByVal lname As String, ByVal gender As String, ByVal address As String, ByVal contact As String, ByVal room As String, ByVal lease As String, ByVal status As String)
-        Tenant.dgvTenant.Rows.Add(fname, lname, gender, address, contact, room, lease, status)
-        tenantAddForm.Close()
-    End Sub
 
     Public Sub update_tenant()
         'tenant edit form

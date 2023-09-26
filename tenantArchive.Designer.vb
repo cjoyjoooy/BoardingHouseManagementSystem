@@ -60,9 +60,10 @@ Partial Class tenantArchive
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2Panel1.Size = New Size(833, 685)
+        Guna2Panel1.Size = New Size(729, 514)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnBack
@@ -74,14 +75,15 @@ Partial Class tenantArchive
         btnBack.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnBack.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnBack.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnBack.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnBack.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnBack.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnBack.Image = CType(resources.GetObject("btnBack.Image"), Image)
         btnBack.ImageSize = New Size(25, 30)
-        btnBack.Location = New Point(691, 5)
+        btnBack.Location = New Point(605, 4)
+        btnBack.Margin = New Padding(3, 2, 3, 2)
         btnBack.Name = "btnBack"
         btnBack.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnBack.Size = New Size(130, 35)
+        btnBack.Size = New Size(114, 26)
         btnBack.TabIndex = 17
         btnBack.Text = "Back"
         ' 
@@ -95,18 +97,18 @@ Partial Class tenantArchive
         txtTenantSearch.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtTenantSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtTenantSearch.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtTenantSearch.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtTenantSearch.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtTenantSearch.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtTenantSearch.IconLeft = CType(resources.GetObject("txtTenantSearch.IconLeft"), Image)
         txtTenantSearch.IconLeftOffset = New Point(10, 0)
-        txtTenantSearch.Location = New Point(12, 5)
-        txtTenantSearch.Margin = New Padding(4, 3, 4, 3)
+        txtTenantSearch.Location = New Point(10, 4)
+        txtTenantSearch.Margin = New Padding(4, 2, 4, 2)
         txtTenantSearch.Name = "txtTenantSearch"
         txtTenantSearch.PasswordChar = ChrW(0)
         txtTenantSearch.PlaceholderText = ""
         txtTenantSearch.SelectedText = ""
         txtTenantSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        txtTenantSearch.Size = New Size(383, 35)
+        txtTenantSearch.Size = New Size(335, 26)
         txtTenantSearch.TabIndex = 14
         ' 
         ' dgvArchiveTenant
@@ -141,7 +143,8 @@ Partial Class tenantArchive
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvArchiveTenant.DefaultCellStyle = DataGridViewCellStyle3
         dgvArchiveTenant.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvArchiveTenant.Location = New Point(12, 46)
+        dgvArchiveTenant.Location = New Point(10, 34)
+        dgvArchiveTenant.Margin = New Padding(3, 2, 3, 2)
         dgvArchiveTenant.Name = "dgvArchiveTenant"
         dgvArchiveTenant.ReadOnly = True
         dgvArchiveTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -156,7 +159,7 @@ Partial Class tenantArchive
         dgvArchiveTenant.RowHeadersVisible = False
         dgvArchiveTenant.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvArchiveTenant.RowTemplate.Height = 34
-        dgvArchiveTenant.Size = New Size(809, 627)
+        dgvArchiveTenant.Size = New Size(708, 470)
         dgvArchiveTenant.TabIndex = 13
         dgvArchiveTenant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvArchiveTenant.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -273,11 +276,12 @@ Partial Class tenantArchive
         ' 
         ' tenantArchive
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(833, 685)
+        ClientSize = New Size(729, 514)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "tenantArchive"
         StartPosition = FormStartPosition.CenterScreen
         Text = "tenantArchive"

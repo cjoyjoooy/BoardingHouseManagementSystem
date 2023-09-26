@@ -1,4 +1,8 @@
 ﻿Public Class tenantArchive
+    Private Sub tenantArchive_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        display_TenantArchive()
+    End Sub
+
     Private Sub dgvArchiveTenant_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvArchiveTenant.CellContentClick
         Dim colName As String = dgvArchiveTenant.Columns(e.ColumnIndex).Name
 
