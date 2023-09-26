@@ -22,19 +22,15 @@ Partial Class tenantPayForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Label13 = New Label()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
         txtFname = New Guna.UI2.WinForms.Guna2TextBox()
@@ -51,8 +47,6 @@ Partial Class tenantPayForm
         Guna2Panel1.BackColor = Color.White
         Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.BorderThickness = 2
-        Guna2Panel1.Controls.Add(Guna2DateTimePicker1)
-        Guna2Panel1.Controls.Add(Label13)
         Guna2Panel1.Controls.Add(btnCancel)
         Guna2Panel1.Controls.Add(btnPay)
         Guna2Panel1.Controls.Add(txtFname)
@@ -61,45 +55,13 @@ Partial Class tenantPayForm
         Guna2Panel1.Controls.Add(Label2)
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(Label18)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges9
+        Guna2Panel1.CustomizableEdges = CustomizableEdges7
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2Panel1.Size = New Size(384, 380)
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Guna2Panel1.Size = New Size(384, 298)
         Guna2Panel1.TabIndex = 0
-        ' 
-        ' Guna2DateTimePicker1
-        ' 
-        Guna2DateTimePicker1.BackColor = Color.White
-        Guna2DateTimePicker1.BorderRadius = 10
-        Guna2DateTimePicker1.Checked = True
-        Guna2DateTimePicker1.CustomizableEdges = CustomizableEdges1
-        Guna2DateTimePicker1.FillColor = Color.White
-        Guna2DateTimePicker1.FocusedColor = Color.White
-        Guna2DateTimePicker1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Guna2DateTimePicker1.Format = DateTimePickerFormat.Short
-        Guna2DateTimePicker1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2DateTimePicker1.Location = New Point(27, 243)
-        Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2DateTimePicker1.Size = New Size(330, 39)
-        Guna2DateTimePicker1.TabIndex = 77
-        Guna2DateTimePicker1.Value = New Date(2023, 9, 12, 15, 5, 18, 211)
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.BackColor = Color.Transparent
-        Label13.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label13.Location = New Point(27, 217)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(104, 23)
-        Label13.TabIndex = 76
-        Label13.Text = "Date Paid"
         ' 
         ' btnCancel
         ' 
@@ -107,7 +69,7 @@ Partial Class tenantPayForm
         btnCancel.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.BorderRadius = 10
         btnCancel.BorderThickness = 2
-        btnCancel.CustomizableEdges = CustomizableEdges3
+        btnCancel.CustomizableEdges = CustomizableEdges1
         btnCancel.DisabledState.BorderColor = Color.DarkGray
         btnCancel.DisabledState.CustomBorderColor = Color.DarkGray
         btnCancel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -115,9 +77,9 @@ Partial Class tenantPayForm
         btnCancel.FillColor = Color.White
         btnCancel.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnCancel.Location = New Point(27, 314)
+        btnCancel.Location = New Point(27, 230)
         btnCancel.Name = "btnCancel"
-        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         btnCancel.Size = New Size(152, 36)
         btnCancel.TabIndex = 75
         btnCancel.Text = "Cancel"
@@ -128,7 +90,7 @@ Partial Class tenantPayForm
         btnPay.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnPay.BorderRadius = 10
         btnPay.BorderThickness = 2
-        btnPay.CustomizableEdges = CustomizableEdges5
+        btnPay.CustomizableEdges = CustomizableEdges3
         btnPay.DisabledState.BorderColor = Color.DarkGray
         btnPay.DisabledState.CustomBorderColor = Color.DarkGray
         btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -136,9 +98,9 @@ Partial Class tenantPayForm
         btnPay.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnPay.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnPay.Location = New Point(205, 314)
+        btnPay.Location = New Point(205, 230)
         btnPay.Name = "btnPay"
-        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnPay.Size = New Size(152, 36)
         btnPay.TabIndex = 74
         btnPay.Text = "Pay"
@@ -147,7 +109,7 @@ Partial Class tenantPayForm
         ' 
         txtFname.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtFname.BorderRadius = 10
-        txtFname.CustomizableEdges = CustomizableEdges7
+        txtFname.CustomizableEdges = CustomizableEdges5
         txtFname.DefaultText = ""
         txtFname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtFname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -164,7 +126,7 @@ Partial Class tenantPayForm
         txtFname.PasswordChar = ChrW(0)
         txtFname.PlaceholderText = ""
         txtFname.SelectedText = ""
-        txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         txtFname.Size = New Size(330, 34)
         txtFname.TabIndex = 73
         ' 
@@ -232,7 +194,7 @@ Partial Class tenantPayForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(384, 380)
+        ClientSize = New Size(384, 298)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "tenantPayForm"
@@ -244,8 +206,6 @@ Partial Class tenantPayForm
     End Sub
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Label13 As Label
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtFname As Guna.UI2.WinForms.Guna2TextBox

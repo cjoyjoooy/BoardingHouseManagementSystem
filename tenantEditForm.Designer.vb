@@ -32,8 +32,6 @@ Partial Class tenantEditForm
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -44,13 +42,14 @@ Partial Class tenantEditForm
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         txtLname = New Guna.UI2.WinForms.Guna2TextBox()
         Label10 = New Label()
-        txtContact = New Guna.UI2.WinForms.Guna2TextBox()
         txtAddress = New Guna.UI2.WinForms.Guna2TextBox()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnAddTenant = New Guna.UI2.WinForms.Guna2Button()
@@ -63,12 +62,19 @@ Partial Class tenantEditForm
         Label17 = New Label()
         Label18 = New Label()
         cmbGender = New Guna.UI2.WinForms.Guna2ComboBox()
+        txtContact = New Guna.UI2.WinForms.Guna2TextBox()
+        Label9 = New Label()
+        Label1 = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Guna2Panel1
         ' 
         Guna2Panel1.BackColor = Color.White
+        Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Guna2Panel1.BorderThickness = 2
+        Guna2Panel1.Controls.Add(Label1)
+        Guna2Panel1.Controls.Add(Label9)
         Guna2Panel1.Controls.Add(cmbGender)
         Guna2Panel1.Controls.Add(Guna2DateTimePicker1)
         Guna2Panel1.Controls.Add(Guna2ComboBox2)
@@ -92,7 +98,7 @@ Partial Class tenantEditForm
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Guna2Panel1.Size = New Size(708, 570)
+        Guna2Panel1.Size = New Size(419, 787)
         Guna2Panel1.TabIndex = 0
         ' 
         ' Guna2DateTimePicker1
@@ -106,12 +112,12 @@ Partial Class tenantEditForm
         Guna2DateTimePicker1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2DateTimePicker1.Format = DateTimePickerFormat.Short
         Guna2DateTimePicker1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        Guna2DateTimePicker1.Location = New Point(15, 432)
+        Guna2DateTimePicker1.Location = New Point(13, 587)
         Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
         Guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2DateTimePicker1.Size = New Size(322, 39)
+        Guna2DateTimePicker1.Size = New Size(393, 39)
         Guna2DateTimePicker1.TabIndex = 65
         Guna2DateTimePicker1.Value = New Date(2023, 9, 12, 15, 5, 18, 211)
         ' 
@@ -130,10 +136,10 @@ Partial Class tenantEditForm
         Guna2ComboBox2.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Guna2ComboBox2.ItemHeight = 30
         Guna2ComboBox2.Items.AddRange(New Object() {"Active", "Inactive"})
-        Guna2ComboBox2.Location = New Point(15, 359)
+        Guna2ComboBox2.Location = New Point(12, 510)
         Guna2ComboBox2.Name = "Guna2ComboBox2"
         Guna2ComboBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2ComboBox2.Size = New Size(322, 36)
+        Guna2ComboBox2.Size = New Size(393, 36)
         Guna2ComboBox2.TabIndex = 64
         ' 
         ' Guna2ComboBox1
@@ -151,10 +157,10 @@ Partial Class tenantEditForm
         Guna2ComboBox1.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Guna2ComboBox1.ItemHeight = 30
         Guna2ComboBox1.Items.AddRange(New Object() {"Active", "Inactive"})
-        Guna2ComboBox1.Location = New Point(368, 358)
+        Guna2ComboBox1.Location = New Point(13, 667)
         Guna2ComboBox1.Name = "Guna2ComboBox1"
         Guna2ComboBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2ComboBox1.Size = New Size(322, 36)
+        Guna2ComboBox1.Size = New Size(393, 36)
         Guna2ComboBox1.TabIndex = 63
         ' 
         ' txtLname
@@ -172,14 +178,14 @@ Partial Class tenantEditForm
         txtLname.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtLname.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtLname.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtLname.Location = New Point(371, 41)
+        txtLname.Location = New Point(13, 151)
         txtLname.Margin = New Padding(4, 4, 4, 4)
         txtLname.Name = "txtLname"
         txtLname.PasswordChar = ChrW(0)
         txtLname.PlaceholderText = ""
         txtLname.SelectedText = ""
         txtLname.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        txtLname.Size = New Size(322, 34)
+        txtLname.Size = New Size(393, 34)
         txtLname.TabIndex = 58
         ' 
         ' Label10
@@ -188,36 +194,11 @@ Partial Class tenantEditForm
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label10.Location = New Point(371, 14)
+        Label10.Location = New Point(16, 124)
         Label10.Name = "Label10"
         Label10.Size = New Size(114, 23)
         Label10.TabIndex = 57
         Label10.Text = "Last Name"
-        ' 
-        ' txtContact
-        ' 
-        txtContact.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtContact.BorderRadius = 10
-        txtContact.CustomizableEdges = CustomizableEdges11
-        txtContact.DefaultText = ""
-        txtContact.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtContact.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtContact.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtContact.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtContact.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtContact.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtContact.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        txtContact.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        txtContact.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtContact.Location = New Point(15, 268)
-        txtContact.Margin = New Padding(4, 4, 4, 4)
-        txtContact.Name = "txtContact"
-        txtContact.PasswordChar = ChrW(0)
-        txtContact.PlaceholderText = ""
-        txtContact.SelectedText = ""
-        txtContact.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        txtContact.Size = New Size(322, 34)
-        txtContact.TabIndex = 56
         ' 
         ' txtAddress
         ' 
@@ -234,14 +215,14 @@ Partial Class tenantEditForm
         txtAddress.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtAddress.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtAddress.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtAddress.Location = New Point(15, 193)
+        txtAddress.Location = New Point(13, 303)
         txtAddress.Margin = New Padding(4, 4, 4, 4)
         txtAddress.Name = "txtAddress"
         txtAddress.PasswordChar = ChrW(0)
         txtAddress.PlaceholderText = ""
         txtAddress.SelectedText = ""
         txtAddress.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        txtAddress.Size = New Size(322, 34)
+        txtAddress.Size = New Size(393, 34)
         txtAddress.TabIndex = 55
         ' 
         ' btnCancel
@@ -258,7 +239,7 @@ Partial Class tenantEditForm
         btnCancel.FillColor = Color.White
         btnCancel.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnCancel.Location = New Point(360, 521)
+        btnCancel.Location = New Point(77, 739)
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         btnCancel.Size = New Size(152, 36)
@@ -279,7 +260,7 @@ Partial Class tenantEditForm
         btnAddTenant.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnAddTenant.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnAddTenant.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnAddTenant.Location = New Point(538, 521)
+        btnAddTenant.Location = New Point(255, 739)
         btnAddTenant.Name = "btnAddTenant"
         btnAddTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         btnAddTenant.Size = New Size(152, 36)
@@ -301,14 +282,14 @@ Partial Class tenantEditForm
         txtFname.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtFname.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtFname.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtFname.Location = New Point(15, 41)
+        txtFname.Location = New Point(13, 77)
         txtFname.Margin = New Padding(4, 4, 4, 4)
         txtFname.Name = "txtFname"
         txtFname.PasswordChar = ChrW(0)
         txtFname.PlaceholderText = ""
         txtFname.SelectedText = ""
         txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        txtFname.Size = New Size(322, 34)
+        txtFname.Size = New Size(393, 34)
         txtFname.TabIndex = 52
         ' 
         ' Label11
@@ -317,7 +298,7 @@ Partial Class tenantEditForm
         Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label11.Location = New Point(15, 332)
+        Label11.Location = New Point(16, 483)
         Label11.Name = "Label11"
         Label11.Size = New Size(66, 23)
         Label11.TabIndex = 51
@@ -329,7 +310,7 @@ Partial Class tenantEditForm
         Label12.BackColor = Color.Transparent
         Label12.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label12.Location = New Point(371, 332)
+        Label12.Location = New Point(17, 641)
         Label12.Name = "Label12"
         Label12.Size = New Size(72, 23)
         Label12.TabIndex = 50
@@ -341,7 +322,7 @@ Partial Class tenantEditForm
         Label13.BackColor = Color.Transparent
         Label13.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label13.Location = New Point(16, 406)
+        Label13.Location = New Point(17, 561)
         Label13.Name = "Label13"
         Label13.Size = New Size(133, 23)
         Label13.TabIndex = 49
@@ -353,7 +334,7 @@ Partial Class tenantEditForm
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label14.Location = New Point(15, 241)
+        Label14.Location = New Point(15, 350)
         Label14.Name = "Label14"
         Label14.Size = New Size(87, 23)
         Label14.TabIndex = 48
@@ -365,7 +346,7 @@ Partial Class tenantEditForm
         Label16.BackColor = Color.Transparent
         Label16.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(15, 166)
+        Label16.Location = New Point(16, 276)
         Label16.Name = "Label16"
         Label16.Size = New Size(93, 23)
         Label16.TabIndex = 47
@@ -377,7 +358,7 @@ Partial Class tenantEditForm
         Label17.BackColor = Color.Transparent
         Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(16, 85)
+        Label17.Location = New Point(17, 198)
         Label17.Name = "Label17"
         Label17.Size = New Size(84, 23)
         Label17.TabIndex = 46
@@ -389,7 +370,7 @@ Partial Class tenantEditForm
         Label18.BackColor = Color.Transparent
         Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(15, 14)
+        Label18.Location = New Point(16, 50)
         Label18.Name = "Label18"
         Label18.Size = New Size(116, 23)
         Label18.TabIndex = 45
@@ -410,17 +391,68 @@ Partial Class tenantEditForm
         cmbGender.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         cmbGender.ItemHeight = 30
         cmbGender.Items.AddRange(New Object() {"Female", "Male"})
-        cmbGender.Location = New Point(16, 111)
+        cmbGender.Location = New Point(14, 224)
         cmbGender.Name = "cmbGender"
         cmbGender.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        cmbGender.Size = New Size(322, 36)
+        cmbGender.Size = New Size(393, 36)
         cmbGender.TabIndex = 46
+        ' 
+        ' txtContact
+        ' 
+        txtContact.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContact.BorderRadius = 10
+        txtContact.CustomizableEdges = CustomizableEdges11
+        txtContact.DefaultText = ""
+        txtContact.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtContact.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtContact.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtContact.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtContact.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtContact.FocusedState.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContact.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtContact.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        txtContact.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtContact.Location = New Point(12, 377)
+        txtContact.Margin = New Padding(4, 4, 4, 4)
+        txtContact.Name = "txtContact"
+        txtContact.PasswordChar = ChrW(0)
+        txtContact.PlaceholderText = ""
+        txtContact.SelectedText = ""
+        txtContact.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        txtContact.Size = New Size(393, 34)
+        txtContact.TabIndex = 56
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.BackColor = Color.Transparent
+        Label9.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label9.Location = New Point(12, 9)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(169, 32)
+        Label9.TabIndex = 66
+        Label9.Text = "Tenant Info"
+        Label9.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label1.Location = New Point(17, 444)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(152, 32)
+        Label1.TabIndex = 67
+        Label1.Text = "Room Info"
+        Label1.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' tenantEditForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(708, 570)
+        ClientSize = New Size(419, 787)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "tenantEditForm"
@@ -437,7 +469,6 @@ Partial Class tenantEditForm
     Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents txtLname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents txtContact As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtAddress As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnAddTenant As Guna.UI2.WinForms.Guna2Button
@@ -450,4 +481,7 @@ Partial Class tenantEditForm
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents cmbGender As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents txtContact As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label1 As Label
 End Class
