@@ -70,7 +70,7 @@ Partial Class roomEditForm
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Guna2Panel1.Size = New Size(388, 450)
+        Guna2Panel1.Size = New Size(388, 414)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnCancel
@@ -87,7 +87,7 @@ Partial Class roomEditForm
         btnCancel.FillColor = Color.White
         btnCancel.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnCancel.Location = New Point(29, 390)
+        btnCancel.Location = New Point(29, 359)
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         btnCancel.Size = New Size(152, 36)
@@ -108,7 +108,7 @@ Partial Class roomEditForm
         btnEditRoom.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnEditRoom.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnEditRoom.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnEditRoom.Location = New Point(207, 390)
+        btnEditRoom.Location = New Point(207, 359)
         btnEditRoom.Name = "btnEditRoom"
         btnEditRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnEditRoom.Size = New Size(152, 36)
@@ -130,7 +130,7 @@ Partial Class roomEditForm
         txtNumPerson.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtNumPerson.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtNumPerson.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtNumPerson.Location = New Point(29, 224)
+        txtNumPerson.Location = New Point(29, 207)
         txtNumPerson.Margin = New Padding(4, 4, 4, 4)
         txtNumPerson.Name = "txtNumPerson"
         txtNumPerson.PasswordChar = ChrW(0)
@@ -146,7 +146,7 @@ Partial Class roomEditForm
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(29, 197)
+        Label2.Location = New Point(29, 180)
         Label2.Name = "Label2"
         Label2.Size = New Size(187, 23)
         Label2.TabIndex = 62
@@ -167,7 +167,7 @@ Partial Class roomEditForm
         txtMonthlyRent.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtMonthlyRent.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtMonthlyRent.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtMonthlyRent.Location = New Point(29, 134)
+        txtMonthlyRent.Location = New Point(29, 127)
         txtMonthlyRent.Margin = New Padding(4, 4, 4, 4)
         txtMonthlyRent.Name = "txtMonthlyRent"
         txtMonthlyRent.PasswordChar = ChrW(0)
@@ -183,7 +183,7 @@ Partial Class roomEditForm
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(29, 107)
+        Label1.Location = New Point(29, 100)
         Label1.Name = "Label1"
         Label1.Size = New Size(136, 23)
         Label1.TabIndex = 60
@@ -204,7 +204,7 @@ Partial Class roomEditForm
         cmbRoomStatus.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         cmbRoomStatus.ItemHeight = 30
         cmbRoomStatus.Items.AddRange(New Object() {"Vacant", "Full/Occupied"})
-        cmbRoomStatus.Location = New Point(29, 317)
+        cmbRoomStatus.Location = New Point(29, 289)
         cmbRoomStatus.Name = "cmbRoomStatus"
         cmbRoomStatus.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         cmbRoomStatus.Size = New Size(330, 36)
@@ -241,7 +241,7 @@ Partial Class roomEditForm
         Label17.BackColor = Color.Transparent
         Label17.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(29, 285)
+        Label17.Location = New Point(29, 257)
         Label17.Name = "Label17"
         Label17.Size = New Size(72, 23)
         Label17.TabIndex = 57
@@ -263,7 +263,7 @@ Partial Class roomEditForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(388, 450)
+        ClientSize = New Size(388, 414)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "roomEditForm"

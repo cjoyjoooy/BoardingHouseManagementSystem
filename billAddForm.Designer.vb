@@ -22,20 +22,20 @@ Partial Class billAddForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnAddBill = New Guna.UI2.WinForms.Guna2Button()
@@ -65,11 +65,11 @@ Partial Class billAddForm
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(txtElectricity)
         Guna2Panel1.Controls.Add(Label18)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges27
+        Guna2Panel1.CustomizableEdges = CustomizableEdges13
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         Guna2Panel1.Size = New Size(377, 414)
         Guna2Panel1.TabIndex = 0
         ' 
@@ -79,7 +79,7 @@ Partial Class billAddForm
         btnCancel.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.BorderRadius = 10
         btnCancel.BorderThickness = 2
-        btnCancel.CustomizableEdges = CustomizableEdges15
+        btnCancel.CustomizableEdges = CustomizableEdges1
         btnCancel.DisabledState.BorderColor = Color.DarkGray
         btnCancel.DisabledState.CustomBorderColor = Color.DarkGray
         btnCancel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -89,8 +89,8 @@ Partial Class billAddForm
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.Location = New Point(23, 360)
         btnCancel.Name = "btnCancel"
-        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        btnCancel.Size = New Size(152, 32)
+        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        btnCancel.Size = New Size(152, 36)
         btnCancel.TabIndex = 58
         btnCancel.Text = "Cancel"
         ' 
@@ -100,7 +100,7 @@ Partial Class billAddForm
         btnAddBill.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnAddBill.BorderRadius = 10
         btnAddBill.BorderThickness = 2
-        btnAddBill.CustomizableEdges = CustomizableEdges17
+        btnAddBill.CustomizableEdges = CustomizableEdges3
         btnAddBill.DisabledState.BorderColor = Color.DarkGray
         btnAddBill.DisabledState.CustomBorderColor = Color.DarkGray
         btnAddBill.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -110,8 +110,8 @@ Partial Class billAddForm
         btnAddBill.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnAddBill.Location = New Point(201, 360)
         btnAddBill.Name = "btnAddBill"
-        btnAddBill.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        btnAddBill.Size = New Size(152, 32)
+        btnAddBill.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        btnAddBill.Size = New Size(152, 36)
         btnAddBill.TabIndex = 57
         btnAddBill.Text = "Add"
         ' 
@@ -119,7 +119,7 @@ Partial Class billAddForm
         ' 
         txtMiscellaneous.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtMiscellaneous.BorderRadius = 10
-        txtMiscellaneous.CustomizableEdges = CustomizableEdges19
+        txtMiscellaneous.CustomizableEdges = CustomizableEdges5
         txtMiscellaneous.DefaultText = ""
         txtMiscellaneous.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtMiscellaneous.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -136,8 +136,8 @@ Partial Class billAddForm
         txtMiscellaneous.PasswordChar = ChrW(0)
         txtMiscellaneous.PlaceholderText = ""
         txtMiscellaneous.SelectedText = ""
-        txtMiscellaneous.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        txtMiscellaneous.Size = New Size(330, 30)
+        txtMiscellaneous.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        txtMiscellaneous.Size = New Size(330, 34)
         txtMiscellaneous.TabIndex = 56
         ' 
         ' Label3
@@ -156,7 +156,7 @@ Partial Class billAddForm
         ' 
         txtMaintainance.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtMaintainance.BorderRadius = 10
-        txtMaintainance.CustomizableEdges = CustomizableEdges21
+        txtMaintainance.CustomizableEdges = CustomizableEdges7
         txtMaintainance.DefaultText = ""
         txtMaintainance.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtMaintainance.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -173,8 +173,8 @@ Partial Class billAddForm
         txtMaintainance.PasswordChar = ChrW(0)
         txtMaintainance.PlaceholderText = ""
         txtMaintainance.SelectedText = ""
-        txtMaintainance.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        txtMaintainance.Size = New Size(330, 30)
+        txtMaintainance.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        txtMaintainance.Size = New Size(330, 34)
         txtMaintainance.TabIndex = 54
         ' 
         ' Label2
@@ -193,7 +193,7 @@ Partial Class billAddForm
         ' 
         txtWaterBill.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtWaterBill.BorderRadius = 10
-        txtWaterBill.CustomizableEdges = CustomizableEdges23
+        txtWaterBill.CustomizableEdges = CustomizableEdges9
         txtWaterBill.DefaultText = ""
         txtWaterBill.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtWaterBill.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -210,8 +210,8 @@ Partial Class billAddForm
         txtWaterBill.PasswordChar = ChrW(0)
         txtWaterBill.PlaceholderText = ""
         txtWaterBill.SelectedText = ""
-        txtWaterBill.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        txtWaterBill.Size = New Size(330, 30)
+        txtWaterBill.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        txtWaterBill.Size = New Size(330, 34)
         txtWaterBill.TabIndex = 52
         ' 
         ' Label1
@@ -230,7 +230,7 @@ Partial Class billAddForm
         ' 
         txtElectricity.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtElectricity.BorderRadius = 10
-        txtElectricity.CustomizableEdges = CustomizableEdges25
+        txtElectricity.CustomizableEdges = CustomizableEdges11
         txtElectricity.DefaultText = ""
         txtElectricity.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtElectricity.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -247,8 +247,8 @@ Partial Class billAddForm
         txtElectricity.PasswordChar = ChrW(0)
         txtElectricity.PlaceholderText = ""
         txtElectricity.SelectedText = ""
-        txtElectricity.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        txtElectricity.Size = New Size(330, 30)
+        txtElectricity.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        txtElectricity.Size = New Size(330, 34)
         txtElectricity.TabIndex = 50
         ' 
         ' Label18

@@ -6,15 +6,15 @@
 
     Private Sub btnAddRoom_Click(sender As Object, e As EventArgs) Handles btnAddRoom.Click
 
-        Dim RoomName, MonthlyRent, Status As String
+        Dim RoomName, MonthlyRent As String
         Dim NumberOfPerson As Integer
 
         RoomName = txtRoomName.Text
         MonthlyRent = txtMonthlyRent.Text
         NumberOfPerson = txtNumPerson.Text
-        Status = cmbRoomStatus.Text
 
-        add_Rooms(RoomName, MonthlyRent, NumberOfPerson, Status)
+
+        add_Rooms(RoomName, MonthlyRent, NumberOfPerson, "Vacant")
 
         Me.Close()
     End Sub

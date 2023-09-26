@@ -12,5 +12,7 @@
         changePanel(tenantArchive)
     End Sub
 
-
+    Private Sub btnTenantBillForm_Click(sender As Object, e As EventArgs) Handles btnShowTenantEditForm.Click
+        tenantEditForm.Show()
+    End Sub
 End Class

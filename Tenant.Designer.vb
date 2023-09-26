@@ -70,7 +70,7 @@ Partial Class Tenant
         btnShowAddForm = New Guna.UI2.WinForms.Guna2Button()
         panelTenant = New Guna.UI2.WinForms.Guna2Panel()
         btnDeleteTenant = New Guna.UI2.WinForms.Guna2Button()
-        btnTenantBillForm = New Guna.UI2.WinForms.Guna2Button()
+        btnShowTenantEditForm = New Guna.UI2.WinForms.Guna2Button()
         btnArchive = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel2.SuspendLayout()
@@ -452,7 +452,7 @@ Partial Class Tenant
         panelTenant.AutoSizeMode = AutoSizeMode.GrowAndShrink
         panelTenant.BorderRadius = 20
         panelTenant.Controls.Add(btnDeleteTenant)
-        panelTenant.Controls.Add(btnTenantBillForm)
+        panelTenant.Controls.Add(btnShowTenantEditForm)
         panelTenant.Controls.Add(btnArchive)
         panelTenant.Controls.Add(btnPay)
         panelTenant.Controls.Add(btnShowAddForm)
@@ -488,23 +488,23 @@ Partial Class Tenant
         btnDeleteTenant.Size = New Size(50, 40)
         btnDeleteTenant.TabIndex = 48
         ' 
-        ' btnTenantBillForm
+        ' btnShowTenantEditForm
         ' 
-        btnTenantBillForm.BorderRadius = 10
-        btnTenantBillForm.CustomizableEdges = CustomizableEdges11
-        btnTenantBillForm.DisabledState.BorderColor = Color.DarkGray
-        btnTenantBillForm.DisabledState.CustomBorderColor = Color.DarkGray
-        btnTenantBillForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        btnTenantBillForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        btnTenantBillForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnTenantBillForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnTenantBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnTenantBillForm.Image = CType(resources.GetObject("btnTenantBillForm.Image"), Image)
-        btnTenantBillForm.Location = New Point(655, 0)
-        btnTenantBillForm.Name = "btnTenantBillForm"
-        btnTenantBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        btnTenantBillForm.Size = New Size(50, 40)
-        btnTenantBillForm.TabIndex = 47
+        btnShowTenantEditForm.BorderRadius = 10
+        btnShowTenantEditForm.CustomizableEdges = CustomizableEdges11
+        btnShowTenantEditForm.DisabledState.BorderColor = Color.DarkGray
+        btnShowTenantEditForm.DisabledState.CustomBorderColor = Color.DarkGray
+        btnShowTenantEditForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        btnShowTenantEditForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        btnShowTenantEditForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        btnShowTenantEditForm.Font = New Font("Arial Rounded MT Bold", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowTenantEditForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        btnShowTenantEditForm.Image = CType(resources.GetObject("btnShowTenantEditForm.Image"), Image)
+        btnShowTenantEditForm.Location = New Point(655, 0)
+        btnShowTenantEditForm.Name = "btnShowTenantEditForm"
+        btnShowTenantEditForm.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        btnShowTenantEditForm.Size = New Size(50, 40)
+        btnShowTenantEditForm.TabIndex = 47
         ' 
         ' btnArchive
         ' 
@@ -589,5 +589,5 @@ Partial Class Tenant
     Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnArchive As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnDeleteTenant As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents btnTenantBillForm As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnShowTenantEditForm As Guna.UI2.WinForms.Guna2Button
 End Class
