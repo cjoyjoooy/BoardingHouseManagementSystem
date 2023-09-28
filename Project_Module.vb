@@ -282,7 +282,7 @@ Module Project_Module
             dataSet = New DataSet
             sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE Status = 'Inactive'", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Tenant")
-            tenantArchive.dgvArchiveTenant.DataSource = dataSet.Tables("Archive Tenant").DefaultView
+            tenantArchive.dgvArchiveTenant.DataSource = dataSet.Tables("Tenant").DefaultView
 
         Catch ex As SqlException
             MessageBox.Show("Error: " & ex.Message)
@@ -290,6 +290,15 @@ Module Project_Module
             SQLite_Close_Connection()
         End Try
     End Sub
+
+    Public Sub add_TenantPay()
+
+    End Sub
+
+    Public Sub add_Rooms()
+
+    End Sub
+
     Private SelectedPanel As Guna2Panel = Nothing
 
     'This changes room panels background color when selected

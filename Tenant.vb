@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub btnArchive_Click(sender As Object, e As EventArgs) Handles btnArchive.Click
-        changePanel(tenantArchive)
+        tenantArchive.Show()
     End Sub
 
     Private Sub btnTenantBillForm_Click(sender As Object, e As EventArgs) Handles btnShowTenantEditForm.Click

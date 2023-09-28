@@ -37,16 +37,6 @@ Partial Class tenantArchive
         btnBack = New Guna.UI2.WinForms.Guna2Button()
         txtTenantSearch = New Guna.UI2.WinForms.Guna2TextBox()
         dgvArchiveTenant = New Guna.UI2.WinForms.Guna2DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        Column8 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Column7 = New DataGridViewTextBoxColumn()
-        restoreColumn = New DataGridViewImageColumn()
-        deleteColumn = New DataGridViewImageColumn()
         Guna2Panel1.SuspendLayout()
         CType(dgvArchiveTenant, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -133,7 +123,6 @@ Partial Class tenantArchive
         dgvArchiveTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         dgvArchiveTenant.ColumnHeadersHeight = 50
         dgvArchiveTenant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvArchiveTenant.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column8, Column6, Column7, restoreColumn, deleteColumn})
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
@@ -183,97 +172,6 @@ Partial Class tenantArchive
         dgvArchiveTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvArchiveTenant.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' Column1
-        ' 
-        Column1.FillWeight = 39.649662F
-        Column1.HeaderText = "First Name"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        ' 
-        ' Column2
-        ' 
-        Column2.FillWeight = 39.649662F
-        Column2.HeaderText = "Last Name"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        ' 
-        ' Column3
-        ' 
-        Column3.FillWeight = 39.649662F
-        Column3.HeaderText = "Gender"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.ReadOnly = True
-        ' 
-        ' Column4
-        ' 
-        Column4.FillWeight = 39.649662F
-        Column4.HeaderText = "Address"
-        Column4.MinimumWidth = 6
-        Column4.Name = "Column4"
-        Column4.ReadOnly = True
-        ' 
-        ' Column5
-        ' 
-        Column5.FillWeight = 39.649662F
-        Column5.HeaderText = "Contact Number"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.ReadOnly = True
-        ' 
-        ' Column8
-        ' 
-        Column8.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        Column8.FillWeight = 28.6131573F
-        Column8.HeaderText = "Room"
-        Column8.MinimumWidth = 6
-        Column8.Name = "Column8"
-        Column8.ReadOnly = True
-        ' 
-        ' Column6
-        ' 
-        Column6.FillWeight = 39.649662F
-        Column6.HeaderText = "Date Leased"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
-        ' 
-        ' Column7
-        ' 
-        Column7.FillWeight = 39.649662F
-        Column7.HeaderText = "Status"
-        Column7.MinimumWidth = 6
-        Column7.Name = "Column7"
-        Column7.ReadOnly = True
-        ' 
-        ' restoreColumn
-        ' 
-        restoreColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        restoreColumn.FillWeight = 80.26524F
-        restoreColumn.HeaderText = ""
-        restoreColumn.Image = CType(resources.GetObject("restoreColumn.Image"), Image)
-        restoreColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        restoreColumn.MinimumWidth = 40
-        restoreColumn.Name = "restoreColumn"
-        restoreColumn.ReadOnly = True
-        restoreColumn.Resizable = DataGridViewTriState.True
-        restoreColumn.SortMode = DataGridViewColumnSortMode.Automatic
-        restoreColumn.Width = 40
-        ' 
-        ' deleteColumn
-        ' 
-        deleteColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
-        deleteColumn.FillWeight = 613.5739F
-        deleteColumn.HeaderText = ""
-        deleteColumn.Image = CType(resources.GetObject("deleteColumn.Image"), Image)
-        deleteColumn.ImageLayout = DataGridViewImageCellLayout.Zoom
-        deleteColumn.MinimumWidth = 40
-        deleteColumn.Name = "deleteColumn"
-        deleteColumn.ReadOnly = True
-        deleteColumn.Width = 40
-        ' 
         ' tenantArchive
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -293,15 +191,5 @@ Partial Class tenantArchive
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents dgvArchiveTenant As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents txtTenantSearch As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents restoreColumn As DataGridViewImageColumn
-    Friend WithEvents deleteColumn As DataGridViewImageColumn
     Friend WithEvents btnBack As Guna.UI2.WinForms.Guna2Button
 End Class
