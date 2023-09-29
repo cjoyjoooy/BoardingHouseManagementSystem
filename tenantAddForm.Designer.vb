@@ -137,10 +137,9 @@ Partial Class tenantAddForm
         Guna2Panel1.FillColor = Color.White
         Guna2Panel1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.Location = New Point(0, 0)
-        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges42
-        Guna2Panel1.Size = New Size(367, 532)
+        Guna2Panel1.Size = New Size(419, 709)
         Guna2Panel1.TabIndex = 0
         ' 
         ' Guna2Panel2
@@ -170,10 +169,9 @@ Partial Class tenantAddForm
         Guna2Panel2.FillColor = Color.White
         Guna2Panel2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel2.Location = New Point(0, 0)
-        Guna2Panel2.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel2.Name = "Guna2Panel2"
         Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        Guna2Panel2.Size = New Size(367, 532)
+        Guna2Panel2.Size = New Size(419, 709)
         Guna2Panel2.TabIndex = 41
         ' 
         ' Label12
@@ -182,9 +180,9 @@ Partial Class tenantAddForm
         Label12.BackColor = Color.Transparent
         Label12.Font = New Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label12.Location = New Point(10, 336)
+        Label12.Location = New Point(11, 448)
         Label12.Name = "Label12"
-        Label12.Size = New Size(113, 26)
+        Label12.Size = New Size(143, 32)
         Label12.TabIndex = 47
         Label12.Text = "Room Info"
         Label12.TextAlign = ContentAlignment.MiddleLeft
@@ -195,9 +193,9 @@ Partial Class tenantAddForm
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Microsoft Sans Serif", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label9.Location = New Point(10, 8)
+        Label9.Location = New Point(11, 11)
         Label9.Name = "Label9"
-        Label9.Size = New Size(120, 26)
+        Label9.Size = New Size(157, 32)
         Label9.TabIndex = 46
         Label9.Text = "Tenant Info"
         Label9.TextAlign = ContentAlignment.MiddleLeft
@@ -217,12 +215,11 @@ Partial Class tenantAddForm
         cmbGender.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         cmbGender.ItemHeight = 30
         cmbGender.Items.AddRange(New Object() {"Female", "Male"})
-        cmbGender.Location = New Point(10, 174)
-        cmbGender.Margin = New Padding(3, 2, 3, 2)
+        cmbGender.Location = New Point(11, 232)
         cmbGender.Name = "cmbGender"
         cmbGender.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        cmbGender.Size = New Size(344, 36)
-        cmbGender.TabIndex = 45
+        cmbGender.Size = New Size(393, 36)
+        cmbGender.TabIndex = 3
         ' 
         ' dtpLease
         ' 
@@ -234,14 +231,13 @@ Partial Class tenantAddForm
         dtpLease.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         dtpLease.Format = DateTimePickerFormat.Short
         dtpLease.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        dtpLease.Location = New Point(10, 446)
-        dtpLease.Margin = New Padding(3, 2, 3, 2)
+        dtpLease.Location = New Point(11, 595)
         dtpLease.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         dtpLease.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         dtpLease.Name = "dtpLease"
         dtpLease.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        dtpLease.Size = New Size(344, 29)
-        dtpLease.TabIndex = 44
+        dtpLease.Size = New Size(393, 39)
+        dtpLease.TabIndex = 7
         dtpLease.Value = New Date(2023, 9, 12, 15, 5, 18, 211)
         ' 
         ' cmbRoom
@@ -258,13 +254,11 @@ Partial Class tenantAddForm
         cmbRoom.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         cmbRoom.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         cmbRoom.ItemHeight = 30
-        cmbRoom.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
-        cmbRoom.Location = New Point(10, 388)
-        cmbRoom.Margin = New Padding(3, 2, 3, 2)
+        cmbRoom.Location = New Point(11, 517)
         cmbRoom.Name = "cmbRoom"
         cmbRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        cmbRoom.Size = New Size(344, 36)
-        cmbRoom.TabIndex = 43
+        cmbRoom.Size = New Size(393, 36)
+        cmbRoom.TabIndex = 6
         ' 
         ' txtLname
         ' 
@@ -281,15 +275,15 @@ Partial Class tenantAddForm
         txtLname.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtLname.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtLname.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtLname.Location = New Point(10, 118)
-        txtLname.Margin = New Padding(4, 3, 4, 3)
+        txtLname.Location = New Point(11, 157)
+        txtLname.Margin = New Padding(5, 4, 5, 4)
         txtLname.Name = "txtLname"
         txtLname.PasswordChar = ChrW(0)
         txtLname.PlaceholderText = ""
         txtLname.SelectedText = ""
         txtLname.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        txtLname.Size = New Size(344, 26)
-        txtLname.TabIndex = 37
+        txtLname.Size = New Size(393, 35)
+        txtLname.TabIndex = 2
         ' 
         ' Label10
         ' 
@@ -297,9 +291,9 @@ Partial Class tenantAddForm
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label10.Location = New Point(10, 98)
+        Label10.Location = New Point(11, 131)
         Label10.Name = "Label10"
-        Label10.Size = New Size(86, 20)
+        Label10.Size = New Size(106, 25)
         Label10.TabIndex = 36
         Label10.Text = "Last Name"
         ' 
@@ -318,15 +312,15 @@ Partial Class tenantAddForm
         txtContact.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtContact.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtContact.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtContact.Location = New Point(10, 288)
-        txtContact.Margin = New Padding(4, 3, 4, 3)
+        txtContact.Location = New Point(11, 384)
+        txtContact.Margin = New Padding(5, 4, 5, 4)
         txtContact.Name = "txtContact"
         txtContact.PasswordChar = ChrW(0)
         txtContact.PlaceholderText = ""
         txtContact.SelectedText = ""
         txtContact.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        txtContact.Size = New Size(344, 26)
-        txtContact.TabIndex = 32
+        txtContact.Size = New Size(393, 35)
+        txtContact.TabIndex = 5
         ' 
         ' txtAddress
         ' 
@@ -343,15 +337,15 @@ Partial Class tenantAddForm
         txtAddress.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtAddress.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtAddress.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtAddress.Location = New Point(10, 232)
-        txtAddress.Margin = New Padding(4, 3, 4, 3)
+        txtAddress.Location = New Point(11, 309)
+        txtAddress.Margin = New Padding(5, 4, 5, 4)
         txtAddress.Name = "txtAddress"
         txtAddress.PasswordChar = ChrW(0)
         txtAddress.PlaceholderText = ""
         txtAddress.SelectedText = ""
         txtAddress.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        txtAddress.Size = New Size(344, 26)
-        txtAddress.TabIndex = 31
+        txtAddress.Size = New Size(393, 35)
+        txtAddress.TabIndex = 4
         ' 
         ' btnCancel
         ' 
@@ -367,12 +361,11 @@ Partial Class tenantAddForm
         btnCancel.FillColor = Color.White
         btnCancel.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnCancel.Location = New Point(74, 496)
-        btnCancel.Margin = New Padding(3, 2, 3, 2)
+        btnCancel.Location = New Point(85, 661)
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        btnCancel.Size = New Size(133, 27)
-        btnCancel.TabIndex = 29
+        btnCancel.Size = New Size(152, 36)
+        btnCancel.TabIndex = 8
         btnCancel.Text = "Cancel"
         ' 
         ' btnAddTenant
@@ -389,12 +382,11 @@ Partial Class tenantAddForm
         btnAddTenant.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnAddTenant.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnAddTenant.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnAddTenant.Location = New Point(223, 496)
-        btnAddTenant.Margin = New Padding(3, 2, 3, 2)
+        btnAddTenant.Location = New Point(255, 661)
         btnAddTenant.Name = "btnAddTenant"
         btnAddTenant.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        btnAddTenant.Size = New Size(133, 27)
-        btnAddTenant.TabIndex = 28
+        btnAddTenant.Size = New Size(152, 36)
+        btnAddTenant.TabIndex = 9
         btnAddTenant.Text = "Add"
         ' 
         ' txtFname
@@ -412,15 +404,15 @@ Partial Class tenantAddForm
         txtFname.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtFname.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtFname.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtFname.Location = New Point(10, 62)
-        txtFname.Margin = New Padding(4, 3, 4, 3)
+        txtFname.Location = New Point(11, 83)
+        txtFname.Margin = New Padding(5, 4, 5, 4)
         txtFname.Name = "txtFname"
         txtFname.PasswordChar = ChrW(0)
         txtFname.PlaceholderText = ""
         txtFname.SelectedText = ""
         txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        txtFname.Size = New Size(344, 26)
-        txtFname.TabIndex = 27
+        txtFname.Size = New Size(393, 35)
+        txtFname.TabIndex = 1
         ' 
         ' Label11
         ' 
@@ -428,9 +420,9 @@ Partial Class tenantAddForm
         Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label11.Location = New Point(10, 368)
+        Label11.Location = New Point(11, 491)
         Label11.Name = "Label11"
-        Label11.Size = New Size(52, 20)
+        Label11.Size = New Size(63, 25)
         Label11.TabIndex = 26
         Label11.Text = "Room"
         ' 
@@ -440,9 +432,9 @@ Partial Class tenantAddForm
         Label13.BackColor = Color.Transparent
         Label13.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label13.Location = New Point(10, 428)
+        Label13.Location = New Point(11, 571)
         Label13.Name = "Label13"
-        Label13.Size = New Size(101, 20)
+        Label13.Size = New Size(123, 25)
         Label13.TabIndex = 24
         Label13.Text = "Date Leased"
         ' 
@@ -452,9 +444,9 @@ Partial Class tenantAddForm
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label14.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label14.Location = New Point(10, 268)
+        Label14.Location = New Point(11, 357)
         Label14.Name = "Label14"
-        Label14.Size = New Size(65, 20)
+        Label14.Size = New Size(80, 25)
         Label14.TabIndex = 23
         Label14.Text = "Contact"
         ' 
@@ -464,9 +456,9 @@ Partial Class tenantAddForm
         Label16.BackColor = Color.Transparent
         Label16.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label16.Location = New Point(10, 212)
+        Label16.Location = New Point(11, 283)
         Label16.Name = "Label16"
-        Label16.Size = New Size(68, 20)
+        Label16.Size = New Size(85, 25)
         Label16.TabIndex = 22
         Label16.Text = "Address"
         ' 
@@ -476,9 +468,9 @@ Partial Class tenantAddForm
         Label17.BackColor = Color.Transparent
         Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label17.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label17.Location = New Point(10, 154)
+        Label17.Location = New Point(11, 205)
         Label17.Name = "Label17"
-        Label17.Size = New Size(63, 20)
+        Label17.Size = New Size(77, 25)
         Label17.TabIndex = 21
         Label17.Text = "Gender"
         ' 
@@ -488,9 +480,9 @@ Partial Class tenantAddForm
         Label18.BackColor = Color.Transparent
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(10, 40)
+        Label18.Location = New Point(11, 53)
         Label18.Name = "Label18"
-        Label18.Size = New Size(86, 20)
+        Label18.Size = New Size(106, 25)
         Label18.TabIndex = 20
         Label18.Text = "First Name"
         ' 
@@ -500,9 +492,9 @@ Partial Class tenantAddForm
         Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label8.Location = New Point(71, 98)
+        Label8.Location = New Point(81, 131)
         Label8.Name = "Label8"
-        Label8.Size = New Size(61, 22)
+        Label8.Size = New Size(79, 26)
         Label8.TabIndex = 40
         Label8.Text = "Female"
         ' 
@@ -513,11 +505,10 @@ Partial Class tenantAddForm
         rdbMale.CheckedState.BorderThickness = 0
         rdbMale.CheckedState.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         rdbMale.CheckedState.InnerColor = Color.White
-        rdbMale.Location = New Point(28, 137)
-        rdbMale.Margin = New Padding(3, 2, 3, 2)
+        rdbMale.Location = New Point(32, 183)
         rdbMale.Name = "rdbMale"
         rdbMale.ShadowDecoration.CustomizableEdges = CustomizableEdges21
-        rdbMale.Size = New Size(18, 12)
+        rdbMale.Size = New Size(21, 16)
         rdbMale.TabIndex = 39
         rdbMale.Text = "Male"
         rdbMale.UncheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
@@ -532,11 +523,10 @@ Partial Class tenantAddForm
         rdbFemale.CheckedState.BorderThickness = 0
         rdbFemale.CheckedState.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         rdbFemale.CheckedState.InnerColor = Color.White
-        rdbFemale.Location = New Point(28, 106)
-        rdbFemale.Margin = New Padding(3, 2, 3, 2)
+        rdbFemale.Location = New Point(32, 141)
         rdbFemale.Name = "rdbFemale"
         rdbFemale.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        rdbFemale.Size = New Size(18, 12)
+        rdbFemale.Size = New Size(21, 16)
         rdbFemale.TabIndex = 38
         rdbFemale.Text = "Female"
         rdbFemale.UncheckedState.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
@@ -557,14 +547,14 @@ Partial Class tenantAddForm
         Guna2TextBox8.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox8.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox8.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox8.Location = New Point(331, 34)
-        Guna2TextBox8.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox8.Location = New Point(378, 45)
+        Guna2TextBox8.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox8.Name = "Guna2TextBox8"
         Guna2TextBox8.PasswordChar = ChrW(0)
         Guna2TextBox8.PlaceholderText = ""
         Guna2TextBox8.SelectedText = ""
         Guna2TextBox8.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        Guna2TextBox8.Size = New Size(282, 26)
+        Guna2TextBox8.Size = New Size(322, 35)
         Guna2TextBox8.TabIndex = 37
         ' 
         ' Label2
@@ -573,9 +563,9 @@ Partial Class tenantAddForm
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(331, 14)
+        Label2.Location = New Point(378, 19)
         Label2.Name = "Label2"
-        Label2.Size = New Size(86, 20)
+        Label2.Size = New Size(106, 25)
         Label2.TabIndex = 36
         Label2.Text = "Last Name"
         ' 
@@ -592,14 +582,14 @@ Partial Class tenantAddForm
         Guna2TextBox7.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox7.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox7.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox7.Location = New Point(372, 106)
-        Guna2TextBox7.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox7.Location = New Point(425, 141)
+        Guna2TextBox7.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox7.Name = "Guna2TextBox7"
         Guna2TextBox7.PasswordChar = ChrW(0)
         Guna2TextBox7.PlaceholderText = ""
         Guna2TextBox7.SelectedText = ""
         Guna2TextBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        Guna2TextBox7.Size = New Size(282, 26)
+        Guna2TextBox7.Size = New Size(322, 35)
         Guna2TextBox7.TabIndex = 35
         ' 
         ' Guna2TextBox6
@@ -615,14 +605,14 @@ Partial Class tenantAddForm
         Guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox6.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox6.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox6.Location = New Point(359, 224)
-        Guna2TextBox6.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox6.Location = New Point(410, 299)
+        Guna2TextBox6.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox6.Name = "Guna2TextBox6"
         Guna2TextBox6.PasswordChar = ChrW(0)
         Guna2TextBox6.PlaceholderText = ""
         Guna2TextBox6.SelectedText = ""
         Guna2TextBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        Guna2TextBox6.Size = New Size(282, 26)
+        Guna2TextBox6.Size = New Size(322, 35)
         Guna2TextBox6.TabIndex = 34
         ' 
         ' Guna2TextBox5
@@ -638,14 +628,14 @@ Partial Class tenantAddForm
         Guna2TextBox5.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox5.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox5.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox5.Location = New Point(19, 272)
-        Guna2TextBox5.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox5.Location = New Point(22, 363)
+        Guna2TextBox5.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox5.Name = "Guna2TextBox5"
         Guna2TextBox5.PasswordChar = ChrW(0)
         Guna2TextBox5.PlaceholderText = ""
         Guna2TextBox5.SelectedText = ""
         Guna2TextBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        Guna2TextBox5.Size = New Size(282, 26)
+        Guna2TextBox5.Size = New Size(322, 35)
         Guna2TextBox5.TabIndex = 33
         ' 
         ' Guna2TextBox4
@@ -661,14 +651,14 @@ Partial Class tenantAddForm
         Guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox4.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox4.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox4.Location = New Point(19, 209)
-        Guna2TextBox4.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox4.Location = New Point(22, 279)
+        Guna2TextBox4.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox4.Name = "Guna2TextBox4"
         Guna2TextBox4.PasswordChar = ChrW(0)
         Guna2TextBox4.PlaceholderText = ""
         Guna2TextBox4.SelectedText = ""
         Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        Guna2TextBox4.Size = New Size(282, 26)
+        Guna2TextBox4.Size = New Size(322, 35)
         Guna2TextBox4.TabIndex = 32
         ' 
         ' Guna2TextBox3
@@ -684,14 +674,14 @@ Partial Class tenantAddForm
         Guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox3.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox3.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox3.Location = New Point(364, 166)
-        Guna2TextBox3.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox3.Location = New Point(416, 221)
+        Guna2TextBox3.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox3.Name = "Guna2TextBox3"
         Guna2TextBox3.PasswordChar = ChrW(0)
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.SelectedText = ""
         Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        Guna2TextBox3.Size = New Size(282, 26)
+        Guna2TextBox3.Size = New Size(322, 35)
         Guna2TextBox3.TabIndex = 31
         ' 
         ' Guna2Button2
@@ -708,11 +698,10 @@ Partial Class tenantAddForm
         Guna2Button2.FillColor = Color.White
         Guna2Button2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2Button2.Location = New Point(372, 284)
-        Guna2Button2.Margin = New Padding(3, 2, 3, 2)
+        Guna2Button2.Location = New Point(425, 379)
         Guna2Button2.Name = "Guna2Button2"
         Guna2Button2.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        Guna2Button2.Size = New Size(133, 27)
+        Guna2Button2.Size = New Size(152, 36)
         Guna2Button2.TabIndex = 29
         Guna2Button2.Text = "Cancel"
         ' 
@@ -730,11 +719,10 @@ Partial Class tenantAddForm
         Guna2Button1.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Guna2Button1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2Button1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Guna2Button1.Location = New Point(528, 284)
-        Guna2Button1.Margin = New Padding(3, 2, 3, 2)
+        Guna2Button1.Location = New Point(603, 379)
         Guna2Button1.Name = "Guna2Button1"
         Guna2Button1.ShadowDecoration.CustomizableEdges = CustomizableEdges38
-        Guna2Button1.Size = New Size(133, 27)
+        Guna2Button1.Size = New Size(152, 36)
         Guna2Button1.TabIndex = 28
         Guna2Button1.Text = "Add"
         ' 
@@ -751,14 +739,14 @@ Partial Class tenantAddForm
         Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(19, 34)
-        Guna2TextBox1.Margin = New Padding(4, 3, 4, 3)
+        Guna2TextBox1.Location = New Point(22, 45)
+        Guna2TextBox1.Margin = New Padding(5, 4, 5, 4)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.PasswordChar = ChrW(0)
         Guna2TextBox1.PlaceholderText = ""
         Guna2TextBox1.SelectedText = ""
         Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        Guna2TextBox1.Size = New Size(282, 26)
+        Guna2TextBox1.Size = New Size(322, 35)
         Guna2TextBox1.TabIndex = 27
         ' 
         ' Label15
@@ -767,9 +755,9 @@ Partial Class tenantAddForm
         Label15.BackColor = Color.Transparent
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label15.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label15.Location = New Point(359, 204)
+        Label15.Location = New Point(410, 272)
         Label15.Name = "Label15"
-        Label15.Size = New Size(52, 20)
+        Label15.Size = New Size(63, 25)
         Label15.TabIndex = 26
         Label15.Text = "Room"
         ' 
@@ -779,9 +767,9 @@ Partial Class tenantAddForm
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label7.Location = New Point(19, 252)
+        Label7.Location = New Point(22, 336)
         Label7.Name = "Label7"
-        Label7.Size = New Size(56, 20)
+        Label7.Size = New Size(68, 25)
         Label7.TabIndex = 25
         Label7.Text = "Status"
         ' 
@@ -791,9 +779,9 @@ Partial Class tenantAddForm
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label6.Location = New Point(372, 86)
+        Label6.Location = New Point(425, 115)
         Label6.Name = "Label6"
-        Label6.Size = New Size(101, 20)
+        Label6.Size = New Size(123, 25)
         Label6.TabIndex = 24
         Label6.Text = "Date Leased"
         ' 
@@ -803,9 +791,9 @@ Partial Class tenantAddForm
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label5.Location = New Point(19, 189)
+        Label5.Location = New Point(22, 252)
         Label5.Name = "Label5"
-        Label5.Size = New Size(65, 20)
+        Label5.Size = New Size(80, 25)
         Label5.TabIndex = 23
         Label5.Text = "Contact"
         ' 
@@ -815,9 +803,9 @@ Partial Class tenantAddForm
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label4.Location = New Point(364, 146)
+        Label4.Location = New Point(416, 195)
         Label4.Name = "Label4"
-        Label4.Size = New Size(68, 20)
+        Label4.Size = New Size(85, 25)
         Label4.TabIndex = 22
         Label4.Text = "Address"
         ' 
@@ -827,9 +815,9 @@ Partial Class tenantAddForm
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label3.Location = New Point(19, 71)
+        Label3.Location = New Point(22, 95)
         Label3.Name = "Label3"
-        Label3.Size = New Size(63, 20)
+        Label3.Size = New Size(77, 25)
         Label3.TabIndex = 21
         Label3.Text = "Gender"
         ' 
@@ -839,20 +827,19 @@ Partial Class tenantAddForm
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(19, 14)
+        Label1.Location = New Point(22, 19)
         Label1.Name = "Label1"
-        Label1.Size = New Size(86, 20)
+        Label1.Size = New Size(106, 25)
         Label1.TabIndex = 20
         Label1.Text = "First Name"
         ' 
         ' tenantAddForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(367, 532)
+        ClientSize = New Size(419, 709)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 2, 3, 2)
         Name = "tenantAddForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Add Tenant"

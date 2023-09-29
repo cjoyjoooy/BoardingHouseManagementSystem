@@ -3,8 +3,8 @@
         Me.Close()
     End Sub
 
-    Private Sub btnAddTenant_Click(sender As Object, e As EventArgs) Handles btnAddTenant.Click
-        Dim FirstName, LastName, Gender, Address, ContactNum, DateLeased, Status As String
+    Private Sub btnEditTenant_Click(sender As Object, e As EventArgs) Handles btnEditTenant.Click
+        Dim FirstName, LastName, Gender, Address, ContactNum, DateLeased As String
         Dim RoomID, TenandID As Integer
 
         FirstName = txtFname.Text
@@ -13,10 +13,9 @@
         Address = txtAddress.Text
         ContactNum = txtContact.Text
         DateLeased = dtpDate.Value
-        Status = cmbStatus.Text
         RoomID = cmbRoom.Text
         TenandID = txtTenandID.Text
-        edit_Tenant(FirstName, LastName, Gender, Address, ContactNum, DateLeased, Status, RoomID, TenandID)
+        edit_Tenant(FirstName, LastName, Gender, Address, ContactNum, DateLeased, RoomID, TenandID)
         display_Tenant()
         Me.Close()
     End Sub

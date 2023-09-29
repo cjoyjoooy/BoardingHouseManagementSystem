@@ -22,14 +22,14 @@ Partial Class Rooms
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Rooms))
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Rooms))
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -41,12 +41,11 @@ Partial Class Rooms
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         panelRooms = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label3 = New Label()
-        Label1 = New Label()
+        tenantList = New Guna.UI2.WinForms.Guna2Panel()
         Label6 = New Label()
         btnAddRoomForm = New Guna.UI2.WinForms.Guna2Button()
         btnDeleteRoom = New Guna.UI2.WinForms.Guna2Button()
@@ -61,15 +60,15 @@ Partial Class Rooms
         Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2Panel15 = New Guna.UI2.WinForms.Guna2Panel()
         lblMonthlyRent = New Label()
-        lblTenantName = New Label()
         lblRoomNumber = New Label()
         lblStatus = New Label()
         Label30 = New Label()
         Label29 = New Label()
-        Label28 = New Label()
         Label27 = New Label()
         Label26 = New Label()
         Label2 = New Label()
+        Label1 = New Label()
+        lblNumOccupants = New Label()
         panelRooms.SuspendLayout()
         Guna2Panel1.SuspendLayout()
         Guna2Panel15.SuspendLayout()
@@ -92,80 +91,38 @@ Partial Class Rooms
         panelRooms.Controls.Add(Guna2Panel8)
         panelRooms.Controls.Add(Guna2Panel15)
         panelRooms.Controls.Add(Label2)
-        panelRooms.CustomizableEdges = CustomizableEdges17
+        panelRooms.CustomizableEdges = CustomizableEdges19
         panelRooms.Dock = DockStyle.Fill
         panelRooms.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         panelRooms.Location = New Point(0, 0)
         panelRooms.Name = "panelRooms"
-        panelRooms.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        panelRooms.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         panelRooms.Size = New Size(833, 685)
         panelRooms.TabIndex = 0
         ' 
         ' Guna2Panel1
         ' 
-        Guna2Panel1.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
+        Guna2Panel1.BackColor = Color.White
         Guna2Panel1.BorderRadius = 10
         Guna2Panel1.BorderThickness = 20
-        Guna2Panel1.Controls.Add(Label4)
-        Guna2Panel1.Controls.Add(Label5)
-        Guna2Panel1.Controls.Add(Label3)
-        Guna2Panel1.Controls.Add(Label1)
+        Guna2Panel1.Controls.Add(tenantList)
         Guna2Panel1.Controls.Add(Label6)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges1
+        Guna2Panel1.CustomizableEdges = CustomizableEdges3
         Guna2Panel1.FillColor = Color.White
         Guna2Panel1.Location = New Point(404, 353)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Guna2Panel1.Size = New Size(417, 329)
         Guna2Panel1.TabIndex = 33
         ' 
-        ' Label4
+        ' tenantList
         ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label4.Location = New Point(31, 175)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(132, 26)
-        Label4.TabIndex = 36
-        Label4.Text = "Tenant Name"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label5.Location = New Point(31, 133)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(132, 26)
-        Label5.TabIndex = 35
-        Label5.Text = "Tenant Name"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label3.Location = New Point(31, 94)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(132, 26)
-        Label3.TabIndex = 34
-        Label3.Text = "Tenant Name"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(31, 52)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(132, 26)
-        Label1.TabIndex = 33
-        Label1.Text = "Tenant Name"
+        tenantList.CustomizableEdges = CustomizableEdges1
+        tenantList.Location = New Point(15, 44)
+        tenantList.Name = "tenantList"
+        tenantList.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        tenantList.Size = New Size(383, 282)
+        tenantList.TabIndex = 29
         ' 
         ' Label6
         ' 
@@ -182,7 +139,7 @@ Partial Class Rooms
         ' btnAddRoomForm
         ' 
         btnAddRoomForm.BorderRadius = 10
-        btnAddRoomForm.CustomizableEdges = CustomizableEdges3
+        btnAddRoomForm.CustomizableEdges = CustomizableEdges5
         btnAddRoomForm.DisabledState.BorderColor = Color.DarkGray
         btnAddRoomForm.DisabledState.CustomBorderColor = Color.DarkGray
         btnAddRoomForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -193,14 +150,14 @@ Partial Class Rooms
         btnAddRoomForm.Image = CType(resources.GetObject("btnAddRoomForm.Image"), Image)
         btnAddRoomForm.Location = New Point(659, 307)
         btnAddRoomForm.Name = "btnAddRoomForm"
-        btnAddRoomForm.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        btnAddRoomForm.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         btnAddRoomForm.Size = New Size(50, 40)
         btnAddRoomForm.TabIndex = 40
         ' 
         ' btnDeleteRoom
         ' 
         btnDeleteRoom.BorderRadius = 10
-        btnDeleteRoom.CustomizableEdges = CustomizableEdges5
+        btnDeleteRoom.CustomizableEdges = CustomizableEdges7
         btnDeleteRoom.DisabledState.BorderColor = Color.DarkGray
         btnDeleteRoom.DisabledState.CustomBorderColor = Color.DarkGray
         btnDeleteRoom.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -211,14 +168,14 @@ Partial Class Rooms
         btnDeleteRoom.Image = CType(resources.GetObject("btnDeleteRoom.Image"), Image)
         btnDeleteRoom.Location = New Point(771, 307)
         btnDeleteRoom.Name = "btnDeleteRoom"
-        btnDeleteRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        btnDeleteRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         btnDeleteRoom.Size = New Size(50, 40)
         btnDeleteRoom.TabIndex = 39
         ' 
         ' btnEditRoomForm
         ' 
         btnEditRoomForm.BorderRadius = 10
-        btnEditRoomForm.CustomizableEdges = CustomizableEdges7
+        btnEditRoomForm.CustomizableEdges = CustomizableEdges9
         btnEditRoomForm.DisabledState.BorderColor = Color.DarkGray
         btnEditRoomForm.DisabledState.CustomBorderColor = Color.DarkGray
         btnEditRoomForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -229,7 +186,7 @@ Partial Class Rooms
         btnEditRoomForm.Image = CType(resources.GetObject("btnEditRoomForm.Image"), Image)
         btnEditRoomForm.Location = New Point(715, 307)
         btnEditRoomForm.Name = "btnEditRoomForm"
-        btnEditRoomForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        btnEditRoomForm.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         btnEditRoomForm.Size = New Size(50, 40)
         btnEditRoomForm.TabIndex = 38
         ' 
@@ -259,11 +216,11 @@ Partial Class Rooms
         Guna2Panel7.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel7.BorderRadius = 5
         Guna2Panel7.BorderThickness = 20
-        Guna2Panel7.CustomizableEdges = CustomizableEdges9
+        Guna2Panel7.CustomizableEdges = CustomizableEdges11
         Guna2Panel7.FillColor = Color.FromArgb(CByte(154), CByte(154), CByte(154))
         Guna2Panel7.Location = New Point(357, 279)
         Guna2Panel7.Name = "Guna2Panel7"
-        Guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Guna2Panel7.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Guna2Panel7.Size = New Size(27, 24)
         Guna2Panel7.TabIndex = 31
         ' 
@@ -285,11 +242,11 @@ Partial Class Rooms
         Guna2Panel9.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel9.BorderRadius = 5
         Guna2Panel9.BorderThickness = 20
-        Guna2Panel9.CustomizableEdges = CustomizableEdges11
+        Guna2Panel9.CustomizableEdges = CustomizableEdges13
         Guna2Panel9.FillColor = Color.White
         Guna2Panel9.Location = New Point(229, 279)
         Guna2Panel9.Name = "Guna2Panel9"
-        Guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Guna2Panel9.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         Guna2Panel9.Size = New Size(27, 24)
         Guna2Panel9.TabIndex = 30
         ' 
@@ -324,11 +281,11 @@ Partial Class Rooms
         Guna2Panel8.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel8.BorderRadius = 5
         Guna2Panel8.BorderThickness = 20
-        Guna2Panel8.CustomizableEdges = CustomizableEdges13
+        Guna2Panel8.CustomizableEdges = CustomizableEdges15
         Guna2Panel8.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         Guna2Panel8.Location = New Point(98, 279)
         Guna2Panel8.Name = "Guna2Panel8"
-        Guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Guna2Panel8.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Guna2Panel8.Size = New Size(27, 24)
         Guna2Panel8.TabIndex = 29
         ' 
@@ -337,20 +294,20 @@ Partial Class Rooms
         Guna2Panel15.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel15.BorderRadius = 10
         Guna2Panel15.BorderThickness = 20
+        Guna2Panel15.Controls.Add(lblNumOccupants)
+        Guna2Panel15.Controls.Add(Label1)
         Guna2Panel15.Controls.Add(lblMonthlyRent)
-        Guna2Panel15.Controls.Add(lblTenantName)
         Guna2Panel15.Controls.Add(lblRoomNumber)
         Guna2Panel15.Controls.Add(lblStatus)
         Guna2Panel15.Controls.Add(Label30)
         Guna2Panel15.Controls.Add(Label29)
-        Guna2Panel15.Controls.Add(Label28)
         Guna2Panel15.Controls.Add(Label27)
         Guna2Panel15.Controls.Add(Label26)
-        Guna2Panel15.CustomizableEdges = CustomizableEdges15
+        Guna2Panel15.CustomizableEdges = CustomizableEdges17
         Guna2Panel15.FillColor = Color.White
         Guna2Panel15.Location = New Point(14, 353)
         Guna2Panel15.Name = "Guna2Panel15"
-        Guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Guna2Panel15.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         Guna2Panel15.Size = New Size(370, 329)
         Guna2Panel15.TabIndex = 20
         ' 
@@ -366,25 +323,13 @@ Partial Class Rooms
         lblMonthlyRent.TabIndex = 34
         lblMonthlyRent.Text = "--"
         ' 
-        ' lblTenantName
-        ' 
-        lblTenantName.AutoSize = True
-        lblTenantName.BackColor = Color.Transparent
-        lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantName.Location = New Point(189, 94)
-        lblTenantName.Name = "lblTenantName"
-        lblTenantName.Size = New Size(26, 26)
-        lblTenantName.TabIndex = 33
-        lblTenantName.Text = "--"
-        ' 
         ' lblRoomNumber
         ' 
         lblRoomNumber.AutoSize = True
         lblRoomNumber.BackColor = Color.Transparent
         lblRoomNumber.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblRoomNumber.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblRoomNumber.Location = New Point(189, 52)
+        lblRoomNumber.Location = New Point(189, 70)
         lblRoomNumber.Name = "lblRoomNumber"
         lblRoomNumber.Size = New Size(26, 26)
         lblRoomNumber.TabIndex = 32
@@ -396,7 +341,7 @@ Partial Class Rooms
         lblStatus.BackColor = Color.Transparent
         lblStatus.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblStatus.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblStatus.Location = New Point(189, 170)
+        lblStatus.Location = New Point(189, 254)
         lblStatus.Name = "lblStatus"
         lblStatus.Size = New Size(26, 26)
         lblStatus.TabIndex = 31
@@ -408,7 +353,7 @@ Partial Class Rooms
         Label30.BackColor = Color.Transparent
         Label30.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label30.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label30.Location = New Point(16, 171)
+        Label30.Location = New Point(16, 254)
         Label30.Name = "Label30"
         Label30.Size = New Size(78, 23)
         Label30.TabIndex = 30
@@ -426,25 +371,13 @@ Partial Class Rooms
         Label29.TabIndex = 29
         Label29.Text = "Monthly Rent:"
         ' 
-        ' Label28
-        ' 
-        Label28.AutoSize = True
-        Label28.BackColor = Color.Transparent
-        Label28.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label28.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label28.Location = New Point(16, 94)
-        Label28.Name = "Label28"
-        Label28.Size = New Size(146, 23)
-        Label28.TabIndex = 28
-        Label28.Text = "Tenant Name:"
-        ' 
         ' Label27
         ' 
         Label27.AutoSize = True
         Label27.BackColor = Color.Transparent
         Label27.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label27.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label27.Location = New Point(16, 55)
+        Label27.Location = New Point(16, 73)
         Label27.Name = "Label27"
         Label27.Size = New Size(156, 23)
         Label27.TabIndex = 27
@@ -474,6 +407,30 @@ Partial Class Rooms
         Label2.TabIndex = 9
         Label2.Text = "Rooms"
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label1.Location = New Point(16, 184)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(117, 46)
+        Label1.TabIndex = 35
+        Label1.Text = "Number of" & vbCrLf & "Occupants"
+        ' 
+        ' lblNumOccupants
+        ' 
+        lblNumOccupants.AutoSize = True
+        lblNumOccupants.BackColor = Color.Transparent
+        lblNumOccupants.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblNumOccupants.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblNumOccupants.Location = New Point(189, 195)
+        lblNumOccupants.Name = "lblNumOccupants"
+        lblNumOccupants.Size = New Size(26, 26)
+        lblNumOccupants.TabIndex = 36
+        lblNumOccupants.Text = "--"
+        ' 
         ' Rooms
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -498,7 +455,6 @@ Partial Class Rooms
     Friend WithEvents Guna2Panel15 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label27 As Label
     Friend WithEvents Label26 As Label
-    Friend WithEvents Label28 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents lblStatus As Label
@@ -515,11 +471,9 @@ Partial Class Rooms
     Friend WithEvents btnDeleteRoom As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnEditRoomForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents lblMonthlyRent As Label
-    Friend WithEvents lblTenantName As Label
+    Friend WithEvents tenantList As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblNumOccupants As Label
 End Class

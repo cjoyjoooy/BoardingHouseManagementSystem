@@ -1,18 +1,7 @@
 ﻿Imports Guna.UI2.WinForms
 Public Class Rooms
     Private Sub Rooms_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        'NOTE: temporary representation of status in database
-        Dim rooms() As String = {"1", "2", "3", "4", "5", "6", "7"}
-
-
-        'NOTE: Need to select id and status from database
-
-        For Each room In rooms
-            RoomPanels(room, "Vacant")
-            'NOTE: RoomPanels(id,status)
-
-        Next
+        display_Rooms()
     End Sub
 
     Private Sub btnAddRoomForm_Click(sender As Object, e As EventArgs) Handles btnAddRoomForm.Click
@@ -20,11 +9,26 @@ Public Class Rooms
     End Sub
 
     Private Sub btnEditRoomForm_Click(sender As Object, e As EventArgs) Handles btnEditRoomForm.Click
+        Dim roomName As String
+        roomName = lblRoomNumber.Text
+        display_Room_info(roomName)
         roomEditForm.Show()
     End Sub
 
     Private Sub btnDeleteRoom_Click(sender As Object, e As EventArgs) Handles btnDeleteRoom.Click
 
     End Sub
+
+    Private Sub lblRoomNumber_TextChanged(sender As Object, e As EventArgs) Handles lblRoomNumber.TextChanged
+        Dim roomName As String
+        roomName = lblRoomNumber.Text
+        If tenantList IsNot Nothing Then
+            tenantList.Controls.Clear()
+            _ContactLabelsAddedCount = 0
+        End If
+        display_Room_info(roomName)
+        display_Room_Tenant(roomName)
+    End Sub
+
 
 End Class

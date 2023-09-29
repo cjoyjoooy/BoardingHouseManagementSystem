@@ -77,6 +77,7 @@ Partial Class billEditForm
         txtBillID.Size = New Size(53, 20)
         txtBillID.TabIndex = 66
         txtBillID.Text = "Label4"
+        txtBillID.Visible = False
         ' 
         ' Label18
         ' 
@@ -191,7 +192,7 @@ Partial Class billEditForm
         txtMisc.SelectedText = ""
         txtMisc.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         txtMisc.Size = New Size(330, 34)
-        txtMisc.TabIndex = 66
+        txtMisc.TabIndex = 4
         ' 
         ' txtMaintenance
         ' 
@@ -216,7 +217,7 @@ Partial Class billEditForm
         txtMaintenance.SelectedText = ""
         txtMaintenance.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         txtMaintenance.Size = New Size(330, 34)
-        txtMaintenance.TabIndex = 64
+        txtMaintenance.TabIndex = 3
         ' 
         ' txtWater
         ' 
@@ -241,7 +242,7 @@ Partial Class billEditForm
         txtWater.SelectedText = ""
         txtWater.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         txtWater.Size = New Size(330, 34)
-        txtWater.TabIndex = 62
+        txtWater.TabIndex = 2
         ' 
         ' txtElectricity
         ' 
@@ -266,7 +267,7 @@ Partial Class billEditForm
         txtElectricity.SelectedText = ""
         txtElectricity.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         txtElectricity.Size = New Size(330, 34)
-        txtElectricity.TabIndex = 60
+        txtElectricity.TabIndex = 1
         ' 
         ' billEditForm
         ' 

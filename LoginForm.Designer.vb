@@ -80,7 +80,7 @@ Partial Class LoginForm
         Guna2TextBox1.SelectedText = ""
         Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Guna2TextBox1.Size = New Size(284, 46)
-        Guna2TextBox1.TabIndex = 7
+        Guna2TextBox1.TabIndex = 1
         ' 
         ' Guna2Panel1
         ' 
@@ -145,7 +145,7 @@ Partial Class LoginForm
         btnLogin.Name = "btnLogin"
         btnLogin.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnLogin.Size = New Size(284, 46)
-        btnLogin.TabIndex = 10
+        btnLogin.TabIndex = 3
         btnLogin.Text = "Login"
         ' 
         ' Label1
@@ -188,7 +188,7 @@ Partial Class LoginForm
         Guna2TextBox2.SelectedText = ""
         Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Guna2TextBox2.Size = New Size(284, 46)
-        Guna2TextBox2.TabIndex = 8
+        Guna2TextBox2.TabIndex = 2
         Guna2TextBox2.UseSystemPasswordChar = True
         ' 
         ' Guna2Panel2

@@ -91,7 +91,7 @@ Partial Class roomEditForm
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         btnCancel.Size = New Size(152, 36)
-        btnCancel.TabIndex = 65
+        btnCancel.TabIndex = 5
         btnCancel.Text = "Cancel"
         ' 
         ' btnEditRoom
@@ -112,7 +112,7 @@ Partial Class roomEditForm
         btnEditRoom.Name = "btnEditRoom"
         btnEditRoom.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnEditRoom.Size = New Size(152, 36)
-        btnEditRoom.TabIndex = 64
+        btnEditRoom.TabIndex = 6
         btnEditRoom.Text = "Save"
         ' 
         ' txtNumPerson
@@ -138,7 +138,7 @@ Partial Class roomEditForm
         txtNumPerson.SelectedText = ""
         txtNumPerson.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         txtNumPerson.Size = New Size(330, 34)
-        txtNumPerson.TabIndex = 63
+        txtNumPerson.TabIndex = 3
         ' 
         ' Label2
         ' 
@@ -175,7 +175,7 @@ Partial Class roomEditForm
         txtMonthlyRent.SelectedText = ""
         txtMonthlyRent.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         txtMonthlyRent.Size = New Size(330, 34)
-        txtMonthlyRent.TabIndex = 61
+        txtMonthlyRent.TabIndex = 2
         ' 
         ' Label1
         ' 
@@ -208,7 +208,7 @@ Partial Class roomEditForm
         cmbRoomStatus.Name = "cmbRoomStatus"
         cmbRoomStatus.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         cmbRoomStatus.Size = New Size(330, 36)
-        cmbRoomStatus.TabIndex = 59
+        cmbRoomStatus.TabIndex = 4
         ' 
         ' txtRoomName
         ' 
@@ -233,7 +233,7 @@ Partial Class roomEditForm
         txtRoomName.SelectedText = ""
         txtRoomName.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         txtRoomName.Size = New Size(330, 34)
-        txtRoomName.TabIndex = 58
+        txtRoomName.TabIndex = 1
         ' 
         ' Label17
         ' 

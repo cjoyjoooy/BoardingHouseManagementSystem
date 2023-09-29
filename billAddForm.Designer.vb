@@ -138,7 +138,7 @@ Partial Class billAddForm
         txtMiscellaneous.SelectedText = ""
         txtMiscellaneous.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         txtMiscellaneous.Size = New Size(330, 34)
-        txtMiscellaneous.TabIndex = 56
+        txtMiscellaneous.TabIndex = 4
         ' 
         ' Label3
         ' 
@@ -175,7 +175,7 @@ Partial Class billAddForm
         txtMaintainance.SelectedText = ""
         txtMaintainance.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         txtMaintainance.Size = New Size(330, 34)
-        txtMaintainance.TabIndex = 54
+        txtMaintainance.TabIndex = 3
         ' 
         ' Label2
         ' 
@@ -212,7 +212,7 @@ Partial Class billAddForm
         txtWaterBill.SelectedText = ""
         txtWaterBill.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         txtWaterBill.Size = New Size(330, 34)
-        txtWaterBill.TabIndex = 52
+        txtWaterBill.TabIndex = 2
         ' 
         ' Label1
         ' 
@@ -249,7 +249,7 @@ Partial Class billAddForm
         txtElectricity.SelectedText = ""
         txtElectricity.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         txtElectricity.Size = New Size(330, 34)
-        txtElectricity.TabIndex = 50
+        txtElectricity.TabIndex = 1
         ' 
         ' Label18
         ' 

@@ -3,7 +3,7 @@
         Me.Close()
     End Sub
 
-    Private Sub btnAddRoom_Click(sender As Object, e As EventArgs) Handles btnEditRoom.Click
+    Private Sub btnEditRoom_Click(sender As Object, e As EventArgs) Handles btnEditRoom.Click
         Dim RoomName, MonthlyRent, Status As String
         Dim NumberOfPerson As Integer
 
@@ -13,6 +13,16 @@
         Status = cmbRoomStatus.Text
 
         edit_Rooms(MonthlyRent, NumberOfPerson, Status, RoomName)
+        If Rooms.addroompanel IsNot Nothing Then
+            Rooms.addroompanel.Controls.Clear()
+            display_Rooms()
+            display_Room_info(RoomName)
+            Rooms.lblMonthlyRent.Text = "--"
+            Rooms.lblNumOccupants.Text = "--"
+            Rooms.lblStatus.Text = "--"
+            Rooms.lblRoomNumber.Text = "--"
+        End If
+
         Me.Close()
     End Sub
 End Class

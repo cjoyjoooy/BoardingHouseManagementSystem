@@ -39,6 +39,7 @@ Partial Class userEditForm
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        txtUserID = New Label()
         txtPassword = New Guna.UI2.WinForms.Guna2TextBox()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         Label4 = New Label()
@@ -51,7 +52,6 @@ Partial Class userEditForm
         Label1 = New Label()
         Label3 = New Label()
         txtAddress = New Guna.UI2.WinForms.Guna2TextBox()
-        txtUserID = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -81,6 +81,16 @@ Partial Class userEditForm
         Guna2Panel1.Size = New Size(453, 513)
         Guna2Panel1.TabIndex = 0
         ' 
+        ' txtUserID
+        ' 
+        txtUserID.AutoSize = True
+        txtUserID.Location = New Point(198, 22)
+        txtUserID.Name = "txtUserID"
+        txtUserID.Size = New Size(53, 20)
+        txtUserID.TabIndex = 60
+        txtUserID.Text = "Label5"
+        txtUserID.Visible = False
+        ' 
         ' txtPassword
         ' 
         txtPassword.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
@@ -104,7 +114,7 @@ Partial Class userEditForm
         txtPassword.SelectedText = ""
         txtPassword.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         txtPassword.Size = New Size(411, 34)
-        txtPassword.TabIndex = 59
+        txtPassword.TabIndex = 5
         ' 
         ' btnCancel
         ' 
@@ -183,7 +193,7 @@ Partial Class userEditForm
         txtUsername.SelectedText = ""
         txtUsername.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         txtUsername.Size = New Size(411, 34)
-        txtUsername.TabIndex = 57
+        txtUsername.TabIndex = 4
         ' 
         ' txtName
         ' 
@@ -208,7 +218,7 @@ Partial Class userEditForm
         txtName.SelectedText = ""
         txtName.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         txtName.Size = New Size(411, 34)
-        txtName.TabIndex = 51
+        txtName.TabIndex = 1
         ' 
         ' Label2
         ' 
@@ -257,7 +267,7 @@ Partial Class userEditForm
         txtContactNum.SelectedText = ""
         txtContactNum.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         txtContactNum.Size = New Size(411, 34)
-        txtContactNum.TabIndex = 55
+        txtContactNum.TabIndex = 2
         ' 
         ' Label1
         ' 
@@ -306,16 +316,7 @@ Partial Class userEditForm
         txtAddress.SelectedText = ""
         txtAddress.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         txtAddress.Size = New Size(411, 34)
-        txtAddress.TabIndex = 53
-        ' 
-        ' txtUserID
-        ' 
-        txtUserID.AutoSize = True
-        txtUserID.Location = New Point(198, 22)
-        txtUserID.Name = "txtUserID"
-        txtUserID.Size = New Size(53, 20)
-        txtUserID.TabIndex = 60
-        txtUserID.Text = "Label5"
+        txtAddress.TabIndex = 3
         ' 
         ' userEditForm
         ' 

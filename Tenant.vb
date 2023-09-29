@@ -3,6 +3,7 @@
         display_Tenant()
     End Sub
     Private Sub btnShowAddForm_Click(sender As Object, e As EventArgs) Handles btnShowAddForm.Click
+        populate_cmbRoom()
         tenantAddForm.Show()
     End Sub
 
@@ -11,13 +12,13 @@
     End Sub
 
     Private Sub btnArchive_Click(sender As Object, e As EventArgs) Handles btnArchive.Click
-        tenantArchive.Show()
+        changePanel(tenantArchive)
     End Sub
 
     Private Sub btnTenantBillForm_Click(sender As Object, e As EventArgs) Handles btnShowTenantEditForm.Click
         Dim rowIndex As Integer
         rowIndex = dgvTenant.CurrentRow.Index
-
+        populate_cmbRoom()
         tenantEditForm.txtTenandID.Text = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
         tenantEditForm.txtFname.Text = dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
         tenantEditForm.txtLname.Text = dgvTenant.Rows(rowIndex).Cells(2).Value.ToString
@@ -25,17 +26,38 @@
         tenantEditForm.txtAddress.Text = dgvTenant.Rows(rowIndex).Cells(4).Value.ToString
         tenantEditForm.txtContact.Text = dgvTenant.Rows(rowIndex).Cells(5).Value.ToString
         tenantEditForm.dtpDate.Text = dgvTenant.Rows(rowIndex).Cells(6).Value.ToString
-        tenantEditForm.cmbStatus.Text = dgvTenant.Rows(rowIndex).Cells(7).Value.ToString
-        tenantEditForm.cmbRoom.Text = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+
+        ' Get the RoomName from the DataGridView
+        Dim roomName As String = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+
+        ' Find the corresponding RoomID in the ComboBox and select it
+        For Each item As DataRowView In tenantEditForm.cmbRoom.Items
+            If item("RoomID").ToString() = roomName Then
+                tenantEditForm.cmbRoom.SelectedItem = item
+                Exit For ' Exit the loop once a match is found
+            End If
+        Next
+
         tenantEditForm.Show()
     End Sub
 
     Private Sub btnDeleteTenant_Click(sender As Object, e As EventArgs) Handles btnDeleteTenant.Click
-        Dim rowIndex As Integer
-        Dim TenantID As Integer
+        Dim rowIndex, TenantID As Integer
+        Dim roomId As String
+
         rowIndex = dgvTenant.CurrentRow.Index
         TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
+        roomId = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
         delete_Tenant(TenantID)
+        check_Occupant_Number(roomId)
+        If Rooms.addroompanel IsNot Nothing Then
+            Rooms.addroompanel.Controls.Clear()
+            display_Rooms()
+            Rooms.lblMonthlyRent.Text = "--"
+            Rooms.lblNumOccupants.Text = "--"
+            Rooms.lblStatus.Text = "--"
+            Rooms.lblRoomNumber.Text = "--"
+        End If
         display_Tenant()
     End Sub
 End Class

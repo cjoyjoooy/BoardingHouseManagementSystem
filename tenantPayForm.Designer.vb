@@ -81,7 +81,7 @@ Partial Class tenantPayForm
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         btnCancel.Size = New Size(152, 36)
-        btnCancel.TabIndex = 75
+        btnCancel.TabIndex = 2
         btnCancel.Text = "Cancel"
         ' 
         ' btnPay
@@ -102,7 +102,7 @@ Partial Class tenantPayForm
         btnPay.Name = "btnPay"
         btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         btnPay.Size = New Size(152, 36)
-        btnPay.TabIndex = 74
+        btnPay.TabIndex = 3
         btnPay.Text = "Pay"
         ' 
         ' txtFname
@@ -128,7 +128,7 @@ Partial Class tenantPayForm
         txtFname.SelectedText = ""
         txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         txtFname.Size = New Size(330, 34)
-        txtFname.TabIndex = 73
+        txtFname.TabIndex = 1
         ' 
         ' Label4
         ' 
