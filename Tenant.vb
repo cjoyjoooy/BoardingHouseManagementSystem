@@ -8,6 +8,13 @@
     End Sub
 
     Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
+        Dim fname, lname As String
+        Dim rowIndex As Integer
+        rowIndex = dgvTenant.CurrentRow.Index
+        fname = dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
+        lname = dgvTenant.Rows(rowIndex).Cells(2).Value.ToString
+        tenantPayForm.lblTenantID.Text = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
+        tenantPayForm.lblTenantName.Text = fname & " " & lname
         tenantPayForm.Show()
     End Sub
 

@@ -179,7 +179,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT COUNT(*) AS 'Tenant Count', Room.NumberOfPerson FROM Tenant INNER JOIN Room ON Room.RoomID = Tenant.RoomID WHERE Tenant.RoomID = '" & roomid & "' AND Tenant.Status = 'Active'", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT (SELECT COUNT(*) FROM Tenant WHERE RoomID = '" & roomid & "' AND Status = 'Active') AS 'Tenant Count', NumberOfPerson FROM Room WHERE RoomID = '" & roomid & "' ", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Room")
 
             If dataSet.Tables("Room").Rows.Count > 0 Then
@@ -220,9 +220,15 @@ Module Project_Module
     Public Sub edit_Tenant(ByVal FirstName As String, ByVal LastName As String, ByVal Gender As String, ByVal Address As String, ByVal ContactNum As String, ByVal DateLeased As String, ByVal RoomID As Integer, ByVal TenandID As Integer)
         Try
             SQLite_Open_Connection()
-            dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET FirstName = '" & FirstName & "', LastName = '" & LastName & "', Gender = '" & Gender & "', Address = '" & Address & "', ContactNum = '" & ContactNum & "', DateLeased = '" & DateLeased & "', RoomID = '" & RoomID & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
-            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            Dim roomStatus As Boolean = isRoomFull(RoomID)
+
+            If roomStatus Then
+                MessageBox.Show("Cannot Edit tenant. The room is already full.")
+            Else
+                dataSet = New DataSet
+                sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET FirstName = '" & FirstName & "', LastName = '" & LastName & "', Gender = '" & Gender & "', Address = '" & Address & "', ContactNum = '" & ContactNum & "', DateLeased = '" & DateLeased & "', RoomID = '" & RoomID & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
+                sqliteDataAdapter.Fill(dataSet, "Tenant")
+            End If
         Catch ex As SQLiteException
             MessageBox.Show("Error:   " & ex.Message)
         Finally
@@ -233,10 +239,18 @@ Module Project_Module
 
     Public Sub restore_Tenant(ByVal status As String, ByVal TenandID As Integer)
         Try
+            Dim rowIndex As Integer
+            rowIndex = tenantArchive.dgvArchiveTenant.CurrentRow.Index
+            Dim RoomId As Integer = tenantArchive.dgvArchiveTenant.Rows(rowIndex).Cells(8).Value.ToString
+            Dim roomStatus As Boolean = isRoomFull(RoomId)
             SQLite_Open_Connection()
-            dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET  Status = '" & status & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
-            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            If roomStatus Then
+                MessageBox.Show("Cannot restore tenant. The room is already full.")
+            Else
+                dataSet = New DataSet
+                sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET  Status = '" & status & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
+                sqliteDataAdapter.Fill(dataSet, "Tenant")
+            End If
         Catch ex As SQLiteException
             MessageBox.Show("Error:   " & ex.Message)
         Finally
@@ -336,16 +350,76 @@ Module Project_Module
 
     End Sub
 
-    Public Sub edit_Rooms(ByVal MonthlyRent As Double, ByVal NumberOfPerson As Integer, ByVal Status As String, ByVal RoomName As String)
+    Public Function isRoomFullEdit(ByVal roomName As String) As Boolean
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-
-            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Room SET MonthlyRent = '" & MonthlyRent & "', NumberOfPerson = '" & NumberOfPerson & "', Status = '" & Status & "' WHERE RoomName = '" & RoomName & "'", sqliteConnection)
-
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT (SELECT COUNT(*) FROM Tenant WHERE RoomID = (SELECT RoomID FROM Room WHERE RoomName Like '" & roomName & "') AND Status = 'Active') AS 'Tenant Count', NumberOfPerson FROM Room WHERE RoomID = (SELECT RoomID FROM Room WHERE RoomName Like '" & roomName & "')", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Room")
+            If dataSet.Tables("Room").Rows.Count > 0 Then
+                Dim row = dataSet.Tables("Room").Rows(0)
+                Dim tenantCount As Integer = CInt(row("Tenant Count"))
+                Dim numberOfPerson As Integer = Integer.Parse(roomEditForm.txtNumPerson.Text)
+                Return numberOfPerson < tenantCount
+            End If
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
 
-            MessageBox.Show("Edited.")
+        ' Return False in case of an error.
+        Return False
+    End Function
+
+    Public Sub check_Occupant_Number_Edit(ByVal roomName As String)
+        Dim status As String
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT RoomID, (SELECT COUNT(*) FROM Tenant WHERE RoomID = (SELECT RoomID FROM Room WHERE RoomName Like '" & roomName & "') AND Status = 'Active') AS 'Tenant Count', NumberOfPerson FROM Room WHERE RoomID = (SELECT RoomID FROM Room WHERE RoomName Like '" & roomName & "')", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Room")
+            If dataSet.Tables("Room").Rows.Count > 0 Then
+                For Each row In dataSet.Tables("Room").Rows
+                    Dim tenantCount As String = row("Tenant Count")
+                    Dim numberOfPerson As String = row("NumberOfPerson")
+                    Dim roomId As Integer = row("RoomID")
+                    If tenantCount >= numberOfPerson Then
+                        status = "Full/Occupied"
+                        edit_Rooms_Status(status, roomid)
+                    Else
+                        status = "Vacant"
+                        edit_Rooms_Status(status, roomid)
+                    End If
+                Next
+            End If
+
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
+
+
+    Public Sub edit_Rooms(ByVal MonthlyRent As Double, ByVal NumberOfPerson As Integer, ByVal RoomName As String)
+        Try
+            SQLite_Open_Connection()
+            Dim roomStatus As Boolean = isRoomFullEdit(RoomName)
+
+            If roomStatus Then
+                MessageBox.Show("Cannot Edit Room. Number of current occupants is greater than the new set number.")
+            Else
+
+                dataSet = New DataSet
+
+                sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Room SET MonthlyRent = '" & MonthlyRent & "', NumberOfPerson = '" & NumberOfPerson & "' WHERE RoomName = '" & RoomName & "'", sqliteConnection)
+
+                sqliteDataAdapter.Fill(dataSet, "Room")
+
+                MessageBox.Show("Edited.")
+            End If
 
         Catch ex As SQLiteException
 
@@ -379,7 +453,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter(" Select COUNT(*) As 'Tenant Count', Room.NumberOfPerson From Tenant INNER Join Room ON Room.RoomID = Tenant.RoomID WHERE Tenant.RoomID ='" & roomid & "' AND Tenant.Status = 'Active'", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT (SELECT COUNT(*) FROM Tenant WHERE RoomID = '" & roomid & "' AND Status = 'Active') AS 'Tenant Count', NumberOfPerson FROM Room WHERE RoomID = '" & roomid & "' ", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Room")
             If dataSet.Tables("Room").Rows.Count > 0 Then
                 For Each row In dataSet.Tables("Room").Rows
@@ -443,7 +517,7 @@ Module Project_Module
                 roomEditForm.txtRoomName.Text = dataSet.Tables(0).Rows(0).Item(1)
                 roomEditForm.txtMonthlyRent.Text = dataSet.Tables(0).Rows(0).Item(2)
                 roomEditForm.txtNumPerson.Text = dataSet.Tables(0).Rows(0).Item(3)
-                roomEditForm.cmbRoomStatus.Text = dataSet.Tables(0).Rows(0).Item(4)
+
             End If
 
 

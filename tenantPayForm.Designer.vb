@@ -22,21 +22,21 @@ Partial Class tenantPayForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
         txtFname = New Guna.UI2.WinForms.Guna2TextBox()
         Label4 = New Label()
-        Label3 = New Label()
-        Label2 = New Label()
+        lblTenantName = New Label()
+        lblTenantID = New Label()
         Label1 = New Label()
         Label18 = New Label()
         Guna2Panel1.SuspendLayout()
@@ -51,15 +51,15 @@ Partial Class tenantPayForm
         Guna2Panel1.Controls.Add(btnPay)
         Guna2Panel1.Controls.Add(txtFname)
         Guna2Panel1.Controls.Add(Label4)
-        Guna2Panel1.Controls.Add(Label3)
-        Guna2Panel1.Controls.Add(Label2)
+        Guna2Panel1.Controls.Add(lblTenantName)
+        Guna2Panel1.Controls.Add(lblTenantID)
         Guna2Panel1.Controls.Add(Label1)
         Guna2Panel1.Controls.Add(Label18)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges7
+        Guna2Panel1.CustomizableEdges = CustomizableEdges15
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Guna2Panel1.Size = New Size(384, 298)
         Guna2Panel1.TabIndex = 0
         ' 
@@ -69,7 +69,7 @@ Partial Class tenantPayForm
         btnCancel.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.BorderRadius = 10
         btnCancel.BorderThickness = 2
-        btnCancel.CustomizableEdges = CustomizableEdges1
+        btnCancel.CustomizableEdges = CustomizableEdges9
         btnCancel.DisabledState.BorderColor = Color.DarkGray
         btnCancel.DisabledState.CustomBorderColor = Color.DarkGray
         btnCancel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -79,7 +79,7 @@ Partial Class tenantPayForm
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnCancel.Location = New Point(27, 230)
         btnCancel.Name = "btnCancel"
-        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         btnCancel.Size = New Size(152, 36)
         btnCancel.TabIndex = 2
         btnCancel.Text = "Cancel"
@@ -90,7 +90,7 @@ Partial Class tenantPayForm
         btnPay.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnPay.BorderRadius = 10
         btnPay.BorderThickness = 2
-        btnPay.CustomizableEdges = CustomizableEdges3
+        btnPay.CustomizableEdges = CustomizableEdges11
         btnPay.DisabledState.BorderColor = Color.DarkGray
         btnPay.DisabledState.CustomBorderColor = Color.DarkGray
         btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -100,7 +100,7 @@ Partial Class tenantPayForm
         btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnPay.Location = New Point(205, 230)
         btnPay.Name = "btnPay"
-        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         btnPay.Size = New Size(152, 36)
         btnPay.TabIndex = 3
         btnPay.Text = "Pay"
@@ -109,7 +109,7 @@ Partial Class tenantPayForm
         ' 
         txtFname.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         txtFname.BorderRadius = 10
-        txtFname.CustomizableEdges = CustomizableEdges5
+        txtFname.CustomizableEdges = CustomizableEdges13
         txtFname.DefaultText = ""
         txtFname.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtFname.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -126,7 +126,7 @@ Partial Class tenantPayForm
         txtFname.PasswordChar = ChrW(0)
         txtFname.PlaceholderText = ""
         txtFname.SelectedText = ""
-        txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        txtFname.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         txtFname.Size = New Size(330, 34)
         txtFname.TabIndex = 1
         ' 
@@ -142,29 +142,29 @@ Partial Class tenantPayForm
         Label4.TabIndex = 72
         Label4.Text = "Amount"
         ' 
-        ' Label3
+        ' lblTenantName
         ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label3.Location = New Point(165, 89)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(81, 26)
-        Label3.TabIndex = 71
-        Label3.Text = "Lex Lao"
+        lblTenantName.AutoSize = True
+        lblTenantName.BackColor = Color.Transparent
+        lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTenantName.Location = New Point(165, 89)
+        lblTenantName.Name = "lblTenantName"
+        lblTenantName.Size = New Size(81, 26)
+        lblTenantName.TabIndex = 71
+        lblTenantName.Text = "Lex Lao"
         ' 
-        ' Label2
+        ' lblTenantID
         ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(165, 30)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(104, 26)
-        Label2.TabIndex = 70
-        Label2.Text = "Tenant123"
+        lblTenantID.AutoSize = True
+        lblTenantID.BackColor = Color.Transparent
+        lblTenantID.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantID.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTenantID.Location = New Point(165, 30)
+        lblTenantID.Name = "lblTenantID"
+        lblTenantID.Size = New Size(104, 26)
+        lblTenantID.TabIndex = 70
+        lblTenantID.Text = "Tenant123"
         ' 
         ' Label1
         ' 
@@ -210,8 +210,8 @@ Partial Class tenantPayForm
     Friend WithEvents btnPay As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtFname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblTenantName As Label
+    Friend WithEvents lblTenantID As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label18 As Label
 End Class

@@ -15,11 +15,20 @@ Public Class tenantArchive
 
     Private Sub btnTenantRestore_Click(sender As Object, e As EventArgs) Handles btnTenantRestore.Click
         Try
-            Dim rowIndex, tenantId As Integer
+            Dim rowIndex, tenantId, RoomId As Integer
             rowIndex = dgvArchiveTenant.CurrentRow.Index
-
             tenantId = dgvArchiveTenant.Rows(rowIndex).Cells(0).Value.ToString
+            RoomId = dgvArchiveTenant.Rows(rowIndex).Cells(8).Value.ToString
             restore_Tenant("Active", tenantId)
+            check_Occupant_Number(RoomId)
+            If Rooms.addroompanel IsNot Nothing Then
+                Rooms.addroompanel.Controls.Clear()
+                display_Rooms()
+                Rooms.lblMonthlyRent.Text = "--"
+                Rooms.lblNumOccupants.Text = "--"
+                Rooms.lblStatus.Text = "--"
+                Rooms.lblRoomNumber.Text = "--"
+            End If
             display_Tenant()
             display_TenantArchive()
         Catch ex As SQLiteException
