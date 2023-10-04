@@ -226,10 +226,11 @@ Partial Class tenantAddForm
         dtpLease.BackColor = Color.White
         dtpLease.BorderRadius = 10
         dtpLease.Checked = True
+        dtpLease.CustomFormat = "MM/dd/yyyy"
         dtpLease.CustomizableEdges = CustomizableEdges3
         dtpLease.FillColor = Color.White
         dtpLease.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        dtpLease.Format = DateTimePickerFormat.Short
+        dtpLease.Format = DateTimePickerFormat.Custom
         dtpLease.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         dtpLease.Location = New Point(11, 595)
         dtpLease.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
@@ -238,7 +239,7 @@ Partial Class tenantAddForm
         dtpLease.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         dtpLease.Size = New Size(393, 39)
         dtpLease.TabIndex = 7
-        dtpLease.Value = New Date(2023, 9, 12, 15, 5, 18, 211)
+        dtpLease.Value = New Date(2023, 9, 12, 0, 0, 0, 0)
         ' 
         ' cmbRoom
         ' 

@@ -8,7 +8,7 @@
         Dim RoomID, TenandID, checkroomId, rowIndex As Integer
 
         rowIndex = Tenant.dgvTenant.CurrentRow.Index
-        checkroomId = Tenant.dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+
 
         FirstName = txtFname.Text
         LastName = txtLname.Text

@@ -1,4 +1,6 @@
-﻿Public Class Tenant
+﻿Imports System.Globalization
+
+Public Class Tenant
     Private Sub Tenant_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         display_Tenant()
     End Sub
@@ -68,5 +70,11 @@
         display_Tenant()
     End Sub
 
-
+    Private Sub dgvTenant_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTenant.CellClick
+        Dim rowIndex, TenantID As Integer
+        rowIndex = dgvTenant.CurrentRow.Index
+        TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
+        display_tenant_info()
+        display_Tenant_Billing_info(TenantID)
+    End Sub
 End Class

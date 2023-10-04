@@ -43,6 +43,7 @@ Partial Class roomEditForm
         Label1 = New Label()
         txtRoomName = New Guna.UI2.WinForms.Guna2TextBox()
         Label18 = New Label()
+        lblRoomName = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -51,6 +52,7 @@ Partial Class roomEditForm
         Guna2Panel1.BackColor = Color.White
         Guna2Panel1.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.BorderThickness = 2
+        Guna2Panel1.Controls.Add(lblRoomName)
         Guna2Panel1.Controls.Add(btnCancel)
         Guna2Panel1.Controls.Add(btnEditRoom)
         Guna2Panel1.Controls.Add(txtNumPerson)
@@ -220,6 +222,18 @@ Partial Class roomEditForm
         Label18.TabIndex = 56
         Label18.Text = "Room Name"
         ' 
+        ' lblRoomName
+        ' 
+        lblRoomName.AutoSize = True
+        lblRoomName.BackColor = Color.Transparent
+        lblRoomName.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRoomName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblRoomName.Location = New Point(231, 9)
+        lblRoomName.Name = "lblRoomName"
+        lblRoomName.Size = New Size(24, 23)
+        lblRoomName.TabIndex = 63
+        lblRoomName.Text = "--"
+        ' 
         ' roomEditForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -244,4 +258,5 @@ Partial Class roomEditForm
     Friend WithEvents Label1 As Label
     Friend WithEvents txtRoomName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label18 As Label
+    Friend WithEvents lblRoomName As Label
 End Class

@@ -49,28 +49,25 @@ Partial Class Dashboard
         Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
         btnShowTransactionPanel = New Guna.UI2.WinForms.Guna2Button()
         Label10 = New Label()
-        dgvTenant = New Guna.UI2.WinForms.Guna2DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
+        dgvRecentTransaction = New Guna.UI2.WinForms.Guna2DataGridView()
         Label9 = New Label()
         Label8 = New Label()
         Label2 = New Label()
         Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
-        Label7 = New Label()
+        lblTotalRooms = New Label()
         Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Label4 = New Label()
         Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
-        Label5 = New Label()
+        lblTotalTenants = New Label()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Label3 = New Label()
         Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Label1 = New Label()
-        Label6 = New Label()
+        lblTotalEarnings = New Label()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         panelDashboard.SuspendLayout()
         CType(Guna2PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
-        CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvRecentTransaction, ComponentModel.ISupportInitialize).BeginInit()
         Guna2Panel5.SuspendLayout()
         CType(Guna2PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Guna2Panel4.SuspendLayout()
@@ -86,7 +83,7 @@ Partial Class Dashboard
         panelDashboard.Controls.Add(Guna2PictureBox4)
         panelDashboard.Controls.Add(btnShowTransactionPanel)
         panelDashboard.Controls.Add(Label10)
-        panelDashboard.Controls.Add(dgvTenant)
+        panelDashboard.Controls.Add(dgvRecentTransaction)
         panelDashboard.Controls.Add(Label9)
         panelDashboard.Controls.Add(Label8)
         panelDashboard.Controls.Add(Label2)
@@ -125,7 +122,7 @@ Partial Class Dashboard
         btnShowTransactionPanel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnShowTransactionPanel.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnShowTransactionPanel.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        btnShowTransactionPanel.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowTransactionPanel.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowTransactionPanel.ForeColor = Color.White
         btnShowTransactionPanel.Image = CType(resources.GetObject("btnShowTransactionPanel.Image"), Image)
         btnShowTransactionPanel.ImageSize = New Size(36, 36)
@@ -147,18 +144,18 @@ Partial Class Dashboard
         Label10.TabIndex = 22
         Label10.Text = "Recent Transaction"
         ' 
-        ' dgvTenant
+        ' dgvRecentTransaction
         ' 
-        dgvTenant.AllowUserToAddRows = False
-        dgvTenant.AllowUserToDeleteRows = False
-        dgvTenant.AllowUserToResizeColumns = False
-        dgvTenant.AllowUserToResizeRows = False
+        dgvRecentTransaction.AllowUserToAddRows = False
+        dgvRecentTransaction.AllowUserToDeleteRows = False
+        dgvRecentTransaction.AllowUserToResizeColumns = False
+        dgvRecentTransaction.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = Color.White
         DataGridViewCellStyle1.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
         DataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
         DataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        dgvTenant.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        dgvRecentTransaction.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         DataGridViewCellStyle2.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Bold, GraphicsUnit.Point)
@@ -166,10 +163,9 @@ Partial Class Dashboard
         DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvTenant.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        dgvTenant.ColumnHeadersHeight = 50
-        dgvTenant.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvTenant.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3})
+        dgvRecentTransaction.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        dgvRecentTransaction.ColumnHeadersHeight = 50
+        dgvRecentTransaction.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Trebuchet MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point)
@@ -177,73 +173,52 @@ Partial Class Dashboard
         DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(204), CByte(204), CByte(204))
         DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        dgvTenant.DefaultCellStyle = DataGridViewCellStyle3
-        dgvTenant.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvTenant.Location = New Point(12, 274)
-        dgvTenant.Name = "dgvTenant"
-        dgvTenant.ReadOnly = True
-        dgvTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        dgvRecentTransaction.DefaultCellStyle = DataGridViewCellStyle3
+        dgvRecentTransaction.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvRecentTransaction.Location = New Point(12, 274)
+        dgvRecentTransaction.Name = "dgvRecentTransaction"
+        dgvRecentTransaction.ReadOnly = True
+        dgvRecentTransaction.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = Color.White
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle4.SelectionBackColor = Color.White
         DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        dgvTenant.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        dgvTenant.RowHeadersVisible = False
-        dgvTenant.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        dgvTenant.RowTemplate.Height = 34
-        dgvTenant.Size = New Size(809, 399)
-        dgvTenant.TabIndex = 21
-        dgvTenant.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
-        dgvTenant.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        dgvTenant.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
-        dgvTenant.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
-        dgvTenant.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
-        dgvTenant.ThemeStyle.BackColor = Color.White
-        dgvTenant.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvTenant.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        dgvTenant.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
-        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        dgvTenant.ThemeStyle.HeaderStyle.ForeColor = Color.White
-        dgvTenant.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        dgvTenant.ThemeStyle.HeaderStyle.Height = 50
-        dgvTenant.ThemeStyle.ReadOnly = True
-        dgvTenant.ThemeStyle.RowsStyle.BackColor = Color.White
-        dgvTenant.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        dgvTenant.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        dgvTenant.ThemeStyle.RowsStyle.Height = 34
-        dgvTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvTenant.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "Tenant Name"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.ReadOnly = True
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "Amount"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.ReadOnly = True
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "Date"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.ReadOnly = True
+        dgvRecentTransaction.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        dgvRecentTransaction.RowHeadersVisible = False
+        dgvRecentTransaction.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
+        dgvRecentTransaction.RowTemplate.Height = 34
+        dgvRecentTransaction.Size = New Size(809, 399)
+        dgvRecentTransaction.TabIndex = 21
+        dgvRecentTransaction.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
+        dgvRecentTransaction.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        dgvRecentTransaction.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty
+        dgvRecentTransaction.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty
+        dgvRecentTransaction.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty
+        dgvRecentTransaction.ThemeStyle.BackColor = Color.White
+        dgvRecentTransaction.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.ForeColor = Color.White
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        dgvRecentTransaction.ThemeStyle.HeaderStyle.Height = 50
+        dgvRecentTransaction.ThemeStyle.ReadOnly = True
+        dgvRecentTransaction.ThemeStyle.RowsStyle.BackColor = Color.White
+        dgvRecentTransaction.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dgvRecentTransaction.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvRecentTransaction.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        dgvRecentTransaction.ThemeStyle.RowsStyle.Height = 34
+        dgvRecentTransaction.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
+        dgvRecentTransaction.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label9.Location = New Point(695, 12)
         Label9.Name = "Label9"
@@ -255,7 +230,7 @@ Partial Class Dashboard
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label8.Location = New Point(592, 12)
         Label8.Name = "Label8"
@@ -280,7 +255,7 @@ Partial Class Dashboard
         Guna2Panel5.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel5.BorderRadius = 20
         Guna2Panel5.BorderThickness = 20
-        Guna2Panel5.Controls.Add(Label7)
+        Guna2Panel5.Controls.Add(lblTotalRooms)
         Guna2Panel5.Controls.Add(Guna2PictureBox3)
         Guna2Panel5.Controls.Add(Label4)
         Guna2Panel5.CustomizableEdges = CustomizableEdges7
@@ -291,17 +266,17 @@ Partial Class Dashboard
         Guna2Panel5.Size = New Size(245, 160)
         Guna2Panel5.TabIndex = 11
         ' 
-        ' Label7
+        ' lblTotalRooms
         ' 
-        Label7.AutoSize = True
-        Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label7.Location = New Point(106, 110)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(37, 39)
-        Label7.TabIndex = 18
-        Label7.Text = "7"
+        lblTotalRooms.AutoSize = True
+        lblTotalRooms.BackColor = Color.Transparent
+        lblTotalRooms.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTotalRooms.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTotalRooms.Location = New Point(81, 106)
+        lblTotalRooms.Name = "lblTotalRooms"
+        lblTotalRooms.Size = New Size(39, 39)
+        lblTotalRooms.TabIndex = 18
+        lblTotalRooms.Text = "--"
         ' 
         ' Guna2PictureBox3
         ' 
@@ -322,7 +297,7 @@ Partial Class Dashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label4.Location = New Point(32, 80)
         Label4.Name = "Label4"
@@ -335,7 +310,7 @@ Partial Class Dashboard
         Guna2Panel4.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel4.BorderRadius = 20
         Guna2Panel4.BorderThickness = 20
-        Guna2Panel4.Controls.Add(Label5)
+        Guna2Panel4.Controls.Add(lblTotalTenants)
         Guna2Panel4.Controls.Add(Guna2PictureBox2)
         Guna2Panel4.Controls.Add(Label3)
         Guna2Panel4.CustomizableEdges = CustomizableEdges11
@@ -346,17 +321,17 @@ Partial Class Dashboard
         Guna2Panel4.Size = New Size(245, 160)
         Guna2Panel4.TabIndex = 10
         ' 
-        ' Label5
+        ' lblTotalTenants
         ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label5.Location = New Point(92, 110)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(57, 39)
-        Label5.TabIndex = 17
-        Label5.Text = "12"
+        lblTotalTenants.AutoSize = True
+        lblTotalTenants.BackColor = Color.Transparent
+        lblTotalTenants.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTotalTenants.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTotalTenants.Location = New Point(78, 106)
+        lblTotalTenants.Name = "lblTotalTenants"
+        lblTotalTenants.Size = New Size(39, 39)
+        lblTotalTenants.TabIndex = 17
+        lblTotalTenants.Text = "--"
         ' 
         ' Guna2PictureBox2
         ' 
@@ -377,7 +352,7 @@ Partial Class Dashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label3.Location = New Point(22, 80)
         Label3.Name = "Label3"
@@ -391,7 +366,7 @@ Partial Class Dashboard
         Guna2Panel3.BorderRadius = 20
         Guna2Panel3.BorderThickness = 20
         Guna2Panel3.Controls.Add(Label1)
-        Guna2Panel3.Controls.Add(Label6)
+        Guna2Panel3.Controls.Add(lblTotalEarnings)
         Guna2Panel3.Controls.Add(Guna2PictureBox1)
         Guna2Panel3.CustomizableEdges = CustomizableEdges15
         Guna2Panel3.FillColor = Color.White
@@ -405,7 +380,7 @@ Partial Class Dashboard
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label1.Location = New Point(41, 80)
         Label1.Name = "Label1"
@@ -413,17 +388,17 @@ Partial Class Dashboard
         Label1.TabIndex = 13
         Label1.Text = "Total Earnings"
         ' 
-        ' Label6
+        ' lblTotalEarnings
         ' 
-        Label6.AutoSize = True
-        Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label6.Location = New Point(52, 110)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(128, 39)
-        Label6.TabIndex = 18
-        Label6.Text = "15,235"
+        lblTotalEarnings.AutoSize = True
+        lblTotalEarnings.BackColor = Color.Transparent
+        lblTotalEarnings.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTotalEarnings.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTotalEarnings.Location = New Point(73, 106)
+        lblTotalEarnings.Name = "lblTotalEarnings"
+        lblTotalEarnings.Size = New Size(39, 39)
+        lblTotalEarnings.TabIndex = 18
+        lblTotalEarnings.Text = "--"
         ' 
         ' Guna2PictureBox1
         ' 
@@ -442,7 +417,7 @@ Partial Class Dashboard
         ' 
         ' Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(833, 685)
         Controls.Add(panelDashboard)
@@ -453,7 +428,7 @@ Partial Class Dashboard
         panelDashboard.ResumeLayout(False)
         panelDashboard.PerformLayout()
         CType(Guna2PictureBox4, ComponentModel.ISupportInitialize).EndInit()
-        CType(dgvTenant, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvRecentTransaction, ComponentModel.ISupportInitialize).EndInit()
         Guna2Panel5.ResumeLayout(False)
         Guna2Panel5.PerformLayout()
         CType(Guna2PictureBox3, ComponentModel.ISupportInitialize).EndInit()
@@ -476,18 +451,15 @@ Partial Class Dashboard
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lblTotalTenants As Label
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lblTotalEarnings As Label
+    Friend WithEvents lblTotalRooms As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents dgvTenant As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents dgvRecentTransaction As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Label10 As Label
     Friend WithEvents btnShowTransaction As FontAwesome.Sharp.IconButton
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents btnShowTransactionPanel As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

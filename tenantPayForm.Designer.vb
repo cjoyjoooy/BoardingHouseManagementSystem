@@ -58,10 +58,9 @@ Partial Class tenantPayForm
         Guna2Panel1.CustomizableEdges = CustomizableEdges7
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
-        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2Panel1.Size = New Size(336, 224)
+        Guna2Panel1.Size = New Size(384, 299)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnCancel
@@ -78,13 +77,13 @@ Partial Class tenantPayForm
         btnCancel.FillColor = Color.White
         btnCancel.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnCancel.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnCancel.Location = New Point(24, 172)
-        btnCancel.Margin = New Padding(3, 2, 3, 2)
+        btnCancel.Location = New Point(27, 229)
         btnCancel.Name = "btnCancel"
         btnCancel.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnCancel.Size = New Size(133, 27)
+        btnCancel.Size = New Size(152, 36)
         btnCancel.TabIndex = 2
-        btnCancel.Text = "Cancel"' 
+        btnCancel.Text = "Cancel"
+        ' 
         ' btnPay
         ' 
         btnPay.BackColor = Color.White
@@ -99,13 +98,13 @@ Partial Class tenantPayForm
         btnPay.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         btnPay.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        btnPay.Location = New Point(179, 172)
-        btnPay.Margin = New Padding(3, 2, 3, 2)
+        btnPay.Location = New Point(205, 229)
         btnPay.Name = "btnPay"
         btnPay.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        btnPay.Size = New Size(133, 27)
+        btnPay.Size = New Size(152, 36)
         btnPay.TabIndex = 3
-        btnPay.Text = "Pay"' 
+        btnPay.Text = "Pay"
+        ' 
         ' amoundPaidtxt
         ' 
         amoundPaidtxt.BorderColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
@@ -121,14 +120,14 @@ Partial Class tenantPayForm
         amoundPaidtxt.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         amoundPaidtxt.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         amoundPaidtxt.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        amoundPaidtxt.Location = New Point(24, 121)
-        amoundPaidtxt.Margin = New Padding(4, 3, 4, 3)
+        amoundPaidtxt.Location = New Point(27, 161)
+        amoundPaidtxt.Margin = New Padding(5, 4, 5, 4)
         amoundPaidtxt.Name = "amoundPaidtxt"
         amoundPaidtxt.PasswordChar = ChrW(0)
         amoundPaidtxt.PlaceholderText = ""
         amoundPaidtxt.SelectedText = ""
         amoundPaidtxt.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        amoundPaidtxt.Size = New Size(289, 26)
+        amoundPaidtxt.Size = New Size(330, 35)
         amoundPaidtxt.TabIndex = 1
         ' 
         ' Label4
@@ -137,63 +136,67 @@ Partial Class tenantPayForm
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label4.Location = New Point(24, 100)
+        Label4.Location = New Point(27, 133)
         Label4.Name = "Label4"
-        Label4.Size = New Size(70, 18)
+        Label4.Size = New Size(85, 23)
         Label4.TabIndex = 72
-        Label4.Text = "Amount"' 
+        Label4.Text = "Amount"
+        ' 
         ' lblTenantName
         ' 
         lblTenantName.AutoSize = True
         lblTenantName.BackColor = Color.Transparent
         lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantName.Location = New Point(144, 67)
+        lblTenantName.Location = New Point(165, 89)
         lblTenantName.Name = "lblTenantName"
-        lblTenantName.Size = New Size(65, 22)
+        lblTenantName.Size = New Size(26, 26)
         lblTenantName.TabIndex = 71
-        lblTenantName.Text = "Lex Lao"' 
+        lblTenantName.Text = "--"
+        ' 
         ' lblTenantID
         ' 
         lblTenantID.AutoSize = True
         lblTenantID.BackColor = Color.Transparent
         lblTenantID.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantID.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantID.Location = New Point(144, 22)
+        lblTenantID.Location = New Point(165, 29)
         lblTenantID.Name = "lblTenantID"
-        lblTenantID.Size = New Size(80, 22)
+        lblTenantID.Size = New Size(26, 26)
         lblTenantID.TabIndex = 70
-        lblTenantID.Text = "Tenant123"' 
+        lblTenantID.Text = "--"
+        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label1.Location = New Point(24, 23)
+        Label1.Location = New Point(27, 31)
         Label1.Name = "Label1"
-        Label1.Size = New Size(90, 18)
+        Label1.Size = New Size(110, 23)
         Label1.TabIndex = 69
-        Label1.Text = "Tenant ID:"' 
+        Label1.Text = "Tenant ID:"
+        ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.BackColor = Color.Transparent
         Label18.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label18.Location = New Point(24, 68)
+        Label18.Location = New Point(27, 91)
         Label18.Name = "Label18"
-        Label18.Size = New Size(99, 18)
+        Label18.Size = New Size(122, 23)
         Label18.TabIndex = 68
-        Label18.Text = "First Name:"' 
+        Label18.Text = "First Name:"
+        ' 
         ' tenantPayForm
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(336, 224)
+        ClientSize = New Size(384, 299)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 2, 3, 2)
         Name = "tenantPayForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "tenantPayForm"

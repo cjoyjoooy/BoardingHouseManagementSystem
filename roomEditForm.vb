@@ -4,15 +4,16 @@
     End Sub
 
     Private Sub btnEditRoom_Click(sender As Object, e As EventArgs) Handles btnEditRoom.Click
-        Dim RoomName, MonthlyRent As String
+        Dim RoomName, MonthlyRent, Name As String
         Dim NumberOfPerson As Integer
 
+        Name = lblRoomName.Text
         RoomName = txtRoomName.Text
         MonthlyRent = txtMonthlyRent.Text
         NumberOfPerson = txtNumPerson.Text
 
 
-        edit_Rooms(MonthlyRent, NumberOfPerson, RoomName)
+        edit_Rooms(RoomName, MonthlyRent, NumberOfPerson, Name)
         check_Occupant_Number_Edit(RoomName)
         If Rooms.addroompanel IsNot Nothing Then
             Rooms.addroompanel.Controls.Clear()

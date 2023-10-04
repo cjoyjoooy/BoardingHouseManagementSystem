@@ -13,15 +13,10 @@
         Dim dateNow As String = currentDate.ToString("yyyy-MM-dd")
         Dim monthNumber As Integer = DateAndTime.Month(DateTime.Now)
         Dim monthName As String = DateAndTime.MonthName(monthNumber)
-
-
         transactionPaid(amountPaid, tenantID, dateNow)
         earningsSec()
         profSummary()
         MsgBox(amountPaid & tenantID & dateNow & monthName)
-
-
-
 
         Me.Close()
     End Sub

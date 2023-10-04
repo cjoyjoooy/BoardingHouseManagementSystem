@@ -159,11 +159,12 @@ Partial Class tenantEditForm
         dtpDate.BackColor = Color.White
         dtpDate.BorderRadius = 10
         dtpDate.Checked = True
+        dtpDate.CustomFormat = "dd//yyyy"
         dtpDate.CustomizableEdges = CustomizableEdges3
         dtpDate.FillColor = Color.White
         dtpDate.FocusedColor = Color.White
         dtpDate.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        dtpDate.Format = DateTimePickerFormat.Short
+        dtpDate.Format = DateTimePickerFormat.Custom
         dtpDate.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         dtpDate.Location = New Point(13, 587)
         dtpDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)

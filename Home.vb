@@ -13,6 +13,10 @@ Public Class Home
 
     Private Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
         changePanel(Dashboard)
+        display_Recent_Transaction()
+        display_dashboard_Earnigns()
+        display_dashboard_Tenants()
+        display_dashboard_Rooms()
     End Sub
 
     Private Sub btnTenant_Click(sender As Object, e As EventArgs) Handles btnTenant.Click
@@ -21,6 +25,15 @@ Public Class Home
 
     Private Sub btnRoom_Click(sender As Object, e As EventArgs) Handles btnRoom.Click
         changePanel(Rooms)
+        If Rooms.addroompanel IsNot Nothing Then
+            Rooms.addroompanel.Controls.Clear()
+            display_Rooms()
+
+            Rooms.lblMonthlyRent.Text = "--"
+            Rooms.lblNumOccupants.Text = "--"
+            Rooms.lblStatus.Text = "--"
+            Rooms.lblRoomNumber.Text = "--"
+        End If
     End Sub
 
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
