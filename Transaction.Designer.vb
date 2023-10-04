@@ -51,9 +51,10 @@ Partial Class Transaction
         Guna2Panel1.CustomizableEdges = CustomizableEdges3
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2Panel1.Size = New Size(833, 685)
+        Guna2Panel1.Size = New Size(729, 514)
         Guna2Panel1.TabIndex = 0
         ' 
         ' txtSearchTransaction
@@ -70,14 +71,14 @@ Partial Class Transaction
         txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
         txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(416, 1)
-        txtSearchTransaction.Margin = New Padding(4, 3, 4, 3)
+        txtSearchTransaction.Location = New Point(364, 1)
+        txtSearchTransaction.Margin = New Padding(4, 2, 4, 2)
         txtSearchTransaction.Name = "txtSearchTransaction"
         txtSearchTransaction.PasswordChar = ChrW(0)
         txtSearchTransaction.PlaceholderText = ""
         txtSearchTransaction.SelectedText = ""
         txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        txtSearchTransaction.Size = New Size(404, 35)
+        txtSearchTransaction.Size = New Size(354, 26)
         txtSearchTransaction.TabIndex = 14
         ' 
         ' dgvTransaction
@@ -112,7 +113,8 @@ Partial Class Transaction
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvTransaction.DefaultCellStyle = DataGridViewCellStyle3
         dgvTransaction.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvTransaction.Location = New Point(12, 40)
+        dgvTransaction.Location = New Point(10, 30)
+        dgvTransaction.Margin = New Padding(3, 2, 3, 2)
         dgvTransaction.Name = "dgvTransaction"
         dgvTransaction.ReadOnly = True
         dgvTransaction.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -127,7 +129,7 @@ Partial Class Transaction
         dgvTransaction.RowHeadersVisible = False
         dgvTransaction.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvTransaction.RowTemplate.Height = 34
-        dgvTransaction.Size = New Size(809, 645)
+        dgvTransaction.Size = New Size(708, 484)
         dgvTransaction.TabIndex = 13
         dgvTransaction.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvTransaction.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -178,19 +180,19 @@ Partial Class Transaction
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(12, 1)
+        Label2.Location = New Point(10, 1)
         Label2.Name = "Label2"
-        Label2.Size = New Size(194, 32)
+        Label2.Size = New Size(152, 26)
         Label2.TabIndex = 10
-        Label2.Text = "Transactions"
-        ' 
+        Label2.Text = "Transactions"' 
         ' Transaction
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(833, 685)
+        ClientSize = New Size(729, 514)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(3, 2, 3, 2)
         Name = "Transaction"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Transaction"

@@ -28,4 +28,8 @@
         delete_Bill(BillID)
         display_Bill()
     End Sub
+
+    Private Sub dgvBill_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvBill.CellContentClick
+
+    End Sub
 End Class

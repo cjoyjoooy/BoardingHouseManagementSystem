@@ -125,7 +125,7 @@ Partial Class Dashboard
         btnShowTransactionPanel.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnShowTransactionPanel.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnShowTransactionPanel.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        btnShowTransactionPanel.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowTransactionPanel.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowTransactionPanel.ForeColor = Color.White
         btnShowTransactionPanel.Image = CType(resources.GetObject("btnShowTransactionPanel.Image"), Image)
         btnShowTransactionPanel.ImageSize = New Size(36, 36)
@@ -185,7 +185,7 @@ Partial Class Dashboard
         dgvTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = Color.White
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle4.SelectionBackColor = Color.White
         DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
@@ -205,14 +205,14 @@ Partial Class Dashboard
         dgvTenant.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvTenant.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         dgvTenant.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
-        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
         dgvTenant.ThemeStyle.HeaderStyle.ForeColor = Color.White
         dgvTenant.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         dgvTenant.ThemeStyle.HeaderStyle.Height = 50
         dgvTenant.ThemeStyle.ReadOnly = True
         dgvTenant.ThemeStyle.RowsStyle.BackColor = Color.White
         dgvTenant.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         dgvTenant.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         dgvTenant.ThemeStyle.RowsStyle.Height = 34
         dgvTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
@@ -243,7 +243,7 @@ Partial Class Dashboard
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label9.Location = New Point(695, 12)
         Label9.Name = "Label9"
@@ -255,7 +255,7 @@ Partial Class Dashboard
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label8.Location = New Point(592, 12)
         Label8.Name = "Label8"
@@ -322,7 +322,7 @@ Partial Class Dashboard
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label4.Location = New Point(32, 80)
         Label4.Name = "Label4"
@@ -377,7 +377,7 @@ Partial Class Dashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label3.Location = New Point(22, 80)
         Label3.Name = "Label3"
@@ -405,7 +405,7 @@ Partial Class Dashboard
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Font = New Font("Arial Rounded MT Bold", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
         Label1.Location = New Point(41, 80)
         Label1.Name = "Label1"
@@ -442,7 +442,7 @@ Partial Class Dashboard
         ' 
         ' Dashboard
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(833, 685)
         Controls.Add(panelDashboard)

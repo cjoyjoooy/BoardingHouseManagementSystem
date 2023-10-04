@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.Data.SQLite
 Imports System.Net
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 
 Module Project_Module
@@ -50,12 +51,12 @@ Module Project_Module
     End Sub
 
 
-    Public Sub add_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double)
+    Public Sub add_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double, ByVal monthh As String)
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
 
-            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Bill VALUES(null,'" & ElectricityBill & "','" & WaterBill & "', '" & MaintenanceBill & "', '" & MiscBill & "')", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO Bill VALUES('" & ElectricityBill & "','" & WaterBill & "', '" & MaintenanceBill & "', '" & MiscBill & "', '" & monthh & "')", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
             MessageBox.Show("Added")
         Catch ex As SQLiteException
@@ -108,7 +109,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT BillID, ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Bill")
             Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
 
@@ -118,6 +119,7 @@ Module Project_Module
             SQLite_Close_Connection()
         End Try
     End Sub
+
 
     Public Sub add_User(ByVal Name As String, ByVal Address As String, ByVal ContactNum As String, ByVal Username As String, ByVal Password As String)
         Try
@@ -236,6 +238,168 @@ Module Project_Module
         End Try
 
     End Sub
+
+    Public Sub profSummary()
+        Try
+            SQLite_Open_Connection()
+            Dim profSummarysql As String = "REPLACE INTO ProfitSummary (
+                                                month_year,          
+                                                total_earnings,
+                                                total_all_bills,
+                                                profit
+                                            )
+                                            SELECT
+                                                e.month_year,
+                                                SUM(e.total_earnings) AS total_earnings,
+                                                COALESCE(SUM(b.total_all_bills), 0) AS total_all_bills,
+                                                SUM(e.total_earnings) - COALESCE(SUM(b.total_all_bills), 0) AS profit
+                                            FROM TotalEarning e
+                                            LEFT JOIN TotalBills b ON e.month_year = b.month_year
+                                            GROUP BY e.month_year;"
+            Using createTableCommand As New SQLiteCommand(profSummarysql, sqliteConnection)
+                createTableCommand.ExecuteNonQuery()
+            End Using
+
+            'Insert the profit calculation results into the "ProfitSummary" table
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM ProfitSummary", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "ProfitSummary")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
+    End Sub
+    Public Sub billSec()
+
+        Try
+            SQLite_Open_Connection()
+            Dim totalBillingsql As String = "REPLACE INTO TotalBills (
+                                                month_year,
+                                                month_name,
+                                                total_electricity_bill,
+                                                total_water_bill,
+                                                total_maintenance_bill,
+                                                total_misc_bill,
+                                                total_all_bills
+                                            )
+                                            SELECT strftime('%Y-%m', Month) AS month_year,
+                                           CASE SUBSTR(strftime('%Y-%m-%d', Month), 6, 2)
+                                               WHEN '01' THEN 'January'
+                                               WHEN '02' THEN 'February'
+                                               WHEN '03' THEN 'March'
+                                               WHEN '04' THEN 'April'
+                                               WHEN '05' THEN 'May'
+                                               WHEN '06' THEN 'June'
+                                               WHEN '07' THEN 'July'
+                                               WHEN '08' THEN 'August'
+                                               WHEN '09' THEN 'September'
+                                               WHEN '10' THEN 'October'
+                                               WHEN '11' THEN 'November'
+                                               WHEN '12' THEN 'December'
+                                               ELSE 'Invalid Month'
+                                           END AS month_name,
+                                           SUM(ElectricityBill) AS total_electricity_bill,
+                                           SUM(WaterBill) AS total_water_bill,
+                                           SUM(MaintenanceBill) AS total_maintenance_bill,
+                                           SUM(MiscBill) AS total_misc_bill,
+                                           SUM(ElectricityBill + WaterBill + MaintenanceBill + MiscBill) AS total_all_bills
+                                    FROM Bill
+                                    GROUP BY month_year, month_name
+                                    ORDER BY month_year DESC;"
+            Using createTableCommand As New SQLiteCommand(totalBillingsql, sqliteConnection)
+                createTableCommand.ExecuteNonQuery()
+            End Using
+
+            ' Now, you can retrieve data from the "TotalBills" table if needed.
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM TotalBills", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "TotalBills")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
+    End Sub
+    Public Sub earningsSec()
+        Try
+            SQLite_Open_Connection()
+            Dim createTableSql As String = "REPLACE INTO TotalEarning (
+                                                month_year,
+                                                month_number,
+                                                month_name,
+                                                total_earnings
+                                            )
+                                        SELECT strftime('%Y-%m', DatePaid) AS month_year,
+                                          SUBSTR(strftime('%Y-%m-%d', DatePaid), 6, 2) AS month_number,
+                                          CASE SUBSTR(strftime('%Y-%m-%d', DatePaid), 6, 2)
+                                              WHEN '01' THEN 'January'
+                                              WHEN '02' THEN 'February'
+                                              WHEN '03' THEN 'March'
+                                              WHEN '04' THEN 'April'
+                                              WHEN '05' THEN 'May'
+                                              WHEN '06' THEN 'June'
+                                              WHEN '07' THEN 'July'
+                                              WHEN '08' THEN 'August'
+                                              WHEN '09' THEN 'September'
+                                              WHEN '10' THEN 'October'
+                                              WHEN '11' THEN 'November'
+                                              WHEN '12' THEN 'December'
+                                              ELSE 'Invalid Month'
+                                          END AS month_name,
+                                          SUM(AmountPaid) AS total_earnings
+                                   FROM ""Transaction""
+                                   GROUP BY month_year, month_name
+                                   ORDER BY month_year ASC;"
+            Using createTableCommand As New SQLiteCommand(createTableSql, sqliteConnection)
+                createTableCommand.ExecuteNonQuery()
+            End Using
+
+            ' Now, you can retrieve data from the "TotalEarning" table if needed.
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM TotalEarning", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "TotalEarning")
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+
+
+    End Sub
+    Public Sub transactionPaid(ByVal amountPaid As Integer, ByVal tenantID As String, ByVal dateNow As String)
+
+
+        'Try
+        'SQLite_Open_Connection()
+        'dataSet = New DataSet
+        'sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO ""Transaction"" VALUES(null, '" & amountPaid & "', '" & dateNow & "' , '" & tenantID & "', (SELECT last_insert_rowid() FROM Earning) ')", sqliteConnection)
+        'sqliteDataAdapter.Fill(dataSet, "Transaction")
+        'Catch ex As Exception
+        'MessageBox.Show("Error: " & ex.Message)
+        'Finally
+
+        'SQLite_Close_Connection()
+        'End Try
+        Try
+            SQLite_Open_Connection()
+            Dim sql As String = "INSERT INTO ""Transaction"" VALUES(null, @amountPaid, @dateNow, @tenantID)"
+            sqliteDataAdapter = New SQLiteDataAdapter(sql, sqliteConnection)
+            sqliteDataAdapter.SelectCommand.Parameters.AddWithValue("@amountPaid", amountPaid)
+            sqliteDataAdapter.SelectCommand.Parameters.AddWithValue("@dateNow", dateNow)
+            sqliteDataAdapter.SelectCommand.Parameters.AddWithValue("@tenantID", tenantID)
+            dataSet = New DataSet
+            sqliteDataAdapter.Fill(dataSet, "Transaction")
+        Catch ex As Exception
+            ' Handle the exception here (e.g., log it, display an error message).
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
 
     Public Sub restore_Tenant(ByVal status As String, ByVal TenandID As Integer)
         Try
@@ -386,7 +550,7 @@ Module Project_Module
                     Dim roomId As Integer = row("RoomID")
                     If tenantCount >= numberOfPerson Then
                         status = "Full/Occupied"
-                        edit_Rooms_Status(status, roomid)
+                        edit_Rooms_Status(status, roomId)
                     Else
                         status = "Vacant"
                         edit_Rooms_Status(status, roomid)
