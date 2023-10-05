@@ -35,6 +35,7 @@ Partial Class roomEditForm
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        lblRoomName = New Label()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnEditRoom = New Guna.UI2.WinForms.Guna2Button()
         txtNumPerson = New Guna.UI2.WinForms.Guna2TextBox()
@@ -43,7 +44,6 @@ Partial Class roomEditForm
         Label1 = New Label()
         txtRoomName = New Guna.UI2.WinForms.Guna2TextBox()
         Label18 = New Label()
-        lblRoomName = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -68,6 +68,18 @@ Partial Class roomEditForm
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Guna2Panel1.Size = New Size(388, 349)
         Guna2Panel1.TabIndex = 0
+        ' 
+        ' lblRoomName
+        ' 
+        lblRoomName.AutoSize = True
+        lblRoomName.BackColor = Color.Transparent
+        lblRoomName.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblRoomName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblRoomName.Location = New Point(231, 9)
+        lblRoomName.Name = "lblRoomName"
+        lblRoomName.Size = New Size(24, 23)
+        lblRoomName.TabIndex = 63
+        lblRoomName.Text = "--"
         ' 
         ' btnCancel
         ' 
@@ -221,18 +233,6 @@ Partial Class roomEditForm
         Label18.Size = New Size(128, 23)
         Label18.TabIndex = 56
         Label18.Text = "Room Name"
-        ' 
-        ' lblRoomName
-        ' 
-        lblRoomName.AutoSize = True
-        lblRoomName.BackColor = Color.Transparent
-        lblRoomName.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        lblRoomName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblRoomName.Location = New Point(231, 9)
-        lblRoomName.Name = "lblRoomName"
-        lblRoomName.Size = New Size(24, 23)
-        lblRoomName.TabIndex = 63
-        lblRoomName.Text = "--"
         ' 
         ' roomEditForm
         ' 

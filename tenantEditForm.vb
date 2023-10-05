@@ -7,12 +7,10 @@ Public Class tenantEditForm
 
     Private Sub btnEditTenant_Click(sender As Object, e As EventArgs) Handles btnEditTenant.Click
         Try
-            Dim FirstName, LastName, Gender, Address, ContactNum, DateLeased As String
-            Dim RoomID, TenandID, checkroomId, rowIndex As Integer
+            Dim FirstName, LastName, Gender, Address, ContactNum, DateLeased, RoomName As String
+            Dim RoomID, TenandID, rowIndex, previousRoomId As Integer
 
             rowIndex = Tenant.dgvTenant.CurrentRow.Index
-
-
             FirstName = txtFname.Text
             LastName = txtLname.Text
             Gender = cmbGender.Text
@@ -20,7 +18,10 @@ Public Class tenantEditForm
             ContactNum = txtContact.Text
             DateLeased = dtpDate.Value
             RoomID = Integer.Parse(cmbRoom.SelectedValue.ToString())
+            previousRoomId = Tenant.dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
+            RoomName = cmbRoom.DisplayMember.ToString()
             TenandID = Integer.Parse(txtTenandID.Text)
+
 
             If String.IsNullOrEmpty(FirstName) Then
                 MessageBox.Show("Some fields are empty! Please try again")
@@ -39,8 +40,9 @@ Public Class tenantEditForm
                 Return
             Else
                 edit_Tenant(FirstName, LastName, Gender, Address, ContactNum, DateLeased, RoomID, TenandID)
-                check_Occupant_Number(checkroomId)
                 check_Occupant_Number(RoomID)
+                check_Occupant_Number_Edit(RoomName)
+                check_Occupant_Number_Edit_previous(previousRoomId)
                 If Rooms.addroompanel IsNot Nothing Then
                     Rooms.addroompanel.Controls.Clear()
                     display_Rooms()
@@ -49,6 +51,7 @@ Public Class tenantEditForm
                     Rooms.lblStatus.Text = "--"
                     Rooms.lblRoomNumber.Text = "--"
                 End If
+
                 display_Tenant()
 
             End If

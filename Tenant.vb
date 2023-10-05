@@ -52,7 +52,7 @@ Public Class Tenant
 
             rowIndex = dgvTenant.CurrentRow.Index
             TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-            roomId = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+            roomId = dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
             delete_Tenant(TenantID)
             check_Occupant_Number(roomId)
             If Rooms.addroompanel IsNot Nothing Then

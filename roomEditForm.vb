@@ -47,4 +47,8 @@
 
         Me.Close()
     End Sub
+
+    Private Sub txtRoomName_TextChanged(sender As Object, e As EventArgs) Handles txtRoomName.TextChanged
+
+    End Sub
 End Class

@@ -787,6 +787,35 @@ Module Project_Module
         End Try
     End Sub
 
+    Public Sub check_Occupant_Number_Edit_previous(ByVal ID As String)
+        Dim status As String
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT RoomID, (SELECT COUNT(*) FROM Tenant WHERE RoomID = " & ID & " AND Status = 'Active') AS 'Tenant Count', NumberOfPerson FROM Room WHERE RoomID = " & ID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Room")
+            If dataSet.Tables("Room").Rows.Count > 0 Then
+                For Each row In dataSet.Tables("Room").Rows
+                    Dim tenantCount As String = row("Tenant Count")
+                    Dim numberOfPerson As String = row("NumberOfPerson")
+                    Dim roomId As Integer = row("RoomID")
+                    If tenantCount >= numberOfPerson Then
+                        status = "Full/Occupied"
+                        edit_Rooms_Status(status, roomId)
+                    Else
+                        status = "Vacant"
+                        edit_Rooms_Status(status, roomId)
+                    End If
+                Next
+            End If
+
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
 
 
     Public Sub edit_Rooms(ByVal Name As String, ByVal MonthlyRent As Double, ByVal NumberOfPerson As Integer, ByVal RoomName As String)
