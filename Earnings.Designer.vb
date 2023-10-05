@@ -22,17 +22,13 @@ Partial Class Earnings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Earnings))
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        txtSearchTransaction = New Guna.UI2.WinForms.Guna2TextBox()
         dgvEarnings = New Guna.UI2.WinForms.Guna2DataGridView()
         Label2 = New Label()
         Guna2Panel1.SuspendLayout()
@@ -42,42 +38,17 @@ Partial Class Earnings
         ' Guna2Panel1
         ' 
         Guna2Panel1.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
-        Guna2Panel1.Controls.Add(txtSearchTransaction)
         Guna2Panel1.Controls.Add(dgvEarnings)
         Guna2Panel1.Controls.Add(Label2)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges3
+        Guna2Panel1.CustomizableEdges = CustomizableEdges1
         Guna2Panel1.Dock = DockStyle.Fill
         Guna2Panel1.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Guna2Panel1.Size = New Size(833, 685)
         Guna2Panel1.TabIndex = 0
-        ' 
-        ' txtSearchTransaction
-        ' 
-        txtSearchTransaction.BorderRadius = 10
-        txtSearchTransaction.CustomizableEdges = CustomizableEdges1
-        txtSearchTransaction.DefaultText = ""
-        txtSearchTransaction.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtSearchTransaction.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtSearchTransaction.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSearchTransaction.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSearchTransaction.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
-        txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(416, 0)
-        txtSearchTransaction.Margin = New Padding(5, 3, 5, 3)
-        txtSearchTransaction.Name = "txtSearchTransaction"
-        txtSearchTransaction.PasswordChar = ChrW(0)
-        txtSearchTransaction.PlaceholderText = ""
-        txtSearchTransaction.SelectedText = ""
-        txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        txtSearchTransaction.Size = New Size(405, 35)
-        txtSearchTransaction.TabIndex = 15
         ' 
         ' dgvEarnings
         ' 
@@ -180,5 +151,4 @@ Partial Class Earnings
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents dgvEarnings As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
 End Class

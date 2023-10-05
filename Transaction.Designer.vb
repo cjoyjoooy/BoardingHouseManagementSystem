@@ -71,7 +71,7 @@ Partial Class Transaction
         txtSearchTransaction.Margin = New Padding(5, 3, 5, 3)
         txtSearchTransaction.Name = "txtSearchTransaction"
         txtSearchTransaction.PasswordChar = ChrW(0)
-        txtSearchTransaction.PlaceholderText = ""
+        txtSearchTransaction.PlaceholderText = "Enter tenant's name"
         txtSearchTransaction.SelectedText = ""
         txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         txtSearchTransaction.Size = New Size(405, 35)

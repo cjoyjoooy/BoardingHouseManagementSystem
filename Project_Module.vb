@@ -3,6 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Data.SQLite
 Imports System.Globalization
 Imports System.Net
+Imports System.Windows.Data
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 
 
@@ -69,50 +70,17 @@ Module Project_Module
 
     End Sub
 
-    Public Sub edit_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double, ByVal BillID As Integer)
 
-        Try
-            SQLite_Open_Connection()
-            dataSet = New DataSet
 
-            sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Bill SET ElectricityBill = " & ElectricityBill & ", WaterBill = " & WaterBill & ", MaintenanceBill = " & MaintenanceBill & ", MiscBill = " & MiscBill & " WHERE BillID = " & BillID & "", sqliteConnection)
 
-            sqliteDataAdapter.Fill(dataSet, "Bill")
-
-            MessageBox.Show("Edited.")
-
-        Catch ex As SQLiteException
-
-            MessageBox.Show("Error: " & ex.Message)
-
-        Finally
-
-            SQLite_Close_Connection()
-
-        End Try
-    End Sub
-
-    Public Sub delete_Bill(ByVal BillID As Integer)
-        Try
-            SQLite_Open_Connection()
-            dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("DELETE FROM Bill WHERE BillID = " & BillID & "", sqliteConnection)
-            sqliteDataAdapter.Fill(dataSet, "Bill")
-        Catch ex As SQLiteException
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-
-            SQLite_Close_Connection()
-        End Try
-    End Sub
 
     Public Sub display_Bill()
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT ElectricityBill, WaterBill, MaintenanceBill, MiscBill FROM Bill", sqliteConnection)
-            sqliteDataAdapter.Fill(dataSet, "Bill")
-            Bills.dgvBill.DataSource = dataSet.Tables("Bill").DefaultView
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT month_name ||' ' || SUBSTR(month_year, 1, 4) AS 'Month', total_electricity_bill As 'Electricity Bill', total_water_bill As 'Water Bill', total_maintenance_bill As 'Maintenance Bill', total_misc_bill As 'Miscellaneous Bill', total_all_bills As 'Total Monthly Bill' FROM TotalBills ORDER by month_year DESC", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "TotalBills")
+            Bills.dgvBill.DataSource = dataSet.Tables("TotalBills").DefaultView
 
         Catch ex As SqlException
             MessageBox.Show("Error: " & ex.Message)
@@ -168,7 +136,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT UserID, Name, Address, ContactNum, Username, Password FROM User", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT UserID, Name, Address, ContactNum, Username FROM User", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "User")
             User.dgvUser.DataSource = dataSet.Tables("User").DefaultView
 
@@ -221,11 +189,7 @@ Module Project_Module
     End Sub
 
     Private Function GetExistingRoomID(ByVal TenandID As Integer) As Integer
-        ' Implement a method to fetch the existing RoomID for the given TenandID
-        ' This method should query the database and return the RoomID for the tenant.
-        ' You may need to execute a SQL SELECT statement to retrieve this information.
-        ' Return the RoomID as an Integer.
-        ' If the tenant is not found or the RoomID cannot be determined, return an appropriate default value or handle the error as needed.
+
         Dim existingRoomID As Integer
         Try
             SQLite_Open_Connection()
@@ -314,7 +278,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE Status = 'Active'", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter(" SELECT TenandID, FirstName ||' '|| LastName As 'Tenant Name', Status, RoomID FROM Tenant WHERE Status = 'Active' ORDER by TenandID DESC", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Tenant")
             Tenant.dgvTenant.DataSource = dataSet.Tables("Tenant").DefaultView
 
@@ -325,36 +289,43 @@ Module Project_Module
         End Try
     End Sub
 
-    Public Sub display_tenant_info()
-        Dim name, fname, lname, gender, address, contact, status, room, dateleased, formattedDate As String
+    Public Sub display_tenant_info(ByVal TenantID As Integer)
         Dim datevalue As DateTime
-        Dim rowIndex As Integer
         Try
-            rowIndex = Tenant.dgvTenant.CurrentRow.Index
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE TenandID = " & TenantID & "", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            If dataSet.Tables("Tenant").Rows.Count > 0 Then
+                Dim row As DataRow = dataSet.Tables("Tenant").Rows(0)
+                Dim fname As String = Convert.ToString(row("FirstName"))
+                Dim lname As String = Convert.ToString(row("LastName"))
+                Dim gender As String = Convert.ToString(row("Gender"))
+                Dim address As String = Convert.ToString(row("Address"))
+                Dim contact As String = Convert.ToString(row("ContactNum"))
+                Dim dateleased As String = Convert.ToString(row("DateLeased"))
+                Dim status As String = Convert.ToString(row("Status"))
+                Dim room As Integer = Convert.ToString(row("RoomID"))
 
-            fname = Tenant.dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
-            lname = Tenant.dgvTenant.Rows(rowIndex).Cells(2).Value.ToString
-            name = fname + " " + lname
-            gender = Tenant.dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
-            address = Tenant.dgvTenant.Rows(rowIndex).Cells(4).Value.ToString
-            contact = Tenant.dgvTenant.Rows(rowIndex).Cells(5).Value.ToString
-            dateleased = Tenant.dgvTenant.Rows(rowIndex).Cells(6).Value.ToString
-            status = Tenant.dgvTenant.Rows(rowIndex).Cells(7).Value.ToString
-            room = Tenant.dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+                Dim name As String = fname + " " + lname
 
-            If DateTime.TryParseExact(dateleased, "dd/MM/yyyy h:mm:ss tt", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
-                formattedDate = datevalue.ToString("MM/dd/yyyy")
-            ElseIf DateTime.TryParseExact(dateleased, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
-                formattedDate = datevalue.ToString("MM/dd/yyyy")
+                If DateTime.TryParseExact(dateleased, "dd/MM/yyyy h:mm:ss tt", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
+                    Dim formattedDate = datevalue.ToString("MM/dd/yyyy")
+                ElseIf DateTime.TryParseExact(dateleased, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
+                    Dim formattedDate = datevalue.ToString("MM/dd/yyyy")
+                    Tenant.lblTenantName.Text = name
+                    Tenant.lblTenantGender.Text = gender
+                    Tenant.lblTenantAddress.Text = address
+                    Tenant.lblTenantContact.Text = contact
+                    Tenant.lblTenantDateLeased.Text = formattedDate
+                    Tenant.lblTenantStatus.Text = status
+                    Tenant.lblTenantRoom.Text = room
+                End If
             End If
-            Tenant.lblTenantName.Text = name
-            Tenant.lblTenantGender.Text = gender
-            Tenant.lblTenantAddress.Text = address
-            Tenant.lblTenantContact.Text = contact
-            Tenant.lblTenantDateLeased.Text = formattedDate
-            Tenant.lblTenantStatus.Text = status
-            Tenant.lblTenantRoom.Text = room
         Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
 
         End Try
 
@@ -364,7 +335,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT t.DatePaid, r.MonthlyRent FROM 'Transaction' AS t INNER JOIN Tenant AS tn ON t.TenantID = tn.TenandID INNER JOIN Room AS r ON tn.RoomID = r.RoomID WHERE tn.TenandID = " & TenantID & " ORDER BY t.DatePaid DESC LIMIT 1;", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT t.DatePaid, r.MonthlyRent, t.AmountPaid FROM 'Transaction' AS t INNER JOIN Tenant AS tn ON t.TenantID = tn.TenandID INNER JOIN Room AS r ON tn.RoomID = r.RoomID WHERE tn.TenandID = '" & TenantID & "' ORDER BY t.DatePaid DESC LIMIT 1", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Transaction")
 
             ' Check if there are rows in the DataSet
@@ -372,11 +343,13 @@ Module Project_Module
                 ' Retrieve the values from the DataSet
                 Dim row As DataRow = dataSet.Tables("Transaction").Rows(0)
                 Dim lastPayment As Date = Convert.ToDateTime(row("DatePaid"))
+                Dim amountpaid As Decimal = Convert.ToDecimal(row("AmountPaid"))
                 Dim monthlyRent As Decimal = Convert.ToDecimal(row("MonthlyRent"))
 
                 ' Update the labels with the retrieved values
                 Tenant.lblLastPayment.Text = lastPayment.ToString("MM/dd/yyyy")
-                Tenant.lblAmountDue.Text = monthlyRent.ToString("0.00")
+                Tenant.lblAmountDue.Text = amountpaid.ToString("0.00")
+                tenantPayForm.lblTenantRent.Text = monthlyRent.ToString("0.00")
 
 
             Else
@@ -482,6 +455,21 @@ Module Project_Module
             Else
                 Dashboard.lblTotalRooms.Text = "--"
             End If
+
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
+    Public Sub display_Earnings()
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT month_year As 'Month', total_earnings As 'Monthly Earnings', total_all_bills As 'Monthly Bills', profit As 'Monthly Profit' FROM ProfitSummary ORDER by month_year DESC", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "ProfitSummary")
+            Earnings.dgvEarnings.DataSource = dataSet.Tables("ProfitSummary").DefaultView
 
         Catch ex As SQLiteException
             MessageBox.Show("Error: " & ex.Message)
@@ -621,19 +609,6 @@ Module Project_Module
 
     End Sub
     Public Sub transactionPaid(ByVal amountPaid As Integer, ByVal tenantID As String, ByVal dateNow As String)
-
-
-        'Try
-        'SQLite_Open_Connection()
-        'dataSet = New DataSet
-        'sqliteDataAdapter = New SQLiteDataAdapter("INSERT INTO ""Transaction"" VALUES(null, '" & amountPaid & "', '" & dateNow & "' , '" & tenantID & "', (SELECT last_insert_rowid() FROM Earning) ')", sqliteConnection)
-        'sqliteDataAdapter.Fill(dataSet, "Transaction")
-        'Catch ex As Exception
-        'MessageBox.Show("Error: " & ex.Message)
-        'Finally
-
-        'SQLite_Close_Connection()
-        'End Try
         Try
             SQLite_Open_Connection()
             Dim sql As String = "INSERT INTO ""Transaction"" VALUES(null, @amountPaid, @dateNow, @tenantID)"
@@ -650,10 +625,6 @@ Module Project_Module
             SQLite_Close_Connection()
         End Try
     End Sub
-
-
-
-
     Public Sub display_TenantArchive()
         Try
             SQLite_Open_Connection()
@@ -667,10 +638,6 @@ Module Project_Module
         Finally
             SQLite_Close_Connection()
         End Try
-    End Sub
-
-    Public Sub add_TenantPay()
-
     End Sub
 
     Public Sub populate_cmbRoom()
@@ -758,7 +725,7 @@ Module Project_Module
                         edit_Rooms_Status(status, roomId)
                     Else
                         status = "Vacant"
-                        edit_Rooms_Status(status, roomid)
+                        edit_Rooms_Status(status, roomId)
                     End If
                 Next
             End If
@@ -844,9 +811,6 @@ Module Project_Module
             SQLite_Close_Connection()
         End Try
     End Sub
-
-
-
 
     Public Sub display_Rooms()
         Try
@@ -1032,18 +996,33 @@ Module Project_Module
 
 
 
-    'NOTE: Do not erase --------------------------------
+    Public Sub Search_Function(ByVal search As String, ByVal tableColumn As String, ByVal tablename As String, ByVal wheretableColumn As String, ByRef Formtable As DataGridView)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT " & tableColumn & " FROM " & tablename & " WHERE " & wheretableColumn & " LIKE '%" & search & "%'", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, tablename)
+            Formtable.DataSource = dataSet.Tables(tablename).DefaultView
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
 
-    'Public Sub Room_iterate()
-    '    Dim c As Control
-    '    For Each c In Rooms.addroompanel.Controls
-    '        If TypeOf (c) Is Panel Then
-    '            CType(c, Panel).BackColor = Color.Red
-    '        End If
-    '    Next
-    'End Sub
+    Public Sub Search_Tenant_Function(ByVal search As String, ByRef Formtable As DataGridView)
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE (FirstName Like '%" & search & "%' OR LastName LIKE '%" & search & "%') AND Status = 'Active' ", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Tenant")
+            Formtable.DataSource = dataSet.Tables("Tenant").DefaultView
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
 
-    '--------------------------------
-    '--------------------------------
 
 End Module
