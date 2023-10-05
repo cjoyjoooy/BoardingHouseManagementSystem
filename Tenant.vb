@@ -28,16 +28,10 @@ Public Class Tenant
         Dim rowIndex As Integer
         rowIndex = dgvTenant.CurrentRow.Index
         populate_cmbRoom()
-        tenantEditForm.txtTenandID.Text = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-        tenantEditForm.txtFname.Text = dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
-        tenantEditForm.txtLname.Text = dgvTenant.Rows(rowIndex).Cells(2).Value.ToString
-        tenantEditForm.cmbGender.Text = dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
-        tenantEditForm.txtAddress.Text = dgvTenant.Rows(rowIndex).Cells(4).Value.ToString
-        tenantEditForm.txtContact.Text = dgvTenant.Rows(rowIndex).Cells(5).Value.ToString
-        tenantEditForm.dtpDate.Text = dgvTenant.Rows(rowIndex).Cells(6).Value.ToString
+
 
         ' Get the RoomName from the DataGridView
-        Dim roomName As String = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+        Dim roomName As String = dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
 
         ' Find the corresponding RoomID in the ComboBox and select it
         For Each item As DataRowView In tenantEditForm.cmbRoom.Items

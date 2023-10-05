@@ -13,7 +13,7 @@
         MaintenanceBill = txtMaintenance.Text
         MiscBill = txtMisc.Text
 
-        edit_Bill(ElectricityBill, WaterBill, MaintenanceBill, MiscBill, BillID)
+
         display_Bill()
         Me.Close()
     End Sub

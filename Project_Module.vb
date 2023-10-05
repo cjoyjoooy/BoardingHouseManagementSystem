@@ -53,6 +53,28 @@ Module Project_Module
     End Sub
 
 
+    Public Function Login(ByVal username As String, ByVal password As String)
+
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT Username, Password FROM User WHERE Username='" & username & "' AND Password='" & password & "'", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "User")
+            If dataSet.Tables("User").Rows.Count > 0 Then
+                LoginForm.Hide()
+                Home.Show()
+            Else
+                MessageBox.Show("Invalid username or password")
+                Return False
+            End If
+
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Function
+
     Public Sub add_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double, ByVal monthh As String)
         Try
             SQLite_Open_Connection()
@@ -69,10 +91,6 @@ Module Project_Module
         End Try
 
     End Sub
-
-
-
-
 
     Public Sub display_Bill()
         Try
@@ -298,6 +316,7 @@ Module Project_Module
             sqliteDataAdapter.Fill(dataSet, "Tenant")
             If dataSet.Tables("Tenant").Rows.Count > 0 Then
                 Dim row As DataRow = dataSet.Tables("Tenant").Rows(0)
+                Dim ID As String = Convert.ToString(row("TenandID"))
                 Dim fname As String = Convert.ToString(row("FirstName"))
                 Dim lname As String = Convert.ToString(row("LastName"))
                 Dim gender As String = Convert.ToString(row("Gender"))
@@ -311,16 +330,26 @@ Module Project_Module
 
                 If DateTime.TryParseExact(dateleased, "dd/MM/yyyy h:mm:ss tt", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
                     Dim formattedDate = datevalue.ToString("MM/dd/yyyy")
+                    Tenant.lblTenantDateLeased.Text = formattedDate
                 ElseIf DateTime.TryParseExact(dateleased, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
                     Dim formattedDate = datevalue.ToString("MM/dd/yyyy")
-                    Tenant.lblTenantName.Text = name
-                    Tenant.lblTenantGender.Text = gender
-                    Tenant.lblTenantAddress.Text = address
-                    Tenant.lblTenantContact.Text = contact
                     Tenant.lblTenantDateLeased.Text = formattedDate
-                    Tenant.lblTenantStatus.Text = status
-                    Tenant.lblTenantRoom.Text = room
                 End If
+                Tenant.lblTenantName.Text = name
+                Tenant.lblTenantGender.Text = gender
+                Tenant.lblTenantAddress.Text = address
+                Tenant.lblTenantContact.Text = contact
+
+                Tenant.lblTenantStatus.Text = status
+                Tenant.lblTenantRoom.Text = room
+
+                tenantEditForm.txtTenandID.Text = ID
+                tenantEditForm.txtFname.Text = fname
+                tenantEditForm.txtLname.Text = lname
+                tenantEditForm.cmbGender.Text = gender
+                tenantEditForm.txtAddress.Text = address
+                tenantEditForm.txtContact.Text = contact
+                tenantEditForm.dtpDate.Text = dateleased
             End If
         Catch ex As SQLiteException
             MessageBox.Show("Error: " & ex.Message)

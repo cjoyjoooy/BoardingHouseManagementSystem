@@ -9,14 +9,15 @@
         password = Passwordtxt.Text
 
         If String.IsNullOrEmpty(username) Then
-            MessageBox.Show("Some fields are empty! Please try again.")
+            MessageBox.Show("Please input username")
 
         ElseIf String.IsNullOrEmpty(password) Then
-            MessageBox.Show("Some fields are empty! Please try again.")
+            MessageBox.Show("Please input password")
 
         Else
-            Me.Hide()
-            Home.Show()
+            Login(username, password)
+            Usernametxt.Clear()
+            Passwordtxt.Clear()
         End If
 
 
