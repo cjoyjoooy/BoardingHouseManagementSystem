@@ -51,23 +51,31 @@ Public Class Tenant
     End Sub
 
     Private Sub btnDeleteTenant_Click(sender As Object, e As EventArgs) Handles btnDeleteTenant.Click
-        Dim rowIndex, TenantID As Integer
-        Dim roomId As String
 
-        rowIndex = dgvTenant.CurrentRow.Index
-        TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-        roomId = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
-        delete_Tenant(TenantID)
-        check_Occupant_Number(roomId)
-        If Rooms.addroompanel IsNot Nothing Then
-            Rooms.addroompanel.Controls.Clear()
-            display_Rooms()
-            Rooms.lblMonthlyRent.Text = "--"
-            Rooms.lblNumOccupants.Text = "--"
-            Rooms.lblStatus.Text = "--"
-            Rooms.lblRoomNumber.Text = "--"
+        Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete this tenant?", MsgBoxStyle.YesNo)
+        If ask = MsgBoxResult.Yes Then
+
+            Dim rowIndex, TenantID As Integer
+            Dim roomId As String
+
+            rowIndex = dgvTenant.CurrentRow.Index
+            TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
+            roomId = dgvTenant.Rows(rowIndex).Cells(8).Value.ToString
+            delete_Tenant(TenantID)
+            check_Occupant_Number(roomId)
+            If Rooms.addroompanel IsNot Nothing Then
+                Rooms.addroompanel.Controls.Clear()
+                display_Rooms()
+                Rooms.lblMonthlyRent.Text = "--"
+                Rooms.lblNumOccupants.Text = "--"
+                Rooms.lblStatus.Text = "--"
+                Rooms.lblRoomNumber.Text = "--"
+            End If
+            display_Tenant()
+        Else
+            Return
+
         End If
-        display_Tenant()
     End Sub
 
     Private Sub dgvTenant_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTenant.CellClick

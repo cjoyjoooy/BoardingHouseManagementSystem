@@ -22,11 +22,18 @@
     End Sub
 
     Private Sub btnDeleteUser_Click(sender As Object, e As EventArgs) Handles btnDeleteUser.Click
-        Dim rowIndex As Integer
-        Dim UserID As Integer
-        rowIndex = dgvUser.CurrentRow.Index
-        UserID = dgvUser.Rows(rowIndex).Cells(0).Value.ToString
-        delete_User(UserID)
-        display_User()
+
+        Dim ask As MsgBoxResult = MsgBox("Are you sure you want to delete the user?", MsgBoxStyle.YesNo)
+        If ask = MsgBoxResult.Yes Then
+            Dim rowIndex As Integer
+            Dim UserID As Integer
+            rowIndex = dgvUser.CurrentRow.Index
+            UserID = dgvUser.Rows(rowIndex).Cells(0).Value.ToString
+            delete_User(UserID)
+            display_User()
+        Else
+            Return
+        End If
+
     End Sub
 End Class

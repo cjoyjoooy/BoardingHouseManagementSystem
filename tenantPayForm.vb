@@ -7,16 +7,26 @@
         Dim amountPaid As Integer
         Dim tenantID As String
 
-        amountPaid = amoundPaidtxt.Text
+
         tenantID = lblTenantID.Text
-        Dim currentDate As DateTime = DateTime.Today
-        Dim dateNow As String = currentDate.ToString("yyyy-MM-dd")
-        Dim monthNumber As Integer = DateAndTime.Month(DateTime.Now)
-        Dim monthName As String = DateAndTime.MonthName(monthNumber)
-        transactionPaid(amountPaid, tenantID, dateNow)
-        earningsSec()
-        profSummary()
-        MsgBox(amountPaid & tenantID & dateNow & monthName)
+
+        If String.IsNullOrEmpty(amoundPaidtxt.Text) OrElse Not Integer.TryParse(amoundPaidtxt.Text, amountPaid) Then
+            MessageBox.Show("Invalid or empty amount entered. Please enter a valid integer amount.")
+            Return ' Exit the event handler.
+
+        Else
+            Dim currentDate As DateTime = DateTime.Today
+            Dim dateNow As String = currentDate.ToString("yyyy-MM-dd")
+            Dim monthNumber As Integer = DateAndTime.Month(DateTime.Now)
+            Dim monthName As String = DateAndTime.MonthName(monthNumber)
+            transactionPaid(amountPaid, tenantID, dateNow)
+            earningsSec()
+            profSummary()
+            MessageBox.Show("Successful Transaction!")
+
+
+        End If
+
 
         Me.Close()
     End Sub
