@@ -97,12 +97,13 @@ Partial Class userAddForm
         txtPassword.Location = New Point(23, 386)
         txtPassword.Margin = New Padding(4, 4, 4, 4)
         txtPassword.Name = "txtPassword"
-        txtPassword.PasswordChar = ChrW(0)
+        txtPassword.PasswordChar = "●"c
         txtPassword.PlaceholderText = ""
         txtPassword.SelectedText = ""
         txtPassword.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         txtPassword.Size = New Size(411, 34)
         txtPassword.TabIndex = 5
+        txtPassword.UseSystemPasswordChar = True
         ' 
         ' Label4
         ' 

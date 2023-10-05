@@ -14,7 +14,7 @@ Public Class User
         userEditForm.txtAddress.Text = dgvUser.Rows(rowIndex).Cells(2).Value.ToString
         userEditForm.txtContactNum.Text = dgvUser.Rows(rowIndex).Cells(3).Value.ToString
         userEditForm.txtUsername.Text = dgvUser.Rows(rowIndex).Cells(4).Value.ToString
-        userEditForm.txtPassword.Text = dgvUser.Rows(rowIndex).Cells(5).Value.ToString
+
 
         userEditForm.Show()
     End Sub
