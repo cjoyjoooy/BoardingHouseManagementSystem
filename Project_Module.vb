@@ -335,6 +335,8 @@ Module Project_Module
                 ElseIf DateTime.TryParseExact(dateleased, "MM/dd/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, datevalue) Then
                     Dim formattedDate = datevalue.ToString("MM/dd/yyyy")
                     Tenant.lblTenantDateLeased.Text = formattedDate
+                Else
+                    Tenant.lblTenantDateLeased.Text = dateleased
                 End If
                 Tenant.lblTenantName.Text = name
                 Tenant.lblTenantGender.Text = gender
