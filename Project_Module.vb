@@ -53,7 +53,7 @@ Module Project_Module
     End Sub
 
 
-    Public Function Login(ByVal username As String, ByVal password As String)
+    Public Sub Login(ByVal username As String, ByVal password As String)
 
         Try
             SQLite_Open_Connection()
@@ -66,7 +66,7 @@ Module Project_Module
                 Home.Show()
             Else
                 MessageBox.Show("Invalid username or password")
-                Return False
+
             End If
 
         Catch ex As SQLiteException
@@ -74,7 +74,7 @@ Module Project_Module
         Finally
             SQLite_Close_Connection()
         End Try
-    End Function
+    End Sub
 
     Public Sub add_Bill(ByVal ElectricityBill As Double, ByVal WaterBill As Double, ByVal MaintenanceBill As Double, ByVal MiscBill As Double, ByVal monthh As String)
         Try
