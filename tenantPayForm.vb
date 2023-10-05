@@ -13,7 +13,6 @@
         If String.IsNullOrEmpty(amoundPaidtxt.Text) OrElse Not Integer.TryParse(amoundPaidtxt.Text, amountPaid) Then
             MessageBox.Show("Invalid or empty amount entered. Please enter a valid integer amount.")
             Return ' Exit the event handler.
-
         Else
             Dim currentDate As DateTime = DateTime.Today
             Dim dateNow As String = currentDate.ToString("yyyy-MM-dd")
@@ -23,7 +22,6 @@
             earningsSec()
             profSummary()
             MessageBox.Show("Successful Transaction!")
-
 
         End If
 

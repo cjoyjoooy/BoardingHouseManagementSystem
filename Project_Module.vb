@@ -360,6 +360,29 @@ Module Project_Module
 
     End Sub
 
+    Public Sub display_monthly_pay_rent(ByVal tenantId As Integer)
+
+        Try
+            SQLite_Open_Connection()
+            dataSet = New DataSet
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT MonthlyRent FROM Room where RoomID = (SELECT RoomID FROM Tenant WHERE TenandID = " & tenantId & ")", sqliteConnection)
+            sqliteDataAdapter.Fill(dataSet, "Room")
+
+            If dataSet.Tables("Room").Rows.Count > 0 Then
+                Dim row As DataRow = dataSet.Tables("Room").Rows(0)
+                Dim monthlyRent As Decimal = Convert.ToDecimal(row("MonthlyRent"))
+                tenantPayForm.lblTenantRent.Text = monthlyRent.ToString("0.00")
+            Else
+                ' Handle the case where no payment data was found
+                tenantPayForm.lblTenantRent.Text = "--"
+            End If
+        Catch ex As SQLiteException
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            SQLite_Close_Connection()
+        End Try
+    End Sub
+
     Public Sub display_Tenant_Billing_info(ByVal TenantID As Integer)
         Try
             SQLite_Open_Connection()
@@ -373,13 +396,10 @@ Module Project_Module
                 Dim row As DataRow = dataSet.Tables("Transaction").Rows(0)
                 Dim lastPayment As Date = Convert.ToDateTime(row("DatePaid"))
                 Dim amountpaid As Decimal = Convert.ToDecimal(row("AmountPaid"))
-                Dim monthlyRent As Decimal = Convert.ToDecimal(row("MonthlyRent"))
 
                 ' Update the labels with the retrieved values
                 Tenant.lblLastPayment.Text = lastPayment.ToString("MM/dd/yyyy")
                 Tenant.lblAmountDue.Text = amountpaid.ToString("0.00")
-                tenantPayForm.lblTenantRent.Text = monthlyRent.ToString("0.00")
-
 
             Else
                 ' Handle the case where no payment data was found

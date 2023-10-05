@@ -10,13 +10,13 @@ Public Class Tenant
     End Sub
 
     Private Sub btnPay_Click(sender As Object, e As EventArgs) Handles btnPay.Click
-        Dim fname, lname As String
+        Dim tenantname As String
         Dim rowIndex As Integer
         rowIndex = dgvTenant.CurrentRow.Index
-        fname = dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
-        lname = dgvTenant.Rows(rowIndex).Cells(2).Value.ToString
+        tenantname = dgvTenant.Rows(rowIndex).Cells(1).Value.ToString
+
         tenantPayForm.lblTenantID.Text = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-        tenantPayForm.lblTenantName.Text = fname & " " & lname
+        tenantPayForm.lblTenantName.Text = tenantname
         tenantPayForm.Show()
     End Sub
 
@@ -28,8 +28,6 @@ Public Class Tenant
         Dim rowIndex As Integer
         rowIndex = dgvTenant.CurrentRow.Index
         populate_cmbRoom()
-
-
         ' Get the RoomName from the DataGridView
         Dim roomName As String = dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
 
@@ -78,6 +76,7 @@ Public Class Tenant
         TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
         display_tenant_info(TenantID)
         display_Tenant_Billing_info(TenantID)
+        display_monthly_pay_rent(TenantID)
     End Sub
 
     Private Sub txtTenantSearch_TextChanged(sender As Object, e As EventArgs) Handles txtTenantSearch.TextChanged

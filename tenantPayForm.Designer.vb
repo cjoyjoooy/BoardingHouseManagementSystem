@@ -31,6 +31,8 @@ Partial Class tenantPayForm
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        lblTenantRent = New Label()
+        Label2 = New Label()
         btnCancel = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
         amoundPaidtxt = New Guna.UI2.WinForms.Guna2TextBox()
@@ -39,8 +41,6 @@ Partial Class tenantPayForm
         lblTenantID = New Label()
         Label1 = New Label()
         Label18 = New Label()
-        Label2 = New Label()
-        lblTenantRent = New Label()
         Guna2Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -66,6 +66,30 @@ Partial Class tenantPayForm
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Guna2Panel1.Size = New Size(384, 345)
         Guna2Panel1.TabIndex = 0
+        ' 
+        ' lblTenantRent
+        ' 
+        lblTenantRent.AutoSize = True
+        lblTenantRent.BackColor = Color.Transparent
+        lblTenantRent.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantRent.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblTenantRent.Location = New Point(205, 139)
+        lblTenantRent.Name = "lblTenantRent"
+        lblTenantRent.Size = New Size(26, 26)
+        lblTenantRent.TabIndex = 74
+        lblTenantRent.Text = "--"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        Label2.Location = New Point(27, 142)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(61, 23)
+        Label2.TabIndex = 73
+        Label2.Text = "Rent:"
         ' 
         ' btnCancel
         ' 
@@ -152,7 +176,7 @@ Partial Class tenantPayForm
         lblTenantName.BackColor = Color.Transparent
         lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantName.Location = New Point(165, 89)
+        lblTenantName.Location = New Point(205, 91)
         lblTenantName.Name = "lblTenantName"
         lblTenantName.Size = New Size(26, 26)
         lblTenantName.TabIndex = 71
@@ -164,7 +188,7 @@ Partial Class tenantPayForm
         lblTenantID.BackColor = Color.Transparent
         lblTenantID.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantID.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantID.Location = New Point(165, 29)
+        lblTenantID.Location = New Point(205, 28)
         lblTenantID.Name = "lblTenantID"
         lblTenantID.Size = New Size(26, 26)
         lblTenantID.TabIndex = 70
@@ -190,33 +214,9 @@ Partial Class tenantPayForm
         Label18.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label18.Location = New Point(27, 91)
         Label18.Name = "Label18"
-        Label18.Size = New Size(122, 23)
+        Label18.Size = New Size(146, 23)
         Label18.TabIndex = 68
-        Label18.Text = "First Name:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        Label2.Location = New Point(27, 142)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(61, 23)
-        Label2.TabIndex = 73
-        Label2.Text = "Rent:"
-        ' 
-        ' lblTenantRent
-        ' 
-        lblTenantRent.AutoSize = True
-        lblTenantRent.BackColor = Color.Transparent
-        lblTenantRent.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        lblTenantRent.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTenantRent.Location = New Point(165, 139)
-        lblTenantRent.Name = "lblTenantRent"
-        lblTenantRent.Size = New Size(26, 26)
-        lblTenantRent.TabIndex = 74
-        lblTenantRent.Text = "--"
+        Label18.Text = "Tenant Name:"
         ' 
         ' tenantPayForm
         ' 
