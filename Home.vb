@@ -52,6 +52,8 @@ Public Class Home
 
     Private Sub btnEarnings_Click(sender As Object, e As EventArgs) Handles btnEarnings.Click
         changePanel(Earnings)
+        earningsSec()
+        profSummary()
         display_Earnings()
     End Sub
 
