@@ -42,17 +42,21 @@ Public Class Home
 
     Private Sub btnTransaction_Click(sender As Object, e As EventArgs) Handles btnTransaction.Click
         changePanel(Transaction)
+        display_Transaction()
     End Sub
 
     Private Sub btnBill_Click(sender As Object, e As EventArgs) Handles btnBill.Click
         changePanel(Bills)
+        display_Bill()
     End Sub
 
     Private Sub btnEarnings_Click(sender As Object, e As EventArgs) Handles btnEarnings.Click
         changePanel(Earnings)
+        display_Earnings()
     End Sub
 
     Private Sub btnUser_Click(sender As Object, e As EventArgs) Handles btnUser.Click
         changePanel(User)
+        display_User()
     End Sub
 End Class

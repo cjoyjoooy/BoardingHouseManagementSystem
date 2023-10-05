@@ -418,7 +418,7 @@ Module Project_Module
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT Tenant.FirstName || ' ' || Tenant.LastName AS 'Tenant Name', Transactions.DatePaid AS 'Date Paid', Transactions.AmountPaid AS 'Amount' FROM Tenant JOIN 'Transaction' AS Transactions ON Tenant.TenandID = Transactions.TenantID ORDER BY Transactions.DatePaid DESC;", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT Tenant.FirstName || ' ' || Tenant.LastName AS 'Tenant Name', Transactions.DatePaid AS 'Date Paid', Transactions.AmountPaid AS 'Amount' FROM Tenant JOIN 'Transaction' AS Transactions ON Tenant.TenandID = Transactions.TenantID ORDER BY Transactions.TransactionID DESC;", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Transaction")
             Transaction.dgvTransaction.DataSource = dataSet.Tables("Transaction").DefaultView
 
