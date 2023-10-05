@@ -61,6 +61,7 @@ Module Project_Module
             sqliteDataAdapter = New SQLiteDataAdapter("SELECT Username, Password FROM User WHERE Username='" & username & "' AND Password='" & password & "'", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "User")
             If dataSet.Tables("User").Rows.Count > 0 Then
+                Dashboard.lblUsername.Text = username
                 LoginForm.Hide()
                 Home.Show()
             Else

@@ -50,7 +50,7 @@ Partial Class Dashboard
         btnShowTransactionPanel = New Guna.UI2.WinForms.Guna2Button()
         Label10 = New Label()
         dgvRecentTransaction = New Guna.UI2.WinForms.Guna2DataGridView()
-        Label9 = New Label()
+        lblUsername = New Label()
         Label8 = New Label()
         Label2 = New Label()
         Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
@@ -84,7 +84,7 @@ Partial Class Dashboard
         panelDashboard.Controls.Add(btnShowTransactionPanel)
         panelDashboard.Controls.Add(Label10)
         panelDashboard.Controls.Add(dgvRecentTransaction)
-        panelDashboard.Controls.Add(Label9)
+        panelDashboard.Controls.Add(lblUsername)
         panelDashboard.Controls.Add(Label8)
         panelDashboard.Controls.Add(Label2)
         panelDashboard.Controls.Add(Guna2Panel5)
@@ -214,17 +214,17 @@ Partial Class Dashboard
         dgvRecentTransaction.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvRecentTransaction.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
-        ' Label9
+        ' lblUsername
         ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
-        Label9.Location = New Point(695, 12)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(77, 23)
-        Label9.TabIndex = 20
-        Label9.Text = "Kerby!"
+        lblUsername.AutoSize = True
+        lblUsername.BackColor = Color.Transparent
+        lblUsername.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblUsername.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
+        lblUsername.Location = New Point(671, 12)
+        lblUsername.Name = "lblUsername"
+        lblUsername.Size = New Size(24, 23)
+        lblUsername.TabIndex = 20
+        lblUsername.Text = "--"
         ' 
         ' Label8
         ' 
@@ -232,7 +232,7 @@ Partial Class Dashboard
         Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.ForeColor = Color.FromArgb(CByte(103), CByte(103), CByte(103))
-        Label8.Location = New Point(592, 12)
+        Label8.Location = New Point(568, 12)
         Label8.Name = "Label8"
         Label8.Size = New Size(106, 23)
         Label8.TabIndex = 19
@@ -272,11 +272,12 @@ Partial Class Dashboard
         lblTotalRooms.BackColor = Color.Transparent
         lblTotalRooms.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
         lblTotalRooms.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTotalRooms.Location = New Point(81, 106)
+        lblTotalRooms.Location = New Point(90, 106)
         lblTotalRooms.Name = "lblTotalRooms"
         lblTotalRooms.Size = New Size(39, 39)
         lblTotalRooms.TabIndex = 18
         lblTotalRooms.Text = "--"
+        lblTotalRooms.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Guna2PictureBox3
         ' 
@@ -327,11 +328,12 @@ Partial Class Dashboard
         lblTotalTenants.BackColor = Color.Transparent
         lblTotalTenants.Font = New Font("Arial Rounded MT Bold", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point)
         lblTotalTenants.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblTotalTenants.Location = New Point(78, 106)
+        lblTotalTenants.Location = New Point(85, 106)
         lblTotalTenants.Name = "lblTotalTenants"
         lblTotalTenants.Size = New Size(39, 39)
         lblTotalTenants.TabIndex = 17
         lblTotalTenants.Text = "--"
+        lblTotalTenants.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Guna2PictureBox2
         ' 
@@ -399,6 +401,7 @@ Partial Class Dashboard
         lblTotalEarnings.Size = New Size(39, 39)
         lblTotalEarnings.TabIndex = 18
         lblTotalEarnings.Text = "--"
+        lblTotalEarnings.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Guna2PictureBox1
         ' 
@@ -455,7 +458,7 @@ Partial Class Dashboard
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents lblTotalEarnings As Label
     Friend WithEvents lblTotalRooms As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lblUsername As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents dgvRecentTransaction As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Label10 As Label
