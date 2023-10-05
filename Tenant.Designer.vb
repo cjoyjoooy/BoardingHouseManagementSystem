@@ -62,6 +62,7 @@ Partial Class Tenant
         Label3 = New Label()
         Label1 = New Label()
         Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        lblLastPayment = New Label()
         Label16 = New Label()
         lblAmountDue = New Label()
         Label10 = New Label()
@@ -74,7 +75,6 @@ Partial Class Tenant
         btnShowTenantEditForm = New Guna.UI2.WinForms.Guna2Button()
         btnArchive = New Guna.UI2.WinForms.Guna2Button()
         btnPay = New Guna.UI2.WinForms.Guna2Button()
-        lblLastPayment = New Label()
         Guna2Panel2.SuspendLayout()
         Guna2Panel4.SuspendLayout()
         CType(dgvTenant, ComponentModel.ISupportInitialize).BeginInit()
@@ -113,7 +113,7 @@ Partial Class Tenant
         ' 
         lblTenantDateLeased.AutoSize = True
         lblTenantDateLeased.BackColor = Color.Transparent
-        lblTenantDateLeased.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantDateLeased.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantDateLeased.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantDateLeased.Location = New Point(155, 222)
         lblTenantDateLeased.Name = "lblTenantDateLeased"
@@ -125,7 +125,7 @@ Partial Class Tenant
         ' 
         lblTenantRoom.AutoSize = True
         lblTenantRoom.BackColor = Color.Transparent
-        lblTenantRoom.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantRoom.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantRoom.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantRoom.Location = New Point(155, 192)
         lblTenantRoom.Name = "lblTenantRoom"
@@ -137,7 +137,7 @@ Partial Class Tenant
         ' 
         lblTenantStatus.AutoSize = True
         lblTenantStatus.BackColor = Color.Transparent
-        lblTenantStatus.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantStatus.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantStatus.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantStatus.Location = New Point(155, 162)
         lblTenantStatus.Name = "lblTenantStatus"
@@ -149,7 +149,7 @@ Partial Class Tenant
         ' 
         lblTenantContact.AutoSize = True
         lblTenantContact.BackColor = Color.Transparent
-        lblTenantContact.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantContact.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantContact.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantContact.Location = New Point(155, 132)
         lblTenantContact.Name = "lblTenantContact"
@@ -161,7 +161,7 @@ Partial Class Tenant
         ' 
         lblTenantAddress.AutoSize = True
         lblTenantAddress.BackColor = Color.Transparent
-        lblTenantAddress.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantAddress.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantAddress.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantAddress.Location = New Point(155, 102)
         lblTenantAddress.Name = "lblTenantAddress"
@@ -173,7 +173,7 @@ Partial Class Tenant
         ' 
         lblTenantGender.AutoSize = True
         lblTenantGender.BackColor = Color.Transparent
-        lblTenantGender.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantGender.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantGender.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantGender.Location = New Point(155, 72)
         lblTenantGender.Name = "lblTenantGender"
@@ -185,7 +185,7 @@ Partial Class Tenant
         ' 
         lblTenantName.AutoSize = True
         lblTenantName.BackColor = Color.Transparent
-        lblTenantName.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblTenantName.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblTenantName.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblTenantName.Location = New Point(155, 42)
         lblTenantName.Name = "lblTenantName"
@@ -197,7 +197,7 @@ Partial Class Tenant
         ' 
         Label15.AutoSize = True
         Label15.BackColor = Color.Transparent
-        Label15.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label15.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label15.Location = New Point(15, 193)
         Label15.Name = "Label15"
@@ -209,7 +209,7 @@ Partial Class Tenant
         ' 
         Label8.AutoSize = True
         Label8.BackColor = Color.Transparent
-        Label8.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label8.Location = New Point(15, 8)
         Label8.Name = "Label8"
@@ -221,7 +221,7 @@ Partial Class Tenant
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label7.Location = New Point(15, 163)
         Label7.Name = "Label7"
@@ -233,7 +233,7 @@ Partial Class Tenant
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
-        Label6.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label6.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label6.Location = New Point(15, 223)
         Label6.Name = "Label6"
@@ -245,7 +245,7 @@ Partial Class Tenant
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label5.Location = New Point(15, 133)
         Label5.Name = "Label5"
@@ -257,7 +257,7 @@ Partial Class Tenant
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label4.Location = New Point(15, 103)
         Label4.Name = "Label4"
@@ -269,7 +269,7 @@ Partial Class Tenant
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label3.Location = New Point(15, 73)
         Label3.Name = "Label3"
@@ -281,7 +281,7 @@ Partial Class Tenant
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label1.Location = New Point(15, 43)
         Label1.Name = "Label1"
@@ -307,11 +307,23 @@ Partial Class Tenant
         Guna2Panel4.Size = New Size(392, 261)
         Guna2Panel4.TabIndex = 11
         ' 
+        ' lblLastPayment
+        ' 
+        lblLastPayment.AutoSize = True
+        lblLastPayment.BackColor = Color.Transparent
+        lblLastPayment.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        lblLastPayment.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
+        lblLastPayment.Location = New Point(171, 42)
+        lblLastPayment.Name = "lblLastPayment"
+        lblLastPayment.Size = New Size(26, 26)
+        lblLastPayment.TabIndex = 25
+        lblLastPayment.Text = "--"
+        ' 
         ' Label16
         ' 
         Label16.AutoSize = True
         Label16.BackColor = Color.Transparent
-        Label16.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label16.Location = New Point(17, 43)
         Label16.Name = "Label16"
@@ -323,7 +335,7 @@ Partial Class Tenant
         ' 
         lblAmountDue.AutoSize = True
         lblAmountDue.BackColor = Color.Transparent
-        lblAmountDue.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        lblAmountDue.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         lblAmountDue.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         lblAmountDue.Location = New Point(171, 81)
         lblAmountDue.Name = "lblAmountDue"
@@ -335,19 +347,19 @@ Partial Class Tenant
         ' 
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label10.Location = New Point(17, 83)
         Label10.Name = "Label10"
-        Label10.Size = New Size(127, 25)
+        Label10.Size = New Size(130, 25)
         Label10.TabIndex = 20
-        Label10.Text = "Amount Due:"
+        Label10.Text = "Amount Paid:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Label9.Location = New Point(18, 9)
         Label9.Name = "Label9"
@@ -392,7 +404,7 @@ Partial Class Tenant
         dgvTenant.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = Color.White
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         DataGridViewCellStyle4.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle4.SelectionBackColor = Color.White
         DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
@@ -412,14 +424,14 @@ Partial Class Tenant
         dgvTenant.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dgvTenant.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         dgvTenant.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
-        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         dgvTenant.ThemeStyle.HeaderStyle.ForeColor = Color.White
         dgvTenant.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         dgvTenant.ThemeStyle.HeaderStyle.Height = 50
         dgvTenant.ThemeStyle.ReadOnly = True
         dgvTenant.ThemeStyle.RowsStyle.BackColor = Color.White
         dgvTenant.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        dgvTenant.ThemeStyle.RowsStyle.Font = New Font("Trebuchet MS", 12F, FontStyle.Regular, GraphicsUnit.Point)
         dgvTenant.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         dgvTenant.ThemeStyle.RowsStyle.Height = 34
         dgvTenant.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
@@ -435,7 +447,7 @@ Partial Class Tenant
         txtTenantSearch.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtTenantSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         txtTenantSearch.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtTenantSearch.Font = New Font("Microsoft Sans Serif", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        txtTenantSearch.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         txtTenantSearch.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
         txtTenantSearch.IconLeft = CType(resources.GetObject("txtTenantSearch.IconLeft"), Image)
         txtTenantSearch.IconLeftOffset = New Point(10, 0)
@@ -443,10 +455,10 @@ Partial Class Tenant
         txtTenantSearch.Margin = New Padding(5, 3, 5, 3)
         txtTenantSearch.Name = "txtTenantSearch"
         txtTenantSearch.PasswordChar = ChrW(0)
-        txtTenantSearch.PlaceholderText = ""
+        txtTenantSearch.PlaceholderText = "Enter tenant's name"
         txtTenantSearch.SelectedText = ""
         txtTenantSearch.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtTenantSearch.Size = New Size(314, 40)
+        txtTenantSearch.Size = New Size(362, 40)
         txtTenantSearch.TabIndex = 13
         ' 
         ' btnShowAddForm
@@ -458,7 +470,7 @@ Partial Class Tenant
         btnShowAddForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnShowAddForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnShowAddForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnShowAddForm.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowAddForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowAddForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowAddForm.Image = CType(resources.GetObject("btnShowAddForm.Image"), Image)
         btnShowAddForm.Location = New Point(597, 0)
@@ -499,7 +511,7 @@ Partial Class Tenant
         btnDeleteTenant.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnDeleteTenant.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnDeleteTenant.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnDeleteTenant.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDeleteTenant.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnDeleteTenant.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnDeleteTenant.Image = CType(resources.GetObject("btnDeleteTenant.Image"), Image)
         btnDeleteTenant.Location = New Point(713, 0)
@@ -517,7 +529,7 @@ Partial Class Tenant
         btnShowTenantEditForm.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnShowTenantEditForm.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnShowTenantEditForm.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnShowTenantEditForm.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnShowTenantEditForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnShowTenantEditForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnShowTenantEditForm.Image = CType(resources.GetObject("btnShowTenantEditForm.Image"), Image)
         btnShowTenantEditForm.Location = New Point(655, 0)
@@ -535,7 +547,7 @@ Partial Class Tenant
         btnArchive.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnArchive.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnArchive.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnArchive.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnArchive.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnArchive.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnArchive.Image = CType(resources.GetObject("btnArchive.Image"), Image)
         btnArchive.Location = New Point(771, 0)
@@ -553,7 +565,7 @@ Partial Class Tenant
         btnPay.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnPay.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnPay.FillColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        btnPay.Font = New Font("Microsoft Sans Serif", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnPay.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnPay.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnPay.Image = CType(resources.GetObject("btnPay.Image"), Image)
         btnPay.Location = New Point(691, 381)
@@ -563,21 +575,9 @@ Partial Class Tenant
         btnPay.TabIndex = 16
         btnPay.Text = "Pay"
         ' 
-        ' lblLastPayment
-        ' 
-        lblLastPayment.AutoSize = True
-        lblLastPayment.BackColor = Color.Transparent
-        lblLastPayment.Font = New Font("Trebuchet MS", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblLastPayment.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
-        lblLastPayment.Location = New Point(171, 42)
-        lblLastPayment.Name = "lblLastPayment"
-        lblLastPayment.Size = New Size(26, 26)
-        lblLastPayment.TabIndex = 25
-        lblLastPayment.Text = "--"
-        ' 
         ' Tenant
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(833, 685)
         Controls.Add(panelTenant)

@@ -40,7 +40,7 @@ Partial Class User
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         btnDeleteUser = New Guna.UI2.WinForms.Guna2Button()
         btnUserBillForm = New Guna.UI2.WinForms.Guna2Button()
-        txtSearchTransaction = New Guna.UI2.WinForms.Guna2TextBox()
+        txtSearchUser = New Guna.UI2.WinForms.Guna2TextBox()
         dgvUser = New Guna.UI2.WinForms.Guna2DataGridView()
         btnAddUserForm = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel1.SuspendLayout()
@@ -52,7 +52,7 @@ Partial Class User
         Guna2Panel1.BackColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.Controls.Add(btnDeleteUser)
         Guna2Panel1.Controls.Add(btnUserBillForm)
-        Guna2Panel1.Controls.Add(txtSearchTransaction)
+        Guna2Panel1.Controls.Add(txtSearchUser)
         Guna2Panel1.Controls.Add(dgvUser)
         Guna2Panel1.Controls.Add(btnAddUserForm)
         Guna2Panel1.CustomizableEdges = CustomizableEdges9
@@ -60,10 +60,9 @@ Partial Class User
         Guna2Panel1.FillColor = Color.FromArgb(CByte(232), CByte(232), CByte(231))
         Guna2Panel1.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         Guna2Panel1.Location = New Point(0, 0)
-        Guna2Panel1.Margin = New Padding(3, 2, 3, 2)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2Panel1.Size = New Size(729, 514)
+        Guna2Panel1.Size = New Size(833, 685)
         Guna2Panel1.TabIndex = 0
         ' 
         ' btnDeleteUser
@@ -78,11 +77,10 @@ Partial Class User
         btnDeleteUser.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnDeleteUser.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), Image)
-        btnDeleteUser.Location = New Point(675, -1)
-        btnDeleteUser.Margin = New Padding(3, 2, 3, 2)
+        btnDeleteUser.Location = New Point(771, -1)
         btnDeleteUser.Name = "btnDeleteUser"
         btnDeleteUser.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnDeleteUser.Size = New Size(44, 30)
+        btnDeleteUser.Size = New Size(50, 40)
         btnDeleteUser.TabIndex = 50
         ' 
         ' btnUserBillForm
@@ -97,36 +95,35 @@ Partial Class User
         btnUserBillForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnUserBillForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnUserBillForm.Image = CType(resources.GetObject("btnUserBillForm.Image"), Image)
-        btnUserBillForm.Location = New Point(625, -1)
-        btnUserBillForm.Margin = New Padding(3, 2, 3, 2)
+        btnUserBillForm.Location = New Point(714, -1)
         btnUserBillForm.Name = "btnUserBillForm"
         btnUserBillForm.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        btnUserBillForm.Size = New Size(44, 30)
+        btnUserBillForm.Size = New Size(50, 40)
         btnUserBillForm.TabIndex = 49
         ' 
-        ' txtSearchTransaction
+        ' txtSearchUser
         ' 
-        txtSearchTransaction.BorderRadius = 10
-        txtSearchTransaction.CustomizableEdges = CustomizableEdges5
-        txtSearchTransaction.DefaultText = ""
-        txtSearchTransaction.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtSearchTransaction.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtSearchTransaction.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSearchTransaction.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSearchTransaction.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        txtSearchTransaction.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
-        txtSearchTransaction.IconLeft = CType(resources.GetObject("txtSearchTransaction.IconLeft"), Image)
-        txtSearchTransaction.IconLeftOffset = New Point(10, 0)
-        txtSearchTransaction.Location = New Point(11, 2)
-        txtSearchTransaction.Margin = New Padding(4, 2, 4, 2)
-        txtSearchTransaction.Name = "txtSearchTransaction"
-        txtSearchTransaction.PasswordChar = ChrW(0)
-        txtSearchTransaction.PlaceholderText = ""
-        txtSearchTransaction.SelectedText = ""
-        txtSearchTransaction.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtSearchTransaction.Size = New Size(354, 26)
-        txtSearchTransaction.TabIndex = 45
+        txtSearchUser.BorderRadius = 10
+        txtSearchUser.CustomizableEdges = CustomizableEdges5
+        txtSearchUser.DefaultText = ""
+        txtSearchUser.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtSearchUser.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtSearchUser.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtSearchUser.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtSearchUser.FocusedState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtSearchUser.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtSearchUser.HoverState.BorderColor = Color.FromArgb(CByte(254), CByte(206), CByte(47))
+        txtSearchUser.IconLeft = CType(resources.GetObject("txtSearchUser.IconLeft"), Image)
+        txtSearchUser.IconLeftOffset = New Point(10, 0)
+        txtSearchUser.Location = New Point(13, 3)
+        txtSearchUser.Margin = New Padding(5, 3, 5, 3)
+        txtSearchUser.Name = "txtSearchUser"
+        txtSearchUser.PasswordChar = ChrW(0)
+        txtSearchUser.PlaceholderText = "Enter the user's name"
+        txtSearchUser.SelectedText = ""
+        txtSearchUser.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        txtSearchUser.Size = New Size(405, 35)
+        txtSearchUser.TabIndex = 45
         ' 
         ' dgvUser
         ' 
@@ -159,8 +156,7 @@ Partial Class User
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         dgvUser.DefaultCellStyle = DataGridViewCellStyle3
         dgvUser.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dgvUser.Location = New Point(10, 32)
-        dgvUser.Margin = New Padding(3, 2, 3, 2)
+        dgvUser.Location = New Point(11, 43)
         dgvUser.Name = "dgvUser"
         dgvUser.ReadOnly = True
         dgvUser.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
@@ -175,7 +171,7 @@ Partial Class User
         dgvUser.RowHeadersVisible = False
         dgvUser.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         dgvUser.RowTemplate.Height = 34
-        dgvUser.Size = New Size(708, 482)
+        dgvUser.Size = New Size(809, 643)
         dgvUser.TabIndex = 44
         dgvUser.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dgvUser.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -211,21 +207,19 @@ Partial Class User
         btnAddUserForm.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnAddUserForm.ForeColor = Color.FromArgb(CByte(27), CByte(27), CByte(27))
         btnAddUserForm.Image = CType(resources.GetObject("btnAddUserForm.Image"), Image)
-        btnAddUserForm.Location = New Point(575, -1)
-        btnAddUserForm.Margin = New Padding(3, 2, 3, 2)
+        btnAddUserForm.Location = New Point(657, -1)
         btnAddUserForm.Name = "btnAddUserForm"
         btnAddUserForm.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        btnAddUserForm.Size = New Size(44, 30)
+        btnAddUserForm.Size = New Size(50, 40)
         btnAddUserForm.TabIndex = 43
         ' 
         ' User
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(729, 514)
+        ClientSize = New Size(833, 685)
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 2, 3, 2)
         Name = "User"
         StartPosition = FormStartPosition.CenterScreen
         Text = "User"
@@ -237,7 +231,7 @@ Partial Class User
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnAddUserForm As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents dgvUser As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents txtSearchTransaction As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtSearchUser As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnDeleteUser As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnUserBillForm As Guna.UI2.WinForms.Guna2Button
 End Class

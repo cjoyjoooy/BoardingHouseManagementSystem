@@ -82,7 +82,13 @@ Public Class Tenant
         Dim rowIndex, TenantID As Integer
         rowIndex = dgvTenant.CurrentRow.Index
         TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-        display_tenant_info()
+        display_tenant_info(TenantID)
         display_Tenant_Billing_info(TenantID)
+    End Sub
+
+    Private Sub txtTenantSearch_TextChanged(sender As Object, e As EventArgs) Handles txtTenantSearch.TextChanged
+        Dim search As String
+        search = txtTenantSearch.Text
+        Search_Tenant_Function(search, Me.dgvTenant)
     End Sub
 End Class

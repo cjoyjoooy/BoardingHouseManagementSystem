@@ -1,4 +1,6 @@
-﻿Public Class User
+﻿Imports System.Data.SQLite
+
+Public Class User
     Private Sub btnAddUserForm_Click(sender As Object, e As EventArgs) Handles btnAddUserForm.Click
         userAddForm.Show()
     End Sub
@@ -35,5 +37,11 @@
             Return
         End If
 
+    End Sub
+
+    Private Sub txtSearchUser_TextChanged(sender As Object, e As EventArgs) Handles txtSearchUser.TextChanged
+        Dim search As String
+        search = txtSearchUser.Text
+        Search_Function(search, "UserID, Name, Address, ContactNum, Username", "User", "Name", Me.dgvUser)
     End Sub
 End Class
