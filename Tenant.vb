@@ -1,6 +1,4 @@
-﻿Imports System.Globalization
-
-Public Class Tenant
+﻿Public Class Tenant
     Private Sub Tenant_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         display_Tenant()
     End Sub
@@ -22,6 +20,7 @@ Public Class Tenant
 
     Private Sub btnArchive_Click(sender As Object, e As EventArgs) Handles btnArchive.Click
         changePanel(tenantArchive)
+        display_TenantArchive()
     End Sub
 
     Private Sub btnTenantBillForm_Click(sender As Object, e As EventArgs) Handles btnShowTenantEditForm.Click
@@ -64,17 +63,20 @@ Public Class Tenant
                 Rooms.lblRoomNumber.Text = "--"
             End If
             display_Tenant()
+            display_TenantArchive()
         Else
             Return
 
         End If
+
     End Sub
 
     Private Sub dgvTenant_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTenant.CellClick
-        Dim rowIndex, TenantID As Integer
+        Dim rowIndex, TenantID, RoomID As Integer
         rowIndex = dgvTenant.CurrentRow.Index
         TenantID = dgvTenant.Rows(rowIndex).Cells(0).Value.ToString
-        display_tenant_info(TenantID)
+        RoomID = dgvTenant.Rows(rowIndex).Cells(3).Value.ToString
+        display_tenant_info(RoomID, TenantID)
         display_Tenant_Billing_info(TenantID)
         display_monthly_pay_rent(TenantID)
     End Sub

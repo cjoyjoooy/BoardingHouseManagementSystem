@@ -24,6 +24,8 @@
                 add_Bill(ElectricityBill, WaterBill, MaintenanceBill, MiscBill, monthh)
                 billSec()
                 display_Bill()
+                earningsSec()
+                display_Earnings()
             End If
 
 

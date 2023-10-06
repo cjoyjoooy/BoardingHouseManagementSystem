@@ -308,12 +308,12 @@ Module Project_Module
         End Try
     End Sub
 
-    Public Sub display_tenant_info(ByVal TenantID As Integer)
+    Public Sub display_tenant_info(ByVal RoomID As Integer, ByVal TenantID As Integer)
         Dim datevalue As DateTime
         Try
             SQLite_Open_Connection()
             dataSet = New DataSet
-            sqliteDataAdapter = New SQLiteDataAdapter("SELECT * FROM Tenant WHERE TenandID = " & TenantID & "", sqliteConnection)
+            sqliteDataAdapter = New SQLiteDataAdapter("SELECT TenandID, FirstName, LastName, Gender, Address, ContactNum, DateLeased, Status, (select RoomName from Room WHERE RoomID = " & RoomID & ") as 'RoomName' from Tenant WHERE TenandID = " & TenantID & "", sqliteConnection)
             sqliteDataAdapter.Fill(dataSet, "Tenant")
             If dataSet.Tables("Tenant").Rows.Count > 0 Then
                 Dim row As DataRow = dataSet.Tables("Tenant").Rows(0)
@@ -325,7 +325,7 @@ Module Project_Module
                 Dim contact As String = Convert.ToString(row("ContactNum"))
                 Dim dateleased As String = Convert.ToString(row("DateLeased"))
                 Dim status As String = Convert.ToString(row("Status"))
-                Dim room As Integer = Convert.ToString(row("RoomID"))
+                Dim roomname As String = Convert.ToString(row("RoomName"))
 
                 Dim name As String = fname + " " + lname
 
@@ -344,7 +344,7 @@ Module Project_Module
                 Tenant.lblTenantContact.Text = contact
 
                 Tenant.lblTenantStatus.Text = status
-                Tenant.lblTenantRoom.Text = room
+                Tenant.lblTenantRoom.Text = roomname
 
                 tenantEditForm.txtTenandID.Text = ID
                 tenantEditForm.txtFname.Text = fname
