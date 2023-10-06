@@ -6,8 +6,6 @@
             Dim currentDate As DateTime = DateTime.Today
             Dim monthh As String = currentDate.ToString("yyyy-MM-dd")
 
-
-
             If String.IsNullOrEmpty(txtElectricity.Text) OrElse Not Double.TryParse(txtElectricity.Text, ElectricityBill) Then
                 MessageBox.Show("Invalid or empty number of persons entered. Please enter a valid integer value.")
                 Return
@@ -27,8 +25,6 @@
                 earningsSec()
                 display_Earnings()
             End If
-
-
 
         Catch ex As Exception
             MessageBox.Show("An error occurred: " & ex.Message)
