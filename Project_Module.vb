@@ -262,16 +262,14 @@ Module Project_Module
 
     Public Sub restore_Tenant(ByVal status As String, ByVal TenandID As Integer)
         Try
-            Dim rowIndex As Integer
-            rowIndex = tenantArchive.dgvArchiveTenant.CurrentRow.Index
-            Dim RoomId As Integer = tenantArchive.dgvArchiveTenant.Rows(rowIndex).Cells(8).Value.ToString
+            Dim RoomId As Integer = Integer.Parse(tenantArchiveRestoreForm.cmbRestoreRoom.SelectedValue.ToString())
             Dim roomStatus As Boolean = isRoomFull(RoomId)
             SQLite_Open_Connection()
             If roomStatus Then
                 MessageBox.Show("Cannot restore tenant. The room is already full.")
             Else
                 dataSet = New DataSet
-                sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET  Status = '" & status & "' WHERE TenandId = " & TenandID & "", sqliteConnection)
+                sqliteDataAdapter = New SQLiteDataAdapter("UPDATE Tenant SET  Status = '" & status & "', RoomID = " & RoomId & " WHERE TenandId = " & TenandID & "", sqliteConnection)
                 sqliteDataAdapter.Fill(dataSet, "Tenant")
             End If
         Catch ex As SQLiteException
@@ -707,7 +705,9 @@ Module Project_Module
             tenantEditForm.cmbRoom.DataSource = dataSet.Tables("Room")
             tenantEditForm.cmbRoom.DisplayMember = "RoomName"
             tenantEditForm.cmbRoom.ValueMember = "RoomID"
-
+            tenantArchiveRestoreForm.cmbRestoreRoom.DataSource = dataSet.Tables("Room")
+            tenantArchiveRestoreForm.cmbRestoreRoom.DisplayMember = "RoomName"
+            tenantArchiveRestoreForm.cmbRestoreRoom.ValueMember = "RoomID"
 
         Catch ex As SQLiteException
             MessageBox.Show("Error: " & ex.Message)
